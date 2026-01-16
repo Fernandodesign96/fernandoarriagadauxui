@@ -1,0 +1,232 @@
+const projectsData = {
+    es: [
+        {
+            id: 1,
+            slug: 'banco-estado',
+            title: 'Banco Estado',
+            subtitle: 'Optimización de Conversión B2B Fintech',
+            year: '2025',
+            industry: 'Fintech',
+            type: 'UX/UI Integral',
+            description: 'Producto bancario con embudo de conversión complejo que requería optimización UX, pruebas de usabilidad y validación visual.',
+            coverImage: '/assets/projects/banco-estado-cover.png',
+            tags: ['Optimización Conversión', 'Fintech', 'Testing con IA', 'Prototipado'],
+            metrics: {
+                improvement: 'Optimización de embudo',
+                impact: 'Validación de rendimiento'
+            }
+        },
+        {
+            id: 2,
+            slug: 'bcn-global',
+            title: 'BCN Global',
+            subtitle: 'Rediseño Corporativo B2B SaaS',
+            year: '2025',
+            industry: 'B2B SaaS',
+            type: 'UX/UI Integral',
+            description: 'Soluciones de capacitación corporativa que requerían una presencia web moderna con propuesta de valor clara y diferenciación de servicios.',
+            coverImage: '/assets/projects/bcn-global-cover.png',
+            tags: ['Arquitectura Información', 'Sistema de Diseño', 'B2B', 'Front-End'],
+            metrics: {
+                improvement: 'Percepción de marca',
+                impact: 'Sitio web funcional'
+            }
+        },
+        {
+            id: 3,
+            slug: 'ghali-kombucha',
+            title: 'Ghali Kombucha',
+            subtitle: 'Investigación y Optimización UX E-commerce',
+            year: '2025',
+            industry: 'E-commerce',
+            type: 'Investigación UX',
+            description: 'Marca de kombucha artesanal que necesitaba mejoras UX basadas en datos mediante card sorting, tree testing y pruebas A/B.',
+            coverImage: '/assets/projects/ghali-kombucha-cover.png',
+            tags: ['Card Sorting', 'A/B Testing', 'E-commerce', 'Conversión'],
+            metrics: {
+                improvement: '+12.5% tasa de conversión',
+                impact: '+100% duración sesión'
+            }
+        },
+        {
+            id: 4,
+            slug: 'la-especieria',
+            title: 'La Especiería',
+            subtitle: 'UX/UI E-commerce & Desarrollo Front-End',
+            year: '2024',
+            industry: 'E-commerce',
+            type: 'UX/UI Integral',
+            description: 'E-commerce de alimentos gourmet requiriendo renovación UX completa con foco en descubrimiento de productos y optimización de conversión.',
+            coverImage: '/assets/projects/la-especieria-cover.png',
+            tags: ['E-commerce', 'Diseño UX/UI', 'Front-End', 'Mobile-First'],
+            metrics: {
+                improvement: '+100% tasa conversión',
+                impact: '+70% CTR'
+            }
+        },
+        {
+            id: 5,
+            slug: 'pharmafy',
+            title: 'Pharmafy',
+            subtitle: 'Diseño UX App de Salud',
+            year: '2023',
+            industry: 'Salud',
+            type: 'Diseño UX',
+            description: 'Solución de salud digital para gestión de medicamentos demostrando proceso UX end-to-end desde investigación hasta prototipos.',
+            coverImage: '/assets/projects/pharmafy-cover.png',
+            tags: ['Salud', 'Investigación UX', 'Personas', 'Flujos de Usuario'],
+            metrics: {
+                improvement: 'Diseño privacidad-primero',
+                impact: 'Certificación Google UX'
+            }
+        },
+        {
+            id: 6,
+            slug: 'findies',
+            title: 'Findies',
+            subtitle: 'App de Descubrimiento de Eventos y Música',
+            year: '2024',
+            industry: 'Entretenimiento',
+            type: 'Mobile App UX/UI',
+            description: 'Aplicación móvil para descubrir eventos de música en vivo y artistas con enfoque en navegación visual intuitiva.',
+            coverImage: '/assets/projects/findies-cover.png',
+            tags: ['Diseño Móvil', 'Flujos de Usuario', 'Diseño Visual', 'Entretenimiento'],
+            metrics: {
+                improvement: 'Descubrimiento eventos',
+                impact: 'Identidad visual atractiva'
+            }
+        },
+        {
+            id: 7,
+            slug: 'goodmeal',
+            title: 'GoodMeal',
+            subtitle: 'App de Planificación de Comidas y Nutrición',
+            year: '2024',
+            industry: 'Salud y Bienestar',
+            type: 'Mobile App UX/UI',
+            description: 'Aplicación de planificación de comidas enfocada en salud con onboarding optimizado y flujo de adquisición de bajo roce.',
+            coverImage: '/assets/projects/goodmeal-cover.png',
+            tags: ['Diseño Móvil', 'Onboarding', 'Health Tech', 'Estrategia UX'],
+            metrics: {
+                improvement: 'Adquisición de usuarios',
+                impact: 'Seguimiento nutricional accesible'
+            }
+        }
+    ],
+    en: [
+        {
+            id: 1,
+            slug: 'banco-estado',
+            title: 'Banco Estado',
+            subtitle: 'Fintech B2B Conversion Optimization',
+            year: '2025',
+            industry: 'Fintech',
+            type: 'End-to-End UX/UI',
+            description: 'Banking product with complex conversion funnel requiring comprehensive UX optimization, usability testing, and front-end validation.',
+            coverImage: '/assets/projects/banco-estado-cover.png',
+            tags: ['Conversion Optimization', 'Fintech', 'AI-Assisted Testing', 'Prototyping'],
+            metrics: {
+                improvement: 'Funnel optimization',
+                impact: 'Performance validation'
+            }
+        },
+        {
+            id: 2,
+            slug: 'bcn-global',
+            title: 'BCN Global',
+            subtitle: 'B2B Corporate Homepage Redesign',
+            year: '2025',
+            industry: 'B2B SaaS',
+            type: 'End-to-End UX/UI',
+            description: 'Corporate training solutions provider requiring modern web presence with clear value proposition and service differentiation.',
+            coverImage: '/assets/projects/bcn-global-cover.png',
+            tags: ['Information Architecture', 'Design System', 'B2B', 'Front-End'],
+            metrics: {
+                improvement: 'Brand perception',
+                impact: 'Functional hosted website'
+            }
+        },
+        {
+            id: 3,
+            slug: 'ghali-kombucha',
+            title: 'Ghali Kombucha',
+            subtitle: 'E-commerce UX Research & Optimization',
+            year: '2025',
+            industry: 'E-commerce',
+            type: 'UX Research & Testing',
+            description: 'Artisan kombucha brand needing data-driven UX improvements through card sorting, tree testing, and A/B testing.',
+            coverImage: '/assets/projects/ghali-kombucha-cover.png',
+            tags: ['Card Sorting', 'A/B Testing', 'E-commerce', 'Conversion'],
+            metrics: {
+                improvement: '+12.5% conversion rate',
+                impact: '+100% session duration'
+            }
+        },
+        {
+            id: 4,
+            slug: 'la-especieria',
+            title: 'La Especiería',
+            subtitle: 'E-commerce UX/UI & Front-End Development',
+            year: '2024',
+            industry: 'E-commerce',
+            type: 'End-to-End UX/UI',
+            description: 'Specialty foods e-commerce requiring complete UX overhaul with focus on product discovery and conversion optimization.',
+            coverImage: '/assets/projects/la-especieria-cover.png',
+            tags: ['E-commerce', 'UX/UI Design', 'Front-End', 'Mobile-First'],
+            metrics: {
+                improvement: '+100% conversion rate',
+                impact: '+70% CTR'
+            }
+        },
+        {
+            id: 5,
+            slug: 'pharmafy',
+            title: 'Pharmafy',
+            subtitle: 'Healthcare App UX Design',
+            year: '2023',
+            industry: 'Healthcare',
+            type: 'UX Design Project',
+            description: 'Digital health solution for medication management demonstrating end-to-end UX process from research to high-fidelity prototypes.',
+            coverImage: '/assets/projects/pharmafy-cover.png',
+            tags: ['Healthcare', 'UX Research', 'Personas', 'User Flows'],
+            metrics: {
+                improvement: 'Privacy-first design',
+                impact: 'Google UX certification'
+            }
+        },
+        {
+            id: 6,
+            slug: 'findies',
+            title: 'Findies',
+            subtitle: 'Music & Events Discovery App',
+            year: '2024',
+            industry: 'Entertainment',
+            type: 'Mobile App UX/UI',
+            description: 'Mobile application for discovering live music events and artists with focus on visual-first browsing and intuitive navigation.',
+            coverImage: '/assets/projects/findies-cover.png',
+            tags: ['Mobile Design', 'User Flows', 'Visual Design', 'Entertainment'],
+            metrics: {
+                improvement: 'Event discovery',
+                impact: 'Engaging visual identity'
+            }
+        },
+        {
+            id: 7,
+            slug: 'goodmeal',
+            title: 'GoodMeal',
+            subtitle: 'Meal Planning & Nutrition App',
+            year: '2024',
+            industry: 'Health & Wellness',
+            type: 'Mobile App UX/UI',
+            description: 'Health-focused meal planning application with streamlined onboarding and low-friction user acquisition flow.',
+            coverImage: '/assets/projects/goodmeal-cover.png',
+            tags: ['Mobile Design', 'Onboarding', 'Health Tech', 'UX Strategy'],
+            metrics: {
+                improvement: 'User acquisition',
+                impact: 'Accessible nutrition tracking'
+            }
+        }
+    ]
+}
+
+export default projectsData
