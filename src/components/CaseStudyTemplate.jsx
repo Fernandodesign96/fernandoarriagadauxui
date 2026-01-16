@@ -27,6 +27,7 @@ const CaseStudyTemplate = ({
             decisions: 'Decisiones Clave',
             results: 'Resultados & Impacto',
             learnings: 'Aprendizajes',
+            resources: 'Recursos & Prototipos',
             backAll: '← Volver a todos los proyectos',
             top: 'Volver arriba ↑'
         },
@@ -38,6 +39,7 @@ const CaseStudyTemplate = ({
             decisions: 'Key Decisions',
             results: 'Results & Impact',
             learnings: 'Key Learnings',
+            resources: 'Resources & Prototypes',
             backAll: '← Back to all projects',
             top: 'Back to top ↑'
         }
@@ -48,6 +50,41 @@ const CaseStudyTemplate = ({
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+    const getLinkIcon = (type) => {
+        switch (type) {
+            case 'figma': return (
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 12C5.5 13.5188 6.73122 14.75 8.25 14.75H11V12H5.5Z" fill="#0ACF83" />
+                    <path d="M5.5 6.5C5.5 7.6402 6.18525 8.62545 7.1518 9.0718C7.45895 9.21385 7.79943 9.25 8.25 9.25H11V6.5H8.25C6.73122 6.5 5.5 7.73122 5.5 9.25Z" fill="#F24E1E" />
+                    <path d="M5.5 9.25C5.5 10.7688 6.73122 12 8.25 12H11V9.25H8.25C6.73122 9.25 5.5 8.01878 5.5 6.5Z" fill="#FF7262" />
+                    <path d="M11 3.75C9.48122 3.75 8.25 4.98122 8.25 6.5C8.25 8.01878 9.48122 9.25 11 9.25V3.75Z" fill="#1ABCFE" />
+                    <path d="M15.75 6.5C15.75 8.01878 14.5188 9.25 13 9.25H11V3.75H13C14.5188 3.75 15.75 4.98122 15.75 6.5Z" fill="#A259FF" />
+                </svg>
+            )
+            case 'lovable': return (
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            )
+            default: return (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+            )
+        }
+    }
+
+    const getLinkLabel = (key) => {
+        const labels = {
+            figma: 'Figma Prototype',
+            lovable: 'Lovable AI Preview',
+            desktop: 'Live Demo (Desktop)',
+            tablet: 'Live Demo (Tablet)',
+            mobile: 'Live Demo (Mobile)'
+        }
+        return labels[key] || 'View Resource'
+    }
 
     return (
         <div className="min-h-screen bg-white dark:bg-neutral-950 transition-colors duration-200">
@@ -90,7 +127,7 @@ const CaseStudyTemplate = ({
                     <div className="max-w-6xl mx-auto">
                         <div className="rounded-xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800">
                             <img
-                                src={project.coverImage}
+                                src={`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`}
                                 alt={`${project.title} showcase`}
                                 className="w-full h-auto"
                             />
@@ -101,6 +138,38 @@ const CaseStudyTemplate = ({
 
             <div className="container-custom py-12 md:py-16">
                 <div className="max-w-4xl mx-auto space-y-20">
+
+                    {/* Project Resources / Links */}
+                    {project.links && Object.keys(project.links).length > 0 && (
+                        <section>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-900 dark:text-white flex items-center">
+                                <span className="w-8 h-1 bg-green-500 mr-4 rounded-full"></span>
+                                {t.resources}
+                            </h2>
+                            <div className="flex flex-wrap gap-4">
+                                {Object.entries(project.links).map(([key, url]) => (
+                                    <a
+                                        key={key}
+                                        href={url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-3 px-6 py-4 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-lg transition-all group"
+                                    >
+                                        <span className="text-neutral-500 dark:text-neutral-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                            {getLinkIcon(key)}
+                                        </span>
+                                        <span className="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">
+                                            {getLinkLabel(key)}
+                                        </span>
+                                        <svg className="w-4 h-4 text-neutral-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </a>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
                     {/* Context & Problem */}
                     <section>
                         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-900 dark:text-white flex items-center">

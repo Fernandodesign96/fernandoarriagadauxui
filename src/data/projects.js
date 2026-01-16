@@ -14,6 +14,10 @@ const projectsData = {
             metrics: {
                 improvement: 'Optimización de embudo',
                 impact: 'Validación de rendimiento'
+            },
+            links: {
+                lovable: 'https://bancoestado.lovable.app/',
+                figma: 'https://www.figma.com/design/h6OYFFFws5oCyJLuwfs3yT/Banco-Estado?node-id=0-1&t=LGiSG3MVs82qJHBv-1'
             }
         },
         {
@@ -30,6 +34,13 @@ const projectsData = {
             metrics: {
                 improvement: 'Percepción de marca',
                 impact: 'Sitio web funcional'
+            },
+            links: {
+                lovable: 'https://bcnglobal.lovable.app/',
+                figma: 'https://www.figma.com/design/BcGdwTMlO6tGBDaoc3D2jX/Redise%C3%B1o-BCN-Global?node-id=0-1&t=oPDIhsV43zFyPlv4-1',
+                desktop: 'https://bcnglobal.figweb.site/',
+                tablet: 'https://bcnglobaltablet.figweb.site/',
+                mobile: 'https://bcnglobalmobile.figweb.site/'
             }
         },
         {
@@ -46,6 +57,9 @@ const projectsData = {
             metrics: {
                 improvement: '+12.5% tasa de conversión',
                 impact: '+100% duración sesión'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/ebPjqNhtVlGVinwQC5VTcS/Prototipo-Ghali?node-id=0-1&t=zAd0ZmvwNu2PDW4t-1'
             }
         },
         {
@@ -62,6 +76,9 @@ const projectsData = {
             metrics: {
                 improvement: '+100% tasa conversión',
                 impact: '+70% CTR'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1'
             }
         },
         {
@@ -78,6 +95,9 @@ const projectsData = {
             metrics: {
                 improvement: 'Diseño privacidad-primero',
                 impact: 'Certificación Google UX'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/lETqUHlS9ABeSDUqg8PJle/Pharmafy?node-id=0-1&t=sNd1MyjcADrqunFV-1'
             }
         },
         {
@@ -94,6 +114,9 @@ const projectsData = {
             metrics: {
                 improvement: 'Descubrimiento eventos',
                 impact: 'Identidad visual atractiva'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/fqe2mj3BKBqIR9RclYk8PB/Prototipo-lo-fi---app-contrataci%C3%B3n-de-m%C3%BAsicos?node-id=123-2&t=VNVpllMgyl7K0xVH-1'
             }
         },
         {
@@ -110,6 +133,9 @@ const projectsData = {
             metrics: {
                 improvement: 'Adquisición de usuarios',
                 impact: 'Seguimiento nutricional accesible'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/dFQzwm8NK6z86GDVmIcUd8/Wireframe-App-GoodMeal---Equipo-3?node-id=113-3&t=XpVD9THQJRMtoRae-1'
             }
         }
     ],
@@ -128,6 +154,10 @@ const projectsData = {
             metrics: {
                 improvement: 'Funnel optimization',
                 impact: 'Performance validation'
+            },
+            links: {
+                lovable: 'https://bancoestado.lovable.app/',
+                figma: 'https://www.figma.com/design/h6OYFFFws5oCyJLuwfs3yT/Banco-Estado?node-id=0-1&t=LGiSG3MVs82qJHBv-1'
             }
         },
         {
@@ -144,6 +174,13 @@ const projectsData = {
             metrics: {
                 improvement: 'Brand perception',
                 impact: 'Functional hosted website'
+            },
+            links: {
+                lovable: 'https://bcnglobal.lovable.app/',
+                figma: 'https://www.figma.com/design/BcGdwTMlO6tGBDaoc3D2jX/Redise%C3%B1o-BCN-Global?node-id=0-1&t=oPDIhsV43zFyPlv4-1',
+                desktop: 'https://bcnglobal.figweb.site/',
+                tablet: 'https://bcnglobaltablet.figweb.site/',
+                mobile: 'https://bcnglobalmobile.figweb.site/'
             }
         },
         {
@@ -160,6 +197,9 @@ const projectsData = {
             metrics: {
                 improvement: '+12.5% conversion rate',
                 impact: '+100% session duration'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/ebPjqNhtVlGVinwQC5VTcS/Prototipo-Ghali?node-id=0-1&t=zAd0ZmvwNu2PDW4t-1'
             }
         },
         {
@@ -176,6 +216,9 @@ const projectsData = {
             metrics: {
                 improvement: '+100% conversion rate',
                 impact: '+70% CTR'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1'
             }
         },
         {
@@ -192,6 +235,9 @@ const projectsData = {
             metrics: {
                 improvement: 'Privacy-first design',
                 impact: 'Google UX certification'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/lETqUHlS9ABeSDUqg8PJle/Pharmafy?node-id=0-1&t=sNd1MyjcADrqunFV-1'
             }
         },
         {
@@ -208,6 +254,9 @@ const projectsData = {
             metrics: {
                 improvement: 'Event discovery',
                 impact: 'Engaging visual identity'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/fqe2mj3BKBqIR9RclYk8PB/Prototipo-lo-fi---app-contrataci%C3%B3n-de-m%C3%BAsicos?node-id=123-2&t=VNVpllMgyl7K0xVH-1'
             }
         },
         {
@@ -224,6 +273,9 @@ const projectsData = {
             metrics: {
                 improvement: 'User acquisition',
                 impact: 'Accessible nutrition tracking'
+            },
+            links: {
+                figma: 'https://www.figma.com/design/dFQzwm8NK6z86GDVmIcUd8/Wireframe-App-GoodMeal---Equipo-3?node-id=113-3&t=XpVD9THQJRMtoRae-1'
             }
         }
     ]

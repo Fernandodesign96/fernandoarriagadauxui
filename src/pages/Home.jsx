@@ -160,7 +160,7 @@ const Home = () => {
                         </div>
                         <div className="relative h-64 lg:h-auto min-h-[300px]">
                             <img
-                                src="/assets/profile.jpg"
+                                src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
                                 alt="Fernando Arriagada"
                                 className="absolute inset-0 w-full h-full object-cover"
                             />
@@ -194,10 +194,10 @@ const Home = () => {
                         ))}
                     </div>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-4 flex-wrap">
                         <a
-                            href="mailto:fernandoarriagada@example.com"
-                            className="w-full sm:w-auto px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center transform hover:-translate-y-0.5"
+                            href="mailto:fernandodesign96@gmail.com"
+                            className="w-full sm:w-auto px-6 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold text-base transition-all shadow-lg hover:shadow-xl flex items-center justify-center transform hover:-translate-y-0.5"
                         >
                             <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -205,15 +205,26 @@ const Home = () => {
                             {t.contact.cta.email}
                         </a>
                         <a
-                            href="https://linkedin.com/in/fernandoarriagada"
+                            href="https://www.linkedin.com/in/fernando-arriagada-castillo-a68283180/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white border-2 border-neutral-200 dark:border-neutral-600 hover:border-primary-600 dark:hover:border-primary-500 rounded-lg font-semibold text-lg transition-all flex items-center justify-center hover:bg-neutral-50 dark:hover:bg-neutral-700"
+                            className="w-full sm:w-auto px-6 py-4 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white border-2 border-neutral-200 dark:border-neutral-600 hover:border-primary-600 dark:hover:border-primary-500 rounded-lg font-semibold text-base transition-all flex items-center justify-center hover:bg-neutral-50 dark:hover:bg-neutral-700"
                         >
                             <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
-                            {t.contact.cta.linkedin}
+                            LinkedIn
+                        </a>
+                        <a
+                            href="https://drive.google.com/file/d/1wIBM0SO7vQGvGgDtebRt3I_b-ZO1E5Gn/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full sm:w-auto px-6 py-4 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white border-2 border-neutral-200 dark:border-neutral-600 hover:border-primary-600 dark:hover:border-primary-500 rounded-lg font-semibold text-base transition-all flex items-center justify-center hover:bg-neutral-50 dark:hover:bg-neutral-700"
+                        >
+                            <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            CV
                         </a>
                     </div>
                 </div>

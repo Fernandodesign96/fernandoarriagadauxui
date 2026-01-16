@@ -17,13 +17,10 @@ const Footer = () => {
                     </div>
 
                     <div className="flex items-center gap-6">
-                        <a href="#" className="text-neutral-500 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-colors">
+                        <a href="https://www.linkedin.com/in/fernando-arriagada-castillo-a68283180/" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-colors">
                             LinkedIn
                         </a>
-                        <a href="#" className="text-neutral-500 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-colors">
-                            Behance
-                        </a>
-                        <a href="#" className="text-neutral-500 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-colors">
+                        <a href="mailto:fernandodesign96@gmail.com" className="text-neutral-500 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-colors">
                             Email
                         </a>
                     </div>
