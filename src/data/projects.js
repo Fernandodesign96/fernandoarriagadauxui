@@ -18,7 +18,17 @@ const projectsData = {
             links: {
                 lovable: 'https://bancoestado.lovable.app/',
                 figma: 'https://www.figma.com/design/h6OYFFFws5oCyJLuwfs3yT/Banco-Estado?node-id=0-1&t=LGiSG3MVs82qJHBv-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "App Original (Legacy)",
+                    images: Array.from({ length: 9 }, (_, i) => `/assets/projects/bancoestado/bancoestadovorigin${i + 1}.PNG`)
+                },
+                {
+                    title: "Prototipo Lovable (Versión B)",
+                    images: Array.from({ length: 7 }, (_, i) => `/assets/projects/bancoestado/bancoestadoversionb${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 2,
@@ -41,7 +51,21 @@ const projectsData = {
                 desktop: 'https://bcnglobal.figweb.site/',
                 tablet: 'https://bcnglobaltablet.figweb.site/',
                 mobile: 'https://bcnglobalmobile.figweb.site/'
-            }
+            },
+            gallery: [
+                {
+                    title: "Sitio Original",
+                    images: Array.from({ length: 5 }, (_, i) => `/assets/projects/bcnglobal/bcnoriginal${i + 1}.PNG`)
+                },
+                {
+                    title: "Prototipo Lovable",
+                    images: Array.from({ length: 4 }, (_, i) => `/assets/projects/bcnglobal/bcnlovable${i + 1}.PNG`)
+                },
+                {
+                    title: "Diseño Final (Figma)",
+                    images: Array.from({ length: 5 }, (_, i) => `/assets/projects/bcnglobal/bcnrediseno${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 3,
@@ -60,7 +84,21 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/ebPjqNhtVlGVinwQC5VTcS/Prototipo-Ghali?node-id=0-1&t=zAd0ZmvwNu2PDW4t-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Sitio Original",
+                    images: Array.from({ length: 4 }, (_, i) => `/assets/projects/ghalikombucha/ghalioriginal${i + 1}.PNG`)
+                },
+                {
+                    title: "Testing A",
+                    images: Array.from({ length: 4 }, (_, i) => `/assets/projects/ghalikombucha/ghaliversiona${i + 1}.PNG`)
+                },
+                {
+                    title: "Testing B (Ganadora)",
+                    images: Array.from({ length: 8 }, (_, i) => `/assets/projects/ghalikombucha/ghaliversionb${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 4,
@@ -79,7 +117,17 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Pagina Oficial",
+                    images: Array.from({ length: 6 }, (_, i) => `/assets/projects/laespecieria/laespecieriaoriginal${i + 1}.PNG`)
+                },
+                {
+                    title: "Prototipo Final",
+                    images: Array.from({ length: 4 }, (_, i) => `/assets/projects/laespecieria/laespecieriarediseno${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 5,
@@ -98,7 +146,13 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/lETqUHlS9ABeSDUqg8PJle/Pharmafy?node-id=0-1&t=sNd1MyjcADrqunFV-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Prototipo Final",
+                    images: Array.from({ length: 9 }, (_, i) => `/assets/projects/pharmafy/pharmafy${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 6,
@@ -117,7 +171,13 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/fqe2mj3BKBqIR9RclYk8PB/Prototipo-lo-fi---app-contrataci%C3%B3n-de-m%C3%BAsicos?node-id=123-2&t=VNVpllMgyl7K0xVH-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Prototipo Final",
+                    images: Array.from({ length: 7 }, (_, i) => `/assets/projects/findies/findies${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 7,
@@ -136,7 +196,16 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/dFQzwm8NK6z86GDVmIcUd8/Wireframe-App-GoodMeal---Equipo-3?node-id=113-3&t=XpVD9THQJRMtoRae-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Prototipo Final",
+                    images: [
+                        ...Array.from({ length: 5 }, (_, i) => `/assets/projects/goodmeal/goodmeal${i + 1}.PNG`),
+                        '/assets/projects/goodmeal/goodmealuikit.PNG'
+                    ]
+                }
+            ]
         }
     ],
     en: [
@@ -158,7 +227,17 @@ const projectsData = {
             links: {
                 lovable: 'https://bancoestado.lovable.app/',
                 figma: 'https://www.figma.com/design/h6OYFFFws5oCyJLuwfs3yT/Banco-Estado?node-id=0-1&t=LGiSG3MVs82qJHBv-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Original App (Legacy)",
+                    images: Array.from({ length: 9 }, (_, i) => `/assets/projects/bancoestado/bancoestadovorigin${i + 1}.PNG`)
+                },
+                {
+                    title: "Lovable Version B",
+                    images: Array.from({ length: 7 }, (_, i) => `/assets/projects/bancoestado/bancoestadoversionb${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 2,
@@ -181,7 +260,21 @@ const projectsData = {
                 desktop: 'https://bcnglobal.figweb.site/',
                 tablet: 'https://bcnglobaltablet.figweb.site/',
                 mobile: 'https://bcnglobalmobile.figweb.site/'
-            }
+            },
+            gallery: [
+                {
+                    title: "Original Site",
+                    images: Array.from({ length: 5 }, (_, i) => `/assets/projects/bcnglobal/bcnoriginal${i + 1}.PNG`)
+                },
+                {
+                    title: "Lovable Prototype",
+                    images: Array.from({ length: 4 }, (_, i) => `/assets/projects/bcnglobal/bcnlovable${i + 1}.PNG`)
+                },
+                {
+                    title: "Final Design (Figma)",
+                    images: Array.from({ length: 5 }, (_, i) => `/assets/projects/bcnglobal/bcnrediseno${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 3,
@@ -200,7 +293,21 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/ebPjqNhtVlGVinwQC5VTcS/Prototipo-Ghali?node-id=0-1&t=zAd0ZmvwNu2PDW4t-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Original Site",
+                    images: Array.from({ length: 4 }, (_, i) => `/assets/projects/ghalikombucha/ghalioriginal${i + 1}.PNG`)
+                },
+                {
+                    title: "Testing A",
+                    images: Array.from({ length: 4 }, (_, i) => `/assets/projects/ghalikombucha/ghaliversiona${i + 1}.PNG`)
+                },
+                {
+                    title: "Testing B (Winner)",
+                    images: Array.from({ length: 8 }, (_, i) => `/assets/projects/ghalikombucha/ghaliversionb${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 4,
@@ -219,7 +326,17 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Original Site",
+                    images: Array.from({ length: 6 }, (_, i) => `/assets/projects/laespecieria/laespecieriaoriginal${i + 1}.PNG`)
+                },
+                {
+                    title: "Final Prototype",
+                    images: Array.from({ length: 4 }, (_, i) => `/assets/projects/laespecieria/laespecieriarediseno${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 5,
@@ -238,7 +355,13 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/lETqUHlS9ABeSDUqg8PJle/Pharmafy?node-id=0-1&t=sNd1MyjcADrqunFV-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Final Prototype",
+                    images: Array.from({ length: 9 }, (_, i) => `/assets/projects/pharmafy/pharmafy${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 6,
@@ -257,7 +380,13 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/fqe2mj3BKBqIR9RclYk8PB/Prototipo-lo-fi---app-contrataci%C3%B3n-de-m%C3%BAsicos?node-id=123-2&t=VNVpllMgyl7K0xVH-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Final Prototype",
+                    images: Array.from({ length: 7 }, (_, i) => `/assets/projects/findies/findies${i + 1}.PNG`)
+                }
+            ]
         },
         {
             id: 7,
@@ -276,7 +405,16 @@ const projectsData = {
             },
             links: {
                 figma: 'https://www.figma.com/design/dFQzwm8NK6z86GDVmIcUd8/Wireframe-App-GoodMeal---Equipo-3?node-id=113-3&t=XpVD9THQJRMtoRae-1'
-            }
+            },
+            gallery: [
+                {
+                    title: "Final Prototype",
+                    images: [
+                        ...Array.from({ length: 5 }, (_, i) => `/assets/projects/goodmeal/goodmeal${i + 1}.PNG`),
+                        '/assets/projects/goodmeal/goodmealuikit.PNG'
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -121,15 +121,15 @@ const CaseStudyTemplate = ({
                 </div>
             </section>
 
-            {/* Project Cover Image */}
+            {/* Project Cover Image (Compact) */}
             {project.coverImage && (
-                <section className="container-custom py-12 md:py-16">
-                    <div className="max-w-6xl mx-auto">
-                        <div className="rounded-xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800">
+                <section className="container-custom py-8 md:py-12">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="rounded-xl overflow-hidden shadow-xl border border-neutral-200 dark:border-neutral-800 relative aspect-[21/9]">
                             <img
                                 src={`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`}
                                 alt={`${project.title} showcase`}
-                                className="w-full h-auto"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
@@ -285,6 +285,28 @@ const CaseStudyTemplate = ({
                             </div>
                         </section>
                     )}
+
+                    {/* Gallery Section */}
+                    {project.gallery && project.gallery.map((group, index) => (
+                        <section key={index} className="pt-8 md:pt-12 border-t border-neutral-100 dark:border-neutral-800">
+                            <h3 className="text-2xl font-bold mb-8 text-neutral-900 dark:text-white flex items-center">
+                                <span className="w-1.5 h-8 bg-primary-500 mr-4 rounded-full"></span>
+                                {group.title}
+                            </h3>
+                            <div className="grid grid-cols-1 gap-8 md:gap-12">
+                                {group.images.map((img, imgIndex) => (
+                                    <div key={imgIndex} className="bg-neutral-50 dark:bg-neutral-900 p-2 md:p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-shadow">
+                                        <img
+                                            src={`${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`}
+                                            alt={`${group.title} ${imgIndex + 1}`}
+                                            className="w-full h-auto rounded-lg shadow-sm"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    ))}
                 </div>
             </div>
 
