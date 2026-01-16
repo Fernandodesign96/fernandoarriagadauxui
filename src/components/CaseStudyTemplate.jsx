@@ -4,14 +4,14 @@ import { useLanguage } from '../context/LanguageContext'
 
 const CaseStudyTemplate = ({
     project,
-    context,
-    problem,
-    role,
-    responsibilities,
-    processSteps,
-    keyDecisions,
-    results,
-    learnings,
+    context = project.context,
+    problem = project.problem,
+    role = project.role,
+    responsibilities = project.responsibilities,
+    processSteps = project.processSteps,
+    keyDecisions = project.keyDecisions,
+    results = project.results,
+    learnings = project.learnings,
     images = []
 }) => {
     const navigate = useNavigate()
