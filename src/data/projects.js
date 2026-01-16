@@ -349,7 +349,50 @@ const projectsData = {
                     title: "Lovable Version B",
                     images: Array.from({ length: 7 }, (_, i) => `/assets/projects/bancoestado/bancoestadoversionb${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // English Content - Restored from component
+            context: "Banco Estado, one of Chile's largest financial institutions, required UX optimization for their B2B banking product. The existing conversion funnel showed friction points affecting business customer acquisition and account activation rates.",
+            problem: "Complex multi-step processes, unclear value propositions, and suboptimal information architecture were creating barriers in the user journey. The challenge was to simplify without compromising the necessary security and compliance requirements inherent to banking products.",
+            role: "Led end-to-end UX/UI design process including user research, wireframing, high-fidelity prototyping, and front-end validation.",
+            responsibilities: [
+                'User flow analysis and funnel optimization strategy',
+                'Wireframing and interactive prototyping',
+                'High-fidelity UI design aligned with brand guidelines',
+                'Usability testing with business banking customers',
+                'AI-assisted testing scenario generation',
+                'Front-end implementation validation'
+            ],
+            processSteps: [
+                {
+                    title: 'Research & Analysis',
+                    description: 'Conducted data analysis of existing conversion funnel, identifying dropout points and usability issues. Performed competitive analysis of B2B banking experiences and interviewed stakeholders to understand business constraints and compliance requirements.'
+                },
+                {
+                    title: 'UX Strategy & Wireframing',
+                    description: 'Redesigned user flows to reduce steps and cognitive load. Created low to mid-fidelity wireframes focusing on progressive disclosure and clear CTAs. Defined new information architecture prioritizing critical banking actions.'
+                },
+                {
+                    title: 'UI Design & Prototyping',
+                    description: 'Developed high-fidelity designs maintaining brand consistency while improving visual hierarchy. Created interactive prototypes for stakeholder review and usability testing. Applied accessibility standards (WCAG 2.1 AA) throughout.'
+                },
+                {
+                    title: 'Testing & Validation',
+                    description: 'Conducted usability tests with business customers. Used AI to generate diverse testing scenarios and edge cases. Validated front-end implementation to ensure design fidelity and performance standards.'
+                }
+            ],
+            keyDecisions: [
+                'Implemented progressive disclosure to reduce overwhelming first impressions while maintaining access to all features',
+                'Designed trust signals (security badges, live support) prominently to address banking anxiety',
+                'Created mobile-responsive flows as data showed 40% of business owners started applications on mobile',
+                'Optimized form fields based on usability testing, reducing required fields by 30% without compromising KYC requirements'
+            ],
+            results: [
+                'Streamlined conversion funnel with reduced steps',
+                'Improved user satisfaction scores in post-launch testing',
+                'Successfully validated front-end implementation against design specs',
+                'Demonstrated measurable performance improvements in key user flows'
+            ],
+            learnings: "Fintech UX requires balancing trust and simplicity. Users need reassurance through familiar banking patterns and clear security indicators, but complexity should never be mistaken for thoroughness. The most secure system is one users actually complete successfully."
         },
         {
             id: 2,
@@ -389,7 +432,51 @@ const projectsData = {
                     title: "Final Design (Figma)",
                     images: Array.from({ length: 5 }, (_, i) => `/assets/projects/bcnglobal/bcnrediseno${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // English Content - Restored from component
+            context: "BCN Global, a leading corporate training solutions provider, needed a complete homepage redesign to better communicate their value proposition and drive lead generation. Their existing website lacked clear messaging and modern UX standards.",
+            problem: "Unclear service differentiation, poor information architecture, and dated visual design were limiting their ability to compete in the B2B e-learning market. The site needed to convey professionalism, credibility, and innovation to attract enterprise clients.",
+            role: "End-to-end ownership of information architecture, UX strategy, visual design, design system creation, and front-end implementation.",
+            responsibilities: [
+                'Stakeholder interviews and requirements gathering',
+                'Content strategy and information architecture',
+                'Visual design system creation',
+                'High-fidelity UI design',
+                'Front-end development and hosting setup',
+                'Performance optimization and SEO implementation'
+            ],
+            processSteps: [
+                {
+                    title: 'Discovery & Strategy',
+                    description: 'Conducted stakeholder workshops to define business goals, target audiences, and key differentiators. Analyzed competitor websites and identified opportunities for differentiation in messaging and UX.'
+                },
+                {
+                    title: 'Information Architecture',
+                    description: 'Restructured site navigation and content hierarchy to prioritize services and value propositions. Created clear pathways for different user segments (HR managers, L&D professionals, executives).'
+                },
+                {
+                    title: 'Design System & UI',
+                    description: 'Developed comprehensive design system including typography, color palette, components, and spacing guidelines. Created high-fidelity mockups emphasizing professionalism and modern aesthetics aligned with B2B expectations.'
+                },
+                {
+                    title: 'Implementation & Launch',
+                    description: 'Built responsive front-end with focus on performance and accessibility. Set up hosting infrastructure, implemented SEO best practices, and conducted cross-browser testing before launch.'
+                }
+            ],
+            keyDecisions: [
+                'Service-focused homepage hero highlighting three pillars of training solutions with clear visual differentiation',
+                'Conversion-optimized CTAs placed strategically throughout the page with A/B tested copy',
+                'Trust-building elements prominently displayed: client logos, certifications, case study metrics',
+                'Mobile-first responsive design considering that initial research often happens on mobile devices'
+            ],
+            results: [
+                'Deployed fully functional website with custom domain and hosting',
+                'Significantly improved brand perception based on client feedback',
+                'Created scalable design system for future page development',
+                'Achieved excellent performance scores (90+ Lighthouse)',
+                'Established clear visual and content hierarchy for lead generation'
+            ],
+            learnings: "B2B websites require credibility-first design. Enterprise clients need to quickly understand what you do, who you've worked with, and why you're qualified. Visual polish matters, but clear communication and trust signals drive conversion in this market."
         },
         {
             id: 3,
@@ -423,7 +510,51 @@ const projectsData = {
                     title: "Testing B (Winner)",
                     images: Array.from({ length: 8 }, (_, i) => `/assets/projects/ghalikombucha/ghaliversionb${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // English Content - Restored from component
+            context: "Ghali Kombucha, an artisan kombucha brand, needed data-driven UX improvements to increase online sales. Despite having quality products and growing brand awareness, their e-commerce conversion rates and session durations were below industry benchmarks.",
+            problem: "Users struggled to find products due to confusing categorization, and the checkout process had multiple friction points causing cart abandonment. The information architecture didn't match user mental models for browsing health beverages.",
+            role: "UX Research lead responsible for conducting card sorting studies, tree testing, and A/B testing to validate and optimize the e-commerce experience.",
+            responsibilities: [
+                'UX research methodology design and execution',
+                'Card sorting studies for product categorization',
+                'Tree testing for navigation validation',
+                'A/B test design and analysis for checkout optimization',
+                'Data analysis and actionable recommendations',
+                'Collaboration with development team on implementation'
+            ],
+            processSteps: [
+                {
+                    title: 'Research Planning',
+                    description: 'Defined research objectives focused on improving product discoverability and reducing checkout friction. Recruited participants matching target customer demographics (health-conscious consumers aged 25-45).'
+                },
+                {
+                    title: 'Card Sorting & IA',
+                    description: 'Conducted open and closed card sorting sessions to understand how users naturally categorize kombucha products. Discovered that users preferred categorization by flavor profile and benefits rather than technical fermentation details.'
+                },
+                {
+                    title: 'Tree Testing',
+                    description: 'Validated proposed navigation structure through tree testing exercises. Identified that users successfully found products 78% faster with the new IA compared to the existing structure.'
+                },
+                {
+                    title: 'A/B Testing & Optimization',
+                    description: 'Designed and ran A/B tests on checkout flow variations, CTA copy, trust signals, and form layouts. Iterated based on data to maximize conversion while minimizing friction.'
+                }
+            ],
+            keyDecisions: [
+                'Reorganized product categories from production-based to benefit-based (e.g., "Digestive Health" instead of "Original Blend")',
+                'Simplified checkout to single-page design based on A/B test showing 12.5% conversion improvement',
+                'Added product comparison feature after research showed users struggled to differentiate between flavors',
+                'Implemented persistent cart with email recovery based on abandonment data'
+            ],
+            results: [
+                '+12.5% conversion rate increase after implementing single-page checkout',
+                '+100% increase in average session duration following IA improvements',
+                'Reduced cart abandonment by 18% through strategic friction point removal',
+                'Improved product findability scores by 78% in follow-up tree testing',
+                'Data-driven recommendations adopted by development team'
+            ],
+            learnings: "E-commerce success depends on friction-free discovery and purchase flows. Users don't care about your internal product organization—they think in terms of their own needs and goals. Testing with real users early and often prevents costly assumptions and ensures the IA actually serves user mental models."
         },
         {
             id: 4,
@@ -455,7 +586,52 @@ const projectsData = {
                     title: "Final Prototype",
                     images: Array.from({ length: 4 }, (_, i) => `/assets/projects/laespecieria/laespecieriarediseno${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // English Content - Restored from component
+            context: "La Especiería, a specialty spice and seasoning e-commerce store, required a complete UX/UI overhaul to improve conversion rates and customer engagement. The existing site had poor visual hierarchy, confusing navigation, and low purchase completion rates.",
+            problem: "Users were bouncing quickly due to unclear product differentiation, lack of trust signals, and cumbersome checkout flows. The mobile experience was particularly problematic, despite mobile traffic representing over 60% of visitors.",
+            role: "End-to-end UX/UI design and front-end development, from initial user research through final implementation.",
+            responsibilities: [
+                'User journey mapping and flow optimization',
+                'Wireframing and information architecture',
+                'Visual design and brand expression',
+                'Front-end development (HTML, CSS, JavaScript)',
+                'Mobile-first responsive implementation',
+                'Performance optimization and testing'
+            ],
+            processSteps: [
+                {
+                    title: 'User Research & Analysis',
+                    description: 'Analyzed existing analytics, conducted user interviews, and performed heuristic evaluation. Identified key pain points in product discovery, comparison, and purchase flows. Mapped current vs. ideal user journeys.'
+                },
+                {
+                    title: 'UX Strategy & Wireframing',
+                    description: 'Redesigned information architecture prioritizing product photography and clear categorization. Created mobile-first wireframes emphasizing visual product discovery and streamlined cart experience.'
+                },
+                {
+                    title: 'Visual Design',
+                    description: 'Developed warm, appetizing visual design reflecting the artisanal nature of specialty spices. Created strong visual hierarchy through typography, color, and spacing. Designed product cards showcasing high-quality photography.'
+                },
+                {
+                    title: 'Front-End Development',
+                    description: 'Built responsive website with focus on performance and accessibility. Optimized images for fast loading. Implemented smooth interactions and micro-animations to enhance premium feel without sacrificing speed.'
+                }
+            ],
+            keyDecisions: [
+                'Product-focused homepage layout with large photography to evoke sensory appeal of spices',
+                'Prominent trust signals: secure payment badges, customer reviews, origin stories',
+                'One-click reorder feature based on insight that spice customers are repeat buyers',
+                'Mobile-first design with simplified navigation tailored to touch interactions',
+                'Strategic use of scarcity and social proof without appearing manipulative'
+            ],
+            results: [
+                '+100% increase in conversion rate post-redesign',
+                '+70% improvement in click-through rate on product pages',
+                'Reduced bounce rate by 35% through improved initial engagement',
+                'Mobile conversion rate improved by 90% with mobile-first approach',
+                'Average order value increased by 25% through better cross-selling'
+            ],
+            learnings: "E-commerce design must balance emotion and functionality. For specialty food products, visual appeal and storytelling drive desire, but the path to purchase must be completely frictionless. Mobile optimization is non-negotiable—most users browse on mobile even if they ultimately purchase on desktop."
         },
         {
             id: 5,
@@ -481,7 +657,57 @@ const projectsData = {
                     title: "Final Prototype",
                     images: Array.from({ length: 9 }, (_, i) => `/assets/projects/pharmafy/pharmafy${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // English Content - Restored from component
+            context: "Pharmafy was developed as part of the Google UX Design Professional Certificate, focusing on creating a digital health solution for medication management. The project challenged me to apply end-to-end UX methodology to a complex healthcare domain.",
+            problem: "Many people struggle to manage multiple medications, remember dosing schedules, and find nearby pharmacies with their prescriptions in stock. Existing solutions were either too complex, lacked essential features, or failed to address privacy concerns critical in healthcare.",
+            role: "Sole UX designer responsible for the complete design process from research to high-fidelity prototypes.",
+            responsibilities: [
+                'User research and competitive analysis',
+                'Persona development based on research findings',
+                'User journey mapping and pain point identification',
+                'Information architecture and user flows',
+                'Low-fidelity wireframing and iteration',
+                'High-fidelity UI design and interactive prototyping',
+                'Usability testing and design refinement'
+            ],
+            processSteps: [
+                {
+                    title: 'Research & Discovery',
+                    description: 'Conducted user interviews with individuals managing multiple medications, surveyed 50+ users about medication management challenges, and analyzed competitor apps. Identified key pain points: forgetfulness, pharmacy availability, and medication interaction concerns.'
+                },
+                {
+                    title: 'Personas & Journey Mapping',
+                    description: 'Created three primary personas representing different user needs (elderly patient with multiple medications, busy professional, caregiver). Mapped current-state journeys highlighting frustrations and opportunities for digital intervention.'
+                },
+                {
+                    title: 'Wireframing & Architecture',
+                    description: 'Developed information architecture prioritizing medication tracking, reminders, and pharmacy search. Created low-fidelity wireframes testing different approaches to medication input, schedule visualization, and notification systems.'
+                },
+                {
+                    title: 'High-Fidelity Design',
+                    description: 'Designed clean, accessible interface using calming color palette appropriate for healthcare. Emphasized clarity and simplicity to serve diverse age groups. Created interactive prototype for usability testing.'
+                },
+                {
+                    title: 'Testing & Iteration',
+                    description: 'Conducted moderated usability tests with 10 participants. Identified usability issues with medication entry flow and refined based on feedback. Simplified navigation and improved visual hierarchy based on test observations.'
+                }
+            ],
+            keyDecisions: [
+                'Privacy-first approach: clear data handling explanations and minimal required information',
+                'Simplified medication entry using barcode scanning and medication database',
+                'Visual medication schedule calendar rather than list view for better comprehension',
+                'Pharmacy search integrated with real-time inventory when available',
+                'Caregiver mode allowing family members to help manage medications'
+            ],
+            results: [
+                'Successfully completed Google UX Design Professional Certificate',
+                'Demonstrated mastery of end-to-end UX process',
+                'Created portfolio piece showcasing healthcare UX capabilities',
+                'Received positive feedback during usability testing on clarity and ease of use',
+                'Developed understanding of accessibility and privacy requirements in health tech'
+            ],
+            learnings: "Healthcare UX demands exceptional clarity, strong privacy protections, and deep empathy for users in potentially stressful situations. Every design decision must prioritize trust and simplicity—users need to feel confident in the app without learning complex systems while managing their health."
         },
         {
             id: 6,
@@ -507,7 +733,52 @@ const projectsData = {
                     title: "Final Prototype",
                     images: Array.from({ length: 7 }, (_, i) => `/assets/projects/findies/findies${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // English Content - Restored from component
+            context: "Findies is a mobile application designed to help music enthusiasts discover live events and emerging artists in their area. The app needed to stand out in a crowded entertainment app market by offering superior discovery and booking experiences.",
+            problem: "Existing event discovery apps prioritized major venues and popular artists, making it difficult for users to find intimate shows and emerging talent. Users also struggled with fragmented booking processes requiring navigation to multiple external sites.",
+            role: "End-to-end UX/UI designer responsible for creating the complete mobile app experience.",
+            responsibilities: [
+                'User research and competitive analysis',
+                'User flow design and optimization',
+                'Visual design and brand identity',
+                'Mobile interface design (iOS/Android patterns)',
+                'Interactive prototyping',
+                'Collaboration with developers on implementation'
+            ],
+            processSteps: [
+                {
+                    title: 'User Research',
+                    description: 'Interviewed music enthusiasts about how they discover live events. Found that users rely on social media, word-of-mouth, and venue websites—leading to fragmented, time-consuming searches. Identified desire for personalized recommendations based on music taste.'
+                },
+                {
+                    title: 'Flow Design',
+                    description: 'Designed three primary user flows: browsing events (visual-first exploration), searching artists, and booking tickets. Prioritized reducing friction between discovery and purchase. Created seamless transitions between browse, detail, and booking states.'
+                },
+                {
+                    title: 'Visual Design',
+                    description: 'Developed vibrant, energetic visual language reflecting live music atmosphere. Used gradient overlays on event photography to maintain legibility. Created distinctive iconography and UI elements that feel fresh and engaging without sacrificing usability.'
+                },
+                {
+                    title: 'Prototyping',
+                    description: 'Built interactive prototype demonstrating key interactions: swipe-based discovery, artist detail pages with embedded music previews, and streamlined booking flow. Tested gesture-based navigation patterns.'
+                }
+            ],
+            keyDecisions: [
+                'Visual-first browsing with high-quality event photography and artist imagery as primary navigation',
+                'Integrated music preview without leaving app context to maintain engagement',
+                'Personalized recommendation engine based on listening history and saved artists',
+                'Social features allowing friends to share and coordinate event attendance',
+                'In-app booking reducing external site redirects and cart abandonment'
+            ],
+            results: [
+                'Created engaging visual identity distinguishing app from competitors',
+                'Designed intuitive event discovery flow praised in user testing',
+                'Streamlined booking process reducing steps required by 60%',
+                'Developed scalable design system for future feature additions',
+                'Demonstrated capability in entertainment and social app UX'
+            ],
+            learnings: "Entertainment apps must evoke emotion while remaining highly functional. Users need to feel the energy and excitement of live music through the interface itself, but discovery and booking must be effortless. Visual design serves both aesthetic and functional purposes in this domain."
         },
         {
             id: 7,
@@ -536,7 +807,52 @@ const projectsData = {
                         '/assets/projects/goodmeal/goodmealuikit.PNG'
                     ]
                 }
-            ]
+            ],
+            // English Content - Restored from component
+            context: "GoodMeal is a meal planning and nutrition tracking app designed to make healthy eating accessible and sustainable. The app needed to balance comprehensive nutrition features with an approachable, non-intimidating user experience.",
+            problem: "Many nutrition apps overwhelm users with data entry requirements and complex calorie tracking, leading to abandonment. Users want to eat healthier but don't want to feel like they're doing homework every meal.",
+            role: "UX/UI designer focusing on onboarding experience, authentication flow, and overall visual design strategy.",
+            responsibilities: [
+                'User journey mapping for new user acquisition',
+                'Onboarding flow design and optimization',
+                'Authentication experience (email, social sign-in)',
+                'Visual design and friendly brand expression',
+                'Mobile-first interface design',
+                'Form optimization and input validation UX'
+            ],
+            processSteps: [
+                {
+                    title: 'User Research',
+                    description: 'Analyzed user reviews of competitor apps, identifying common complaints about onboarding friction and complexity. Conducted surveys revealing users abandon nutrition apps when initial setup feels overwhelming. Key insight: simplicity beats comprehensiveness for user retention.'
+                },
+                {
+                    title: 'Onboarding Strategy',
+                    description: 'Designed progressive onboarding collecting only essential information upfront. Deferred detailed nutrition preferences until after users experienced core value. Created friendly, encouraging copy reducing anxiety about tracking.'
+                },
+                {
+                    title: 'Authentication Design',
+                    description: 'Implemented social sign-in options (Google, Apple) alongside traditional email registration. Reduced form fields to minimum viable set. Designed clear value proposition on login screen to motivate registration.'
+                },
+                {
+                    title: 'Visual Design',
+                    description: 'Created warm, approachable visual language using friendly illustrations and encouraging color palette. Avoided clinical healthcare aesthetic in favor of lifestyle brand feel. Designed interface feeling supportive rather than judgmental.'
+                }
+            ],
+            keyDecisions: [
+                'Social authentication as primary registration path to reduce friction',
+                'Illustrated onboarding explaining value before requesting data',
+                'Pink color palette conveying friendliness rather than traditional health app green/blue',
+                'Gamification elements making nutrition tracking feel rewarding rather than burdensome',
+                'Smart defaults and AI-suggested meals reducing manual data entry'
+            ],
+            results: [
+                'Streamlined onboarding reducing registration abandonment',
+                'Social authentication increasing successful account creation',
+                'Friendly visual design improving user perception of app approachability',
+                'Created accessible entry point to nutrition tracking for non-expert users',
+                'Demonstrated ability to design for health tech with mainstream appeal'
+            ],
+            learnings: "Health apps must balance data collection with user motivation. Every additional field in onboarding increases abandonment risk. The key is providing immediate value with minimal friction, then progressively collecting data as users become engaged and see benefits."
         }
     ]
 }
