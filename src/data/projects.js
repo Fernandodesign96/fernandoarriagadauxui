@@ -17,8 +17,10 @@ const projectsData = {
             },
             links: {
                 lovable: 'https://bancoestado.lovable.app/',
-                figma: 'https://www.figma.com/design/h6OYFFFws5oCyJLuwfs3yT/Banco-Estado?node-id=0-1&t=LGiSG3MVs82qJHBv-1'
+                figma: 'https://www.figma.com/design/h6OYFFFws5oCyJLuwfs3yT/Banco-Estado?node-id=0-1&t=LGiSG3MVs82qJHBv-1',
+                github: 'https://github.com/Fernandodesign96/bancoestado-app'
             },
+            codeDetails: 'Desarrollo Front End (HTML5 + CSS3 + Bootstrap)',
             gallery: [
                 {
                     title: "App Original (Legacy)",
@@ -50,8 +52,10 @@ const projectsData = {
                 figma: 'https://www.figma.com/design/BcGdwTMlO6tGBDaoc3D2jX/Redise%C3%B1o-BCN-Global?node-id=0-1&t=oPDIhsV43zFyPlv4-1',
                 desktop: 'https://bcnglobal.figweb.site/',
                 tablet: 'https://bcnglobaltablet.figweb.site/',
-                mobile: 'https://bcnglobalmobile.figweb.site/'
+                mobile: 'https://bcnglobalmobile.figweb.site/',
+                github: 'https://github.com/Fernandodesign96/bancoestado-app'
             },
+            codeDetails: 'Desarrollo Front End (HTML5 + CSS3 + Bootstrap)',
             gallery: [
                 {
                     title: "Sitio Original",
@@ -116,8 +120,10 @@ const projectsData = {
                 impact: '+70% CTR'
             },
             links: {
-                figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1'
+                figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1',
+                github: 'https://github.com/Fernandodesign96/la-especieria'
             },
+            codeDetails: 'Desarrollo Front End (HTML5 + CSS3 + Bootstrap)',
             gallery: [
                 {
                     title: "Pagina Oficial",
@@ -135,7 +141,7 @@ const projectsData = {
             title: 'Pharmafy',
             subtitle: 'Diseño UX App de Salud',
             year: '2023',
-            industry: 'Salud',
+            industry: 'Healthcare',
             type: 'Diseño UX',
             description: 'Solución de salud digital para gestión de medicamentos demostrando proceso UX end-to-end desde investigación hasta prototipos.',
             coverImage: '/assets/projects/pharmafy-cover.png',
@@ -226,8 +232,10 @@ const projectsData = {
             },
             links: {
                 lovable: 'https://bancoestado.lovable.app/',
-                figma: 'https://www.figma.com/design/h6OYFFFws5oCyJLuwfs3yT/Banco-Estado?node-id=0-1&t=LGiSG3MVs82qJHBv-1'
+                figma: 'https://www.figma.com/design/h6OYFFFws5oCyJLuwfs3yT/Banco-Estado?node-id=0-1&t=LGiSG3MVs82qJHBv-1',
+                github: 'https://github.com/Fernandodesign96/bancoestado-app'
             },
+            codeDetails: 'Front End Development (HTML5 + CSS3 + Bootstrap)',
             gallery: [
                 {
                     title: "Original App (Legacy)",
@@ -259,8 +267,10 @@ const projectsData = {
                 figma: 'https://www.figma.com/design/BcGdwTMlO6tGBDaoc3D2jX/Redise%C3%B1o-BCN-Global?node-id=0-1&t=oPDIhsV43zFyPlv4-1',
                 desktop: 'https://bcnglobal.figweb.site/',
                 tablet: 'https://bcnglobaltablet.figweb.site/',
-                mobile: 'https://bcnglobalmobile.figweb.site/'
+                mobile: 'https://bcnglobalmobile.figweb.site/',
+                github: 'https://github.com/Fernandodesign96/bancoestado-app'
             },
+            codeDetails: 'Front End Development (HTML5 + CSS3 + Bootstrap)',
             gallery: [
                 {
                     title: "Original Site",
@@ -325,8 +335,10 @@ const projectsData = {
                 impact: '+70% CTR'
             },
             links: {
-                figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1'
+                figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1',
+                github: 'https://github.com/Fernandodesign96/la-especieria'
             },
+            codeDetails: 'Front End Development (HTML5 + CSS3 + Bootstrap)',
             gallery: [
                 {
                     title: "Original Site",
