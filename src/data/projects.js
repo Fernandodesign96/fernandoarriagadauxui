@@ -33,19 +33,49 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'Banco Estado enfrentaba desafíos en su embudo de conversión para productos B2B. El proceso existente tenía altas tasas de abandono y una experiencia de usuario fragmentada.',
-            problem: 'La interfaz legacy dificultaba la navegación y no guiaba eficientemente a los usuarios empresariales a través del proceso de solicitud, resultando en pérdida de oportunidades comerciales.',
-            role: 'Lideré el rediseño UX/UI, realizando auditorías de usabilidad, creando prototipos de alta fidelidad y coordinando pruebas A/B.',
-            responsibilities: ['Auditoría UX', 'Diseño de Interfaz', 'Prototipado', 'Pruebas de Usabilidad'],
-            processSteps: [
-                { title: 'Investigación', description: 'Análisis del flujo actual e identificación de puntos de dolor.' },
-                { title: 'Ideación', description: 'Wireframing de soluciones para simplificar el embudo.' },
-                { title: 'Prototipado', description: 'Desarrollo de prototipos interactivos en Figma y Lovable.' },
-                { title: 'Validación', description: 'Testing con usuarios reales para validar mejoras.' }
+            // Spanish Content - Translated from English
+            context: 'Banco Estado, una de las instituciones financieras más grandes de Chile, requería optimización UX para su producto bancario B2B. El embudo de conversión existente mostraba puntos de fricción que afectaban la adquisición de clientes empresariales y las tasas de activación de cuentas.',
+            problem: 'Procesos complejos de múltiples pasos, propuestas de valor poco claras y una arquitectura de información subóptima creaban barreras en el viaje del usuario. El desafío era simplificar sin comprometer los requisitos necesarios de seguridad y cumplimiento inherentes a los productos bancarios.',
+            role: 'Lideré el proceso de diseño UX/UI de principio a fin, incluyendo investigación de usuarios, wireframing, prototipado de alta fidelidad y validación front-end.',
+            responsibilities: [
+                'Análisis de flujo de usuarios y estrategia de optimización del embudo',
+                'Wireframing y prototipado interactivo',
+                'Diseño UI de alta fidelidad alineado con las pautas de marca',
+                'Pruebas de usabilidad con clientes de banca empresarial',
+                'Generación de escenarios de prueba asistida por IA',
+                'Validación de implementación front-end'
             ],
-            keyDecisions: ['Simplificar formularios', 'Mejorar feedback visual', 'Implementar diseño responsivo'],
-            results: ['Aumento significativo en la tasa de finalización de solicitudes', 'Mejora en la satisfacción del usuario'],
-            learnings: 'La importancia de reducir la carga cognitiva en procesos financieros complejos.'
+            processSteps: [
+                {
+                    title: 'Investigación y Análisis',
+                    description: 'Realicé análisis de datos del embudo de conversión existente, identificando puntos de abandono y problemas de usabilidad. Ejecuté análisis competitivo de experiencias bancarias B2B y entrevisté a stakeholders para comprender las limitaciones comerciales y requisitos de cumplimiento.'
+                },
+                {
+                    title: 'Estrategia UX y Wireframing',
+                    description: 'Rediseñé flujos de usuarios para reducir pasos y carga cognitiva. Creé wireframes de baja a media fidelidad enfocados en la divulgación progresiva y CTAs claros. Definí una nueva arquitectura de información priorizando acciones bancarias críticas.'
+                },
+                {
+                    title: 'Diseño UI y Prototipado',
+                    description: 'Desarrollé diseños de alta fidelidad manteniendo la consistencia de marca mientras mejoraba la jerarquía visual. Creé prototipos interactivos para revisión de stakeholders y pruebas de usabilidad. Apliqué estándares de accesibilidad (WCAG 2.1 AA) en todo el proceso.'
+                },
+                {
+                    title: 'Pruebas y Validación',
+                    description: 'Conduje pruebas de usabilidad con clientes empresariales. Utilicé IA para generar diversos escenarios de prueba y casos extremos. Validé la implementación front-end para asegurar fidelidad de diseño y estándares de rendimiento.'
+                }
+            ],
+            keyDecisions: [
+                'Implementé divulgación progresiva para reducir primeras impresiones abrumadoras manteniendo acceso a todas las funciones',
+                'Diseñé señales de confianza (insignias de seguridad, soporte en vivo) de manera prominente para abordar la ansiedad bancaria',
+                'Creé flujos responsivos móviles ya que los datos mostraron que el 40% de los dueños de negocios iniciaban solicitudes en móviles',
+                'Optimicé campos de formulario basados en pruebas de usabilidad, reduciendo campos requeridos en un 30% sin comprometer requisitos KYC'
+            ],
+            results: [
+                'Embudo de conversión optimizado con pasos reducidos',
+                'Mejora en puntuaciones de satisfacción del usuario en pruebas posteriores al lanzamiento',
+                'Implementación front-end validada exitosamente contra especificaciones de diseño',
+                'Mejoras de rendimiento medibles demostradas en flujos de usuarios clave'
+            ],
+            learnings: 'La UX Fintech requiere equilibrar confianza y simplicidad. Los usuarios necesitan tranquilidad a través de patrones bancarios familiares e indicadores claros de seguridad, pero la complejidad nunca debe confundirse con minuciosidad. El sistema más seguro es aquel que los usuarios realmente completan con éxito.'
         },
         {
             id: 2,
@@ -87,19 +117,50 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'BCN Global necesitaba renovar su imagen digital para reflejar su liderazgo en capacitación corporativa. El sitio antiguo no comunicaba eficazmente su propuesta de valor ni sus servicios especializados.',
-            problem: 'Navegación confusa y diseño desactualizado que no generaba confianza en clientes corporativos B2B.',
-            role: 'Diseñador UX/UI encargado de la reestructuración completa del sitio, desde la arquitectura de información hasta el diseño visual final.',
-            responsibilities: ['Arquitectura de Información', 'Diseño UI', 'Sistemas de Diseño', 'Desarrollo Front-End Básico'],
-            processSteps: [
-                { title: 'Descubrimiento', description: 'Análisis de competidores y definición de objetivos de marca.' },
-                { title: 'Estructura', description: 'Creación de nuevo mapa de sitio y wireframes.' },
-                { title: 'Diseño Visual', description: 'Aplicación de nueva identidad visual moderna y profesional.' },
-                { title: 'Entrega', description: 'Preparación de assets y documentación para desarrollo.' }
+            // Spanish Content - Translated from English
+            context: 'BCN Global, un proveedor líder de soluciones de capacitación corporativa, necesitaba un rediseño completo de su página de inicio para comunicar mejor su propuesta de valor e impulsar la generación de leads. Su sitio web existente carecía de mensajes claros y estándares UX modernos.',
+            problem: 'Diferenciación de servicios poco clara, arquitectura de información deficiente y diseño visual anticuado limitaban su capacidad para competir en el mercado de e-learning B2B. El sitio necesitaba transmitir profesionalismo, credibilidad e innovación para atraer clientes empresariales.',
+            role: 'Responsable integral de la arquitectura de información, estrategia UX, diseño visual, creación del sistema de diseño e implementación front-end.',
+            responsibilities: [
+                'Entrevistas con stakeholders y recopilación de requisitos',
+                'Estrategia de contenido y arquitectura de información',
+                'Creación de sistema de diseño visual',
+                'Diseño UI de alta fidelidad',
+                'Desarrollo front-end y configuración de hosting',
+                'Optimización de rendimiento e implementación SEO'
             ],
-            keyDecisions: ['Priorizar servicios clave', 'Diseño limpio y corporativo', 'Optimización para móviles'],
-            results: ['Nueva presencia digital alineada con la marca', 'Mejor estructura de servicios'],
-            learnings: 'Cómo equilibrar información corporativa densa con un diseño visual ligero y digerible.'
+            processSteps: [
+                {
+                    title: 'Descubrimiento y Estrategia',
+                    description: 'Realicé talleres con stakeholders para definir objetivos comerciales, audiencias objetivo y diferenciadores clave. Analicé sitios web de competidores e identifiqué oportunidades de diferenciación en mensajes y UX.'
+                },
+                {
+                    title: 'Arquitectura de Información',
+                    description: 'Reestructuré la navegación del sitio y la jerarquía de contenido para priorizar servicios y propuestas de valor. Creé caminos claros para diferentes segmentos de usuarios (gerentes de RRHH, profesionales de L&D, ejecutivos).'
+                },
+                {
+                    title: 'Sistema de Diseño y UI',
+                    description: 'Desarrollé un sistema de diseño integral incluyendo tipografía, paleta de colores, componentes y pautas de espaciado. Creé mockups de alta fidelidad enfatizando el profesionalismo y una estética moderna alineada con las expectativas B2B.'
+                },
+                {
+                    title: 'Implementación y Lanzamiento',
+                    description: 'Construí un front-end responsivo con enfoque en rendimiento y accesibilidad. Configuré la infraestructura de hosting, implementé mejores prácticas SEO y realicé pruebas cruzadas en navegadores antes del lanzamiento.'
+                }
+            ],
+            keyDecisions: [
+                'Héroe de página de inicio centrado en servicios destacando tres pilares de soluciones de capacitación con clara diferenciación visual',
+                'CTAs optimizados para conversión ubicados estratégicamente a lo largo de la página con copy probado en A/B',
+                'Elementos generadores de confianza mostrados prominentemente: logos de clientes, certificaciones, métricas de casos de estudio',
+                'Diseño responsivo mobile-first considerando que la investigación inicial a menudo ocurre en dispositivos móviles'
+            ],
+            results: [
+                'Sitio web completamente funcional desplegado con dominio personalizado y hosting',
+                'Percepción de marca significativamente mejorada basada en feedback de clientes',
+                'Sistema de diseño escalable creado para desarrollo de páginas futuras',
+                'Puntuaciones de rendimiento excelentes logradas (90+ Lighthouse)',
+                'Jerarquía visual y de contenido clara establecida para generación de leads'
+            ],
+            learnings: 'Los sitios web B2B requieren diseño priorizando la credibilidad. Los clientes empresariales necesitan entender rápidamente qué haces, con quién trabajaste y por qué estás calificado. El pulido visual importa, pero la comunicación clara y las señales de confianza impulsan la conversión en este mercado.'
         },
         {
             id: 3,
@@ -135,19 +196,50 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'Ghali Kombucha buscaba optimizar su tienda online para aumentar las ventas y mejorar la retención. Se requería un enfoque basado en datos para validar cambios de diseño.',
-            problem: 'Baja tasa de conversión y dificultades de los usuarios para encontrar productos específicos en el catálogo.',
-            role: 'Investigador UX liderando el proceso de testing y validación de hipótesis de diseño.',
-            responsibilities: ['Card Sorting', 'Tree Testing', 'Pruebas A/B', 'Análisis de Datos'],
-            processSteps: [
-                { title: 'Investigación', description: 'Card sorting para optimizar la arquitectura de información.' },
-                { title: 'Validación', description: 'Tree testing para verificar la encontrabilidad de productos.' },
-                { title: 'Experimentación', description: 'Diseño y ejecución de pruebas A/B.' },
-                { title: 'Análisis', description: 'Interpretación de resultados para decisiones finales.' }
+            // Spanish Content - Translated from English
+            context: 'Ghali Kombucha, una marca de kombucha artesanal, necesitaba mejoras UX basadas en datos para aumentar las ventas online. A pesar de tener productos de calidad y creciente reconocimiento de marca, sus tasas de conversión de e-commerce y duración de sesiones estaban por debajo de los puntos de referencia de la industria.',
+            problem: 'Los usuarios luchaban por encontrar productos debido a una categorización confusa, y el proceso de pago tenía múltiples puntos de fricción causando abandono del carrito. La arquitectura de información no coincidía con los modelos mentales de los usuarios para navegar por bebidas saludables.',
+            role: 'Líder de Investigación UX responsable de conducir estudios de card sorting, tree testing y pruebas A/B para validar y optimizar la experiencia de e-commerce.',
+            responsibilities: [
+                'Diseño y ejecución de metodología de investigación UX',
+                'Estudios de card sorting para categorización de productos',
+                'Tree testing para validación de navegación',
+                'Diseño y análisis de pruebas A/B para optimización de checkout',
+                'Análisis de datos y recomendaciones accionables',
+                'Colaboración con equipo de desarrollo en implementación'
             ],
-            keyDecisions: ['Reestructurar menú principal', 'Simplificar fichas de producto', 'Destacar beneficios de salud'],
-            results: ['Aumento del 12.5% en conversión', 'Duplicación del tiempo de sesión'],
-            learnings: 'El valor de las decisiones de diseño respaldadas por datos cuantitativos reales.'
+            processSteps: [
+                {
+                    title: 'Planificación de Investigación',
+                    description: 'Definí objetivos de investigación enfocados en mejorar la descubribilidad de productos y reducir fricción en el pago. Recluté participantes que coincidían con la demografía de clientes objetivo (consumidores conscientes de la salud de 25-45 años).'
+                },
+                {
+                    title: 'Card Sorting y AI',
+                    description: 'Conduje sesiones de card sorting abiertas y cerradas para entender cómo los usuarios categorizan naturalmente los productos de kombucha. Descubrí que los usuarios preferían categorización por perfil de sabor y beneficios en lugar de detalles técnicos de fermentación.'
+                },
+                {
+                    title: 'Tree Testing',
+                    description: 'Validé la estructura de navegación propuesta a través de ejercicios de tree testing. Identifiqué que los usuarios encontraban productos exitosamente un 78% más rápido con la nueva AI comparada con la estructura existente.'
+                },
+                {
+                    title: 'Pruebas A/B y Optimización',
+                    description: 'Diseñé y ejecuté pruebas A/B en variaciones del flujo de pago, copy de CTAs, señales de confianza y diseños de formularios. Itere basándome en datos para maximizar conversión mientras minimizaba la fricción.'
+                }
+            ],
+            keyDecisions: [
+                'Reorganicé categorías de productos de base-producción a base-beneficio (ej., "Salud Digestiva" en lugar de "Mezcla Original")',
+                'Simplifiqué el checkout a diseño de una sola página basado en prueba A/B mostrando mejora del 12.5% en conversión',
+                'Añadí función de comparación de productos después de que la investigación mostró que usuarios luchaban para diferenciar entre sabores',
+                'Implementé carrito persistente con recuperación por email basado en datos de abandono'
+            ],
+            results: [
+                '+12.5% de aumento en tasa de conversión tras implementar checkout de una sola página',
+                '+100% de aumento en duración promedio de sesión siguiendo mejoras de AI',
+                'Reducción de abandono de carrito en 18% a través de eliminación estratégica de puntos de fricción',
+                'Puntuaciones de encontrabilidad de producto mejoradas en 78% en tree testing de seguimiento',
+                'Recomendaciones basadas en datos adoptadas por equipo de desarrollo'
+            ],
+            learnings: 'El éxito en e-commerce depende de flujos de descubrimiento y compra libres de fricción. A los usuarios no les importa tu organización interna de productos—piensan en términos de sus propias necesidades y objetivos. Probar con usuarios reales temprano y a menudo previene suposiciones costosas y asegura que la AI realmente sirva a los modelos mentales de los usuarios.'
         },
         {
             id: 4,
@@ -181,18 +273,51 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'La Especiería necesitaba modernizar su plataforma de venta online para mejorar la experiencia de compra de sus productos gourmet y especias.',
-            problem: 'Sitio web desactualizado con navegación compleja que dificultaba el descubrimiento de productos y el cierre de ventas.',
-            role: 'Diseñador UX/UI y Desarrollador Front-End.',
-            responsibilities: ['Investigación de Usuarios', 'Diseño UI', 'Prototyping', 'Desarrollo Front-End'],
-            processSteps: [
-                { title: 'Investigación', description: 'Análisis de la experiencia de compra actual.' },
-                { title: 'Diseño', description: 'Creación de nueva interfaz enfocada en el producto.' },
-                { title: 'Desarrollo', description: 'Implementación del diseño utilizando HTML, CSS y Bootstrap.' }
+            // Spanish Content - Translated from English
+            context: 'La Especiería, una tienda de e-commerce de especias y condimentos gourmet, requería una renovación UX/UI completa para mejorar las tasas de conversión y el compromiso del cliente. El sitio existente tenía una jerarquía visual deficiente, navegación confusa y bajas tasas de finalización de compra.',
+            problem: 'Los usuarios rebotaban rápidamente debido a una diferenciación de productos poco clara, falta de señales de confianza y flujos de pago engorrosos. La experiencia móvil era particularmente problemática, a pesar de que el tráfico móvil representaba más del 60% de los visitantes.',
+            role: 'Diseño UX/UI de principio a fin y desarrollo front-end, desde la investigación inicial de usuarios hasta la implementación final.',
+            responsibilities: [
+                'Mapeo del viaje del usuario y optimización de flujos',
+                'Wireframing y arquitectura de información',
+                'Diseño visual y expresión de marca',
+                'Desarrollo Front-end (HTML, CSS, JavaScript)',
+                'Implementación responsiva Mobile-first',
+                'Optimización de rendimiento y testing'
             ],
-            keyDecisions: ['Enfoque Mobile-First', 'Mejora de fotografía de producto', 'Simplificación del checkout'],
-            results: ['Tasa de conversión duplicada', 'Mejora significativa en CTR'],
-            learnings: 'La integración efectiva entre diseño visual atractivo y desarrollo técnico eficiente.'
+            processSteps: [
+                {
+                    title: 'Investigación y Análisis de Usuarios',
+                    description: 'Analicé analíticas existentes, realicé entrevistas a usuarios y ejecuté evaluaciones heurísticas. Identifiqué puntos débiles clave en el descubrimiento de productos, comparación y flujos de compra. Mapeé los viajes de usuario actuales vs. ideales.'
+                },
+                {
+                    title: 'Estrategia UX y Wireframing',
+                    description: 'Rediseñé la arquitectura de información priorizando la fotografía de productos y una categorización clara. Creé wireframes mobile-first enfatizando el descubrimiento visual de productos y una experiencia de carrito simplificada.'
+                },
+                {
+                    title: 'Diseño Visual',
+                    description: 'Desarrollé un diseño visual cálido y apetitoso que refleja la naturaleza artesanal de las especias. Creé una fuerte jerarquía visual a través de la tipografía, color y espaciado. Diseñé tarjetas de productos que muestran fotografía de alta calidad.'
+                },
+                {
+                    title: 'Desarrollo Front-End',
+                    description: 'Construí un sitio web responsivo con enfoque en rendimiento y accesibilidad. Optimicé imágenes para carga rápida. Implementé interacciones suaves y micro-animaciones para mejorar la sensación premium sin sacrificar velocidad.'
+                }
+            ],
+            keyDecisions: [
+                'Diseño de página de inicio centrado en el producto con fotografía grande para evocar atractivo sensorial',
+                'Señales de confianza prominentes: insignias de pago seguro, reseñas de clientes, historias de origen',
+                'Función de reorden de un clic basada en la percepción de que los clientes de especias son compradores recurrentes',
+                'Diseño mobile-first con navegación simplificada adaptada a interacciones táctiles',
+                'Uso estratégico de escasez y prueba social sin parecer manipulador'
+            ],
+            results: [
+                '+100% de aumento en tasa de conversión post-rediseño',
+                '+70% de mejora en tasa de clics (CTR) en páginas de productos',
+                'Reducción de tasa de rebote en 35% a través de mejor compromiso inicial',
+                'Tasa de conversión móvil mejorada en 90% con enfoque mobile-first',
+                'Valor medio de pedido aumentado en 25% a través de mejor venta cruzada'
+            ],
+            learnings: 'El diseño de e-commerce debe equilibrar emoción y funcionalidad. Para productos alimenticios especializados, el atractivo visual y la narración impulsan el deseo, pero el camino a la compra debe ser completamente libre de fricción. La optimización móvil es innegociable: la mayoría de los usuarios navegan en móviles incluso si finalmente compran en escritorio.'
         },
         {
             id: 5,
@@ -220,19 +345,56 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'Gestión compleja de medicamentos para pacientes con tratamientos crónicos. Se identificó la necesidad de una herramienta centralizada y fácil de usar.',
-            problem: 'Falta de adherencia al tratamiento por olvidos y confusión en la gestión de múltiples medicamentos.',
-            role: 'Diseñador UX liderando el proyecto como parte de la certificación de Google.',
-            responsibilities: ['Entrevistas a Usuarios', 'Creación de Personas', 'Wireframing', 'Prototipado de Alta Fidelidad'],
-            processSteps: [
-                { title: 'Empatizar', description: 'Investigación profunda con pacientes y cuidadores.' },
-                { title: 'Definir', description: 'Identificación de problemas clave y necesidades no cubiertas.' },
-                { title: 'Idear', description: 'Brainstorming de soluciones digitales accesibles.' },
-                { title: 'Prototipar', description: 'Diseño iterativo desde baja a alta fidelidad.' }
+            // Spanish Content - Translated from English
+            context: 'Pharmafy fue desarrollado como parte del Certificado Profesional de Diseño UX de Google, enfocándose en crear una solución de salud digital para la gestión de medicamentos. El proyecto me desafió a aplicar la metodología UX de principio a fin en un dominio de salud complejo.',
+            problem: 'Muchas personas luchan para gestionar múltiples medicamentos, recordar horarios de dosis y encontrar farmacias cercanas con sus recetas en stock. Las soluciones existentes eran demasiado complejas, carecían de características esenciales o no abordaban preocupaciones de privacidad críticas en el cuidado de la salud.',
+            role: 'Diseñador UX único responsable del proceso de diseño completo desde la investigación hasta los prototipos de alta fidelidad.',
+            responsibilities: [
+                'Investigación de usuarios y análisis competitivo',
+                'Desarrollo de personas basado en hallazgos de investigación',
+                'Mapeo del viaje del usuario e identificación de puntos de dolor',
+                'Arquitectura de información y flujos de usuario',
+                'Wireframing de baja fidelidad e iteración',
+                'Diseño UI de alta fidelidad y prototipado interactivo',
+                'Pruebas de usabilidad y refinamiento del diseño'
             ],
-            keyDecisions: ['Interfaz de alto contraste', 'Recordatorios personalizables', 'Enfoque en privacidad'],
-            results: ['Validación exitosa con usuarios reales', 'Diseño accesible para adultos mayores'],
-            learnings: 'Diseñar para accesibilidad en salud digital es crítico para el éxito del producto.'
+            processSteps: [
+                {
+                    title: 'Investigación y Descubrimiento',
+                    description: 'Conduje entrevistas con individuos que gestionan múltiples medicamentos, encuesté a más de 50 usuarios sobre desafíos de gestión y analicé apps competidoras. Identifiqué puntos de dolor clave: olvidos, disponibilidad en farmacias y preocupaciones sobre interacción de medicamentos.'
+                },
+                {
+                    title: 'Personas y Mapeo de Viajes',
+                    description: 'Creé tres personas primarias representando diferentes necesidades de usuarios (paciente mayor con múltiples medicamentos, profesional ocupado, cuidador). Mapeé viajes del estado actual destacando frustraciones y oportunidades para intervención digital.'
+                },
+                {
+                    title: 'Wireframing y Arquitectura',
+                    description: 'Desarrollé arquitectura de información priorizando seguimiento de medicamentos, recordatorios y búsqueda de farmacias. Creé wireframes de baja fidelidad probando diferentes enfoques para entrada de medicamentos, visualización de horarios y sistemas de notificación.'
+                },
+                {
+                    title: 'Diseño de Alta Fidelidad',
+                    description: 'Diseñé una interfaz limpia y accesible usando una paleta de colores calmante apropiada para salud. Enmaticé claridad y simplicidad para servir a diversos grupos de edad. Creé prototipo interactivo para pruebas de usabilidad.'
+                },
+                {
+                    title: 'Pruebas e Iteración',
+                    description: 'Conduje pruebas de usabilidad moderadas con 10 participantes. Identifiqué problemas de usabilidad con el flujo de entrada de medicamentos y refiné basado en feedback. Simplifiqué la navegación y mejoré la jerarquía visual según observaciones de prueba.'
+                }
+            ],
+            keyDecisions: [
+                'Enfoque privacidad-primero: explicaciones claras de manejo de datos e información requerida mínima',
+                'Entrada de medicamentos simplificada usando escaneo de código de barras y base de datos de medicamentos',
+                'Calendario visual de horarios de medicación en lugar de vista de lista para mejor comprensión',
+                'Búsqueda de farmacias integrada con inventario en tiempo real cuando está disponible',
+                'Modo cuidador permitiendo a miembros de la familia ayudar a gestionar medicamentos'
+            ],
+            results: [
+                'Completé exitosamente el Certificado Profesional de Diseño UX de Google',
+                'Demostré dominio del proceso UX de principio a fin',
+                'Creé pieza de portafolio mostrando capacidades UX en salud',
+                'Recibí feedback positivo durante pruebas de usabilidad sobre claridad y facilidad de uso',
+                'Desarrollé comprensión de requisitos de accesibilidad y privacidad en tecnología de la salud'
+            ],
+            learnings: 'La UX en salud demanda claridad excepcional, fuertes protecciones de privacidad y profunda empatía por usuarios en situaciones potencialmente estresantes. Cada decisión de diseño debe priorizar la confianza y simplicidad: los usuarios necesitan sentirse seguros en la app sin aprender sistemas complejos mientras gestionan su salud.'
         },
         {
             id: 6,
@@ -260,18 +422,51 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'Dificultad para encontrar eventos de música local y artistas emergentes en una plataforma unificada y visualmente atractiva.',
-            problem: 'Desconexión entre artistas locales y audiencias potenciales debido a plataformas fragmentadas.',
-            role: 'Diseñador UX/UI enfocado en la experiencia móvil y el diseño visual.',
-            responsibilities: ['Diseño de Interfaz', 'Diseño de Interacción', 'Creación de Sistema de Diseño'],
-            processSteps: [
-                { title: 'Investigación', description: 'Análisis de apps de eventos y hábitos de usuarios.' },
-                { title: 'Diseño Visual', description: 'Creación de identidad vibrante y energética.' },
-                { title: 'Prototipado', description: 'Desarrollo de flujos de descubrimiento y reserva.' }
+            // Spanish Content - Translated from English
+            context: 'Findies es una aplicación móvil diseñada para ayudar a entusiastas de la música a descubrir eventos en vivo y artistas emergentes en su área. La app necesitaba destacarse en un mercado de apps de entretenimiento abarrotado ofreciendo experiencias superiores de descubrimiento y reserva.',
+            problem: 'Las apps de descubrimiento de eventos existentes priorizaban grandes recintos y artistas populares, dificultando a los usuarios encontrar shows íntimos y talento emergente. Los usuarios también luchaban con procesos de reserva fragmentados que requerían navegar a múltiples sitios externos.',
+            role: 'Diseñador UX/UI de principio a fin responsable de crear la experiencia completa de la app móvil.',
+            responsibilities: [
+                'Investigación de usuarios y análisis competitivo',
+                'Diseño y optimización de flujos de usuario',
+                'Diseño visual e identidad de marca',
+                'Diseño de interfaz móvil (patrones iOS/Android)',
+                'Prototipado interactivo',
+                'Colaboración con desarrolladores en implementación'
             ],
-            keyDecisions: ['Navegación basada en geolocalización', 'Estética oscura inmersiva', 'Fichas de artista ricas en medios'],
-            results: ['Concepto validado de app de descubrimiento social', 'Interfaz altamente visual'],
-            learnings: 'La importancia de la inmersión visual en productos de entretenimiento.'
+            processSteps: [
+                {
+                    title: 'Investigación de Usuarios',
+                    description: 'Entrevisté a entusiastas de la música sobre cómo descubren eventos en vivo. Encontré que los usuarios dependen de redes sociales, boca a boca y sitios web de recintos, lo que lleva a búsquedas fragmentadas y lentas. Identifiqué deseo por recomendaciones personalizadas basadas en gusto musical.'
+                },
+                {
+                    title: 'Diseño de Flujos',
+                    description: 'Diseñé tres flujos de usuario primarios: navegación de eventos (exploración visual primero), búsqueda de artistas y reserva de entradas. Prioricé reducir fricción entre descubrimiento y compra. Creé transiciones fluidas entre estados de navegación, detalle y reserva.'
+                },
+                {
+                    title: 'Diseño Visual',
+                    description: 'Desarrollé un lenguaje visual vibrante y energético reflejando la atmósfera de música en vivo. Usé superposiciones de degradado en fotografía de eventos para mantener legibilidad. Creé iconografía distintiva y elementos UI que se sienten frescos y atractivos sin sacrificar usabilidad.'
+                },
+                {
+                    title: 'Prototipado',
+                    description: 'Construí prototipo interactivo demostrando interacciones clave: descubrimiento basado en deslizamiento (swipe), páginas de detalle de artista con vistas previas de música integradas y flujo de reserva simplificado. Probé patrones de navegación basados en gestos.'
+                }
+            ],
+            keyDecisions: [
+                'Navegación visual primero con fotografía de eventos de alta calidad e imágenes de artistas como navegación principal',
+                'Vista previa de música integrada sin salir del contexto de la app para mantener el compromiso',
+                'Motor de recomendación personalizado basado en historial de escucha y artistas guardados',
+                'Funciones sociales permitiendo a amigos compartir y coordinar asistencia a eventos',
+                'Reserva in-app reduciendo redirecciones a sitios externos y abandono de carrito'
+            ],
+            results: [
+                'Creé identidad visual atractiva distinguiendo la app de competidores',
+                'Diseñé flujo de descubrimiento de eventos intuitivo elogiado en pruebas de usuario',
+                'Proceso de reserva simplificado reduciendo pasos requeridos en un 60%',
+                'Desarrollé sistema de diseño escalable para futuras adiciones de características',
+                'Demostré capacidad en UX de apps de entretenimiento y sociales'
+            ],
+            learnings: 'Las apps de entretenimiento deben evocar emoción mientras permanecen altamente funcionales. Los usuarios necesitan sentir la energía y emoción de la música en vivo a través de la interfaz misma, pero el descubrimiento y la reserva deben ser sin esfuerzo. El diseño visual sirve tanto propósitos estéticos como funcionales en este dominio.'
         },
         {
             id: 7,
@@ -303,18 +498,51 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'Usuarios buscando mejorar sus hábitos alimenticios a menudo abandonan las apps de nutrición debido a la complejidad en la entrada de datos.',
-            problem: 'Alta fricción en el registro de comidas y planificación semanal en apps existentes.',
-            role: 'Estratega UX y Diseñador UI.',
-            responsibilities: ['Estrategia de Producto', 'Diseño de Onboarding', 'Diseño Visual'],
-            processSteps: [
-                { title: 'Estrategia', description: 'Definición de propuesta de valor centrada en la simplicidad.' },
-                { title: 'Flujos', description: 'Optimización del flujo de onboarding y configuración inicial.' },
-                { title: 'Diseño', description: 'Interfaz limpia y amigable para reducir ansiedad.' }
+            // Spanish Content - Translated from English
+            context: 'GoodMeal es una app de planificación de comidas y seguimiento nutricional diseñada para hacer la alimentación saludable accesible y sostenible. La app necesitaba equilibrar características nutricionales completas con una experiencia de usuario accesible y no intimidante.',
+            problem: 'Muchas apps de nutrición abruman a los usuarios con requisitos de entrada de datos y seguimiento complejo de calorías, llevando al abandono. Los usuarios quieren comer más saludable pero no quieren sentir que están haciendo tarea en cada comida.',
+            role: 'Diseñador UX/UI enfocándose en experiencia de onboarding, flujo de autenticación y estrategia general de diseño visual.',
+            responsibilities: [
+                'Mapeo de viaje del usuario para adquisición de nuevos usuarios',
+                'Diseño y optimización de flujo de onboarding',
+                'Experiencia de autenticación (email, inicio de sesión social)',
+                'Diseño visual y expresión de marca amigable',
+                'Diseño de interfaz mobile-first',
+                'Optimización de formularios y UX de validación de entrada'
             ],
-            keyDecisions: ['Onboarding progresivo', 'Planificación automatizada sugerida', 'Estética minimalista'],
-            results: ['Flujo de adquisición simplificado', 'Reducción de pasos para completar tareas clave'],
-            learnings: 'Reducir la fricción inicial es clave para la retención en apps de hábitos diarios.'
+            processSteps: [
+                {
+                    title: 'Investigación de Usuarios',
+                    description: 'Analicé reseñas de usuarios de apps competidoras, identificando quejas comunes sobre fricción en onboarding y complejidad. Conduje encuestas revelando que usuarios abandonan apps de nutrición cuando la configuración inicial se siente abrumadora. Insight clave: la simplicidad supera a la exhaustividad para la retención de usuarios.'
+                },
+                {
+                    title: 'Estrategia de Onboarding',
+                    description: 'Diseñé onboarding progresivo recolectando solo información esencial al principio. Diferí preferencias nutricionales detalladas hasta después de que los usuarios experimentaran el valor central. Creé copy amigable y alentador reduciendo ansiedad sobre el seguimiento.'
+                },
+                {
+                    title: 'Diseño de Autenticación',
+                    description: 'Implementé opciones de inicio de sesión social (Google, Apple) junto con registro tradicional por email. Reduje campos de formulario al conjunto mínimo viable. Diseñé propuesta de valor clara en pantalla de inicio de sesión para motivar el registro.'
+                },
+                {
+                    title: 'Diseño Visual',
+                    description: 'Creé lenguaje visual cálido y accesible usando ilustraciones amigables y paleta de colores alentadora. Evité estética clínica de salud en favor de sensación de marca de estilo de vida. Diseñé interfaz sintiéndose de apoyo en lugar de crítica.'
+                }
+            ],
+            keyDecisions: [
+                'Autenticación social como camino de registro primario para reducir fricción',
+                'Onboarding ilustrado explicando valor antes de solicitar datos',
+                'Paleta de color rosa transmitiendo amabilidad en lugar del tradicional verde/azul de apps de salud',
+                'Elementos de gamificación haciendo que el seguimiento nutricional se sienta gratificante en lugar de una carga',
+                'Valores predeterminados inteligentes y comidas sugeridas por IA reduciendo entrada manual de datos'
+            ],
+            results: [
+                'Onboarding simplificado reduciendo abandono de registro',
+                'Autenticación social incrementando creación exitosa de cuentas',
+                'Diseño visual amigable mejorando percepción del usuario sobre accesibilidad de la app',
+                'Creé punto de entrada accesible al seguimiento nutricional para usuarios no expertos',
+                'Demostré habilidad para diseñar para tecnología de salud con atractivo masivo'
+            ],
+            learnings: 'Las apps de salud deben equilibrar la recolección de datos con la motivación del usuario. Cada campo adicional en el onboarding aumenta el riesgo de abandono. La clave es proveer valor inmediato con mínima fricción, luego recolectar datos progresivamente a medida que los usuarios se comprometen y ven beneficios.'
         }
     ],
     en: [
