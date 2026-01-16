@@ -31,7 +31,21 @@ const projectsData = {
                     title: "Prototipo Lovable (Versión B)",
                     images: Array.from({ length: 7 }, (_, i) => `/assets/projects/bancoestado/bancoestadoversionb${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // Spanish Content
+            context: 'Banco Estado enfrentaba desafíos en su embudo de conversión para productos B2B. El proceso existente tenía altas tasas de abandono y una experiencia de usuario fragmentada.',
+            problem: 'La interfaz legacy dificultaba la navegación y no guiaba eficientemente a los usuarios empresariales a través del proceso de solicitud, resultando en pérdida de oportunidades comerciales.',
+            role: 'Lideré el rediseño UX/UI, realizando auditorías de usabilidad, creando prototipos de alta fidelidad y coordinando pruebas A/B.',
+            responsibilities: ['Auditoría UX', 'Diseño de Interfaz', 'Prototipado', 'Pruebas de Usabilidad'],
+            processSteps: [
+                { title: 'Investigación', description: 'Análisis del flujo actual e identificación de puntos de dolor.' },
+                { title: 'Ideación', description: 'Wireframing de soluciones para simplificar el embudo.' },
+                { title: 'Prototipado', description: 'Desarrollo de prototipos interactivos en Figma y Lovable.' },
+                { title: 'Validación', description: 'Testing con usuarios reales para validar mejoras.' }
+            ],
+            keyDecisions: ['Simplificar formularios', 'Mejorar feedback visual', 'Implementar diseño responsivo'],
+            results: ['Aumento significativo en la tasa de finalización de solicitudes', 'Mejora en la satisfacción del usuario'],
+            learnings: 'La importancia de reducir la carga cognitiva en procesos financieros complejos.'
         },
         {
             id: 2,
@@ -46,8 +60,8 @@ const projectsData = {
             coverImage: '/assets/projects/bcn-global-cover.png',
             tags: ['Arquitectura Información', 'Sistema de Diseño', 'B2B', 'Front-End'],
             metrics: {
-                improvement: 'Percepción de marca',
-                impact: 'Sitio web funcional'
+                improvement: 'Mejora Percepción Marca',
+                impact: 'Sitio Web Funcional'
             },
             links: {
                 lovable: 'https://bcnglobal.lovable.app/',
@@ -71,7 +85,21 @@ const projectsData = {
                     title: "Diseño Final (Figma)",
                     images: Array.from({ length: 5 }, (_, i) => `/assets/projects/bcnglobal/bcnrediseno${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // Spanish Content
+            context: 'BCN Global necesitaba renovar su imagen digital para reflejar su liderazgo en capacitación corporativa. El sitio antiguo no comunicaba eficazmente su propuesta de valor ni sus servicios especializados.',
+            problem: 'Navegación confusa y diseño desactualizado que no generaba confianza en clientes corporativos B2B.',
+            role: 'Diseñador UX/UI encargado de la reestructuración completa del sitio, desde la arquitectura de información hasta el diseño visual final.',
+            responsibilities: ['Arquitectura de Información', 'Diseño UI', 'Sistemas de Diseño', 'Desarrollo Front-End Básico'],
+            processSteps: [
+                { title: 'Descubrimiento', description: 'Análisis de competidores y definición de objetivos de marca.' },
+                { title: 'Estructura', description: 'Creación de nuevo mapa de sitio y wireframes.' },
+                { title: 'Diseño Visual', description: 'Aplicación de nueva identidad visual moderna y profesional.' },
+                { title: 'Entrega', description: 'Preparación de assets y documentación para desarrollo.' }
+            ],
+            keyDecisions: ['Priorizar servicios clave', 'Diseño limpio y corporativo', 'Optimización para móviles'],
+            results: ['Nueva presencia digital alineada con la marca', 'Mejor estructura de servicios'],
+            learnings: 'Cómo equilibrar información corporativa densa con un diseño visual ligero y digerible.'
         },
         {
             id: 3,
@@ -105,7 +133,21 @@ const projectsData = {
                     title: "Testing B (Ganadora)",
                     images: Array.from({ length: 8 }, (_, i) => `/assets/projects/ghalikombucha/ghaliversionb${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // Spanish Content
+            context: 'Ghali Kombucha buscaba optimizar su tienda online para aumentar las ventas y mejorar la retención. Se requería un enfoque basado en datos para validar cambios de diseño.',
+            problem: 'Baja tasa de conversión y dificultades de los usuarios para encontrar productos específicos en el catálogo.',
+            role: 'Investigador UX liderando el proceso de testing y validación de hipótesis de diseño.',
+            responsibilities: ['Card Sorting', 'Tree Testing', 'Pruebas A/B', 'Análisis de Datos'],
+            processSteps: [
+                { title: 'Investigación', description: 'Card sorting para optimizar la arquitectura de información.' },
+                { title: 'Validación', description: 'Tree testing para verificar la encontrabilidad de productos.' },
+                { title: 'Experimentación', description: 'Diseño y ejecución de pruebas A/B.' },
+                { title: 'Análisis', description: 'Interpretación de resultados para decisiones finales.' }
+            ],
+            keyDecisions: ['Reestructurar menú principal', 'Simplificar fichas de producto', 'Destacar beneficios de salud'],
+            results: ['Aumento del 12.5% en conversión', 'Duplicación del tiempo de sesión'],
+            learnings: 'El valor de las decisiones de diseño respaldadas por datos cuantitativos reales.'
         },
         {
             id: 4,
@@ -137,7 +179,20 @@ const projectsData = {
                     title: "Prototipo Final",
                     images: Array.from({ length: 4 }, (_, i) => `/assets/projects/laespecieria/laespecieriarediseno${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // Spanish Content
+            context: 'La Especiería necesitaba modernizar su plataforma de venta online para mejorar la experiencia de compra de sus productos gourmet y especias.',
+            problem: 'Sitio web desactualizado con navegación compleja que dificultaba el descubrimiento de productos y el cierre de ventas.',
+            role: 'Diseñador UX/UI y Desarrollador Front-End.',
+            responsibilities: ['Investigación de Usuarios', 'Diseño UI', 'Prototyping', 'Desarrollo Front-End'],
+            processSteps: [
+                { title: 'Investigación', description: 'Análisis de la experiencia de compra actual.' },
+                { title: 'Diseño', description: 'Creación de nueva interfaz enfocada en el producto.' },
+                { title: 'Desarrollo', description: 'Implementación del diseño utilizando HTML, CSS y Bootstrap.' }
+            ],
+            keyDecisions: ['Enfoque Mobile-First', 'Mejora de fotografía de producto', 'Simplificación del checkout'],
+            results: ['Tasa de conversión duplicada', 'Mejora significativa en CTR'],
+            learnings: 'La integración efectiva entre diseño visual atractivo y desarrollo técnico eficiente.'
         },
         {
             id: 5,
@@ -150,7 +205,7 @@ const projectsData = {
             type: 'Diseño UX',
             description: 'Solución de salud digital para gestión de medicamentos demostrando proceso UX end-to-end desde investigación hasta prototipos.',
             coverImage: '/assets/projects/pharmafy-cover.png',
-            tags: ['Healthcare', 'UX Research', 'Personas', 'Flujos de Usuario'],
+            tags: ['Healthcare', 'Investigación UX', 'Personas', 'Flujos de Usuario'],
             metrics: {
                 improvement: 'Diseño privacidad-primero',
                 impact: 'Certificación Google UX'
@@ -163,14 +218,28 @@ const projectsData = {
                     title: "Prototipo Final",
                     images: Array.from({ length: 9 }, (_, i) => `/assets/projects/pharmafy/pharmafy${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // Spanish Content
+            context: 'Gestión compleja de medicamentos para pacientes con tratamientos crónicos. Se identificó la necesidad de una herramienta centralizada y fácil de usar.',
+            problem: 'Falta de adherencia al tratamiento por olvidos y confusión en la gestión de múltiples medicamentos.',
+            role: 'Diseñador UX liderando el proyecto como parte de la certificación de Google.',
+            responsibilities: ['Entrevistas a Usuarios', 'Creación de Personas', 'Wireframing', 'Prototipado de Alta Fidelidad'],
+            processSteps: [
+                { title: 'Empatizar', description: 'Investigación profunda con pacientes y cuidadores.' },
+                { title: 'Definir', description: 'Identificación de problemas clave y necesidades no cubiertas.' },
+                { title: 'Idear', description: 'Brainstorming de soluciones digitales accesibles.' },
+                { title: 'Prototipar', description: 'Diseño iterativo desde baja a alta fidelidad.' }
+            ],
+            keyDecisions: ['Interfaz de alto contraste', 'Recordatorios personalizables', 'Enfoque en privacidad'],
+            results: ['Validación exitosa con usuarios reales', 'Diseño accesible para adultos mayores'],
+            learnings: 'Diseñar para accesibilidad en salud digital es crítico para el éxito del producto.'
         },
         {
             id: 6,
             slug: 'findies',
             galleryCols: 3,
             title: 'Findies',
-            subtitle: 'Music & Events Discovery App',
+            subtitle: 'App de Descubrimiento de Eventos y Música',
             year: '2024',
             industry: 'Entretenimiento',
             type: 'Mobile App UX/UI',
@@ -189,14 +258,28 @@ const projectsData = {
                     title: "Prototipo Final",
                     images: Array.from({ length: 7 }, (_, i) => `/assets/projects/findies/findies${i + 1}.PNG`)
                 }
-            ]
+            ],
+            // Spanish Content
+            context: 'Dificultad para encontrar eventos de música local y artistas emergentes en una plataforma unificada y visualmente atractiva.',
+            problem: 'Desconexión entre artistas locales y audiencias potenciales debido a plataformas fragmentadas.',
+            role: 'Diseñador UX/UI enfocado en la experiencia móvil y el diseño visual.',
+            responsibilities: ['Diseño de Interfaz', 'Diseño de Interacción', 'Creación de Sistema de Diseño'],
+            processSteps: [
+                { title: 'Investigación', description: 'Análisis de apps de eventos y hábitos de usuarios.' },
+                { title: 'Diseño Visual', description: 'Creación de identidad vibrante y energética.' },
+                { title: 'Prototipado', description: 'Desarrollo de flujos de descubrimiento y reserva.' }
+            ],
+            keyDecisions: ['Navegación basada en geolocalización', 'Estética oscura inmersiva', 'Fichas de artista ricas en medios'],
+            results: ['Concepto validado de app de descubrimiento social', 'Interfaz altamente visual'],
+            learnings: 'La importancia de la inmersión visual en productos de entretenimiento.'
         },
         {
             id: 7,
             slug: 'goodmeal',
             galleryCols: 3,
+            coverImageClass: 'max-w-md mx-auto', // Custom class for resizing cover
             title: 'GoodMeal',
-            subtitle: 'Meal Planning & Nutrition App',
+            subtitle: 'App de Planificación de Comidas y Nutrición',
             year: '2024',
             industry: 'Salud y Bienestar',
             type: 'Mobile App UX/UI',
@@ -205,20 +288,33 @@ const projectsData = {
             tags: ['Diseño Móvil', 'Onboarding', 'Health Tech', 'Estrategia UX'],
             metrics: {
                 improvement: 'Adquisición de usuarios',
-                impact: 'Accessible nutrition tracking'
+                impact: 'Accesibilidad nutricional'
             },
             links: {
                 figma: 'https://www.figma.com/design/dFQzwm8NK6z86GDVmIcUd8/Wireframe-App-GoodMeal---Equipo-3?node-id=113-3&t=XpVD9THQJRMtoRae-1'
             },
             gallery: [
                 {
-                    title: "Final Prototype",
+                    title: "Prototipo Final",
                     images: [
                         ...Array.from({ length: 5 }, (_, i) => `/assets/projects/goodmeal/goodmeal${i + 1}.PNG`),
                         '/assets/projects/goodmeal/goodmealuikit.PNG'
                     ]
                 }
-            ]
+            ],
+            // Spanish Content
+            context: 'Usuarios buscando mejorar sus hábitos alimenticios a menudo abandonan las apps de nutrición debido a la complejidad en la entrada de datos.',
+            problem: 'Alta fricción en el registro de comidas y planificación semanal en apps existentes.',
+            role: 'Estratega UX y Diseñador UI.',
+            responsibilities: ['Estrategia de Producto', 'Diseño de Onboarding', 'Diseño Visual'],
+            processSteps: [
+                { title: 'Estrategia', description: 'Definición de propuesta de valor centrada en la simplicidad.' },
+                { title: 'Flujos', description: 'Optimización del flujo de onboarding y configuración inicial.' },
+                { title: 'Diseño', description: 'Interfaz limpia y amigable para reducir ansiedad.' }
+            ],
+            keyDecisions: ['Onboarding progresivo', 'Planificación automatizada sugerida', 'Estética minimalista'],
+            results: ['Flujo de adquisición simplificado', 'Reducción de pasos para completar tareas clave'],
+            learnings: 'Reducir la fricción inicial es clave para la retención en apps de hábitos diarios.'
         }
     ],
     en: [

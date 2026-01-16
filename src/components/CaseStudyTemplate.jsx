@@ -128,11 +128,11 @@ const CaseStudyTemplate = ({
 
                         {/* Image Column */}
                         {project.coverImage && (
-                            <div className="flex-1 w-full max-w-2xl">
+                            <div className="flex-1 w-full max-w-2xl flex justify-center items-center">
                                 <img
                                     src={`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`}
                                     alt={`${project.title} showcase`}
-                                    className="w-full h-auto rounded-xl shadow-lg object-cover"
+                                    className={`h-auto rounded-xl shadow-lg object-cover ${project.coverImageClass ? project.coverImageClass : 'w-full'}`}
                                 />
                             </div>
                         )}
