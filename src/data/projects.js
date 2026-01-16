@@ -3,6 +3,7 @@ const projectsData = {
         {
             id: 1,
             slug: 'banco-estado',
+            galleryCols: 3,
             title: 'Banco Estado',
             subtitle: 'Optimización de Conversión B2B Fintech',
             year: '2025',
@@ -35,6 +36,7 @@ const projectsData = {
         {
             id: 2,
             slug: 'bcn-global',
+            galleryCols: 2,
             title: 'BCN Global',
             subtitle: 'Rediseño Corporativo B2B SaaS',
             year: '2025',
@@ -74,6 +76,7 @@ const projectsData = {
         {
             id: 3,
             slug: 'ghali-kombucha',
+            galleryCols: 2,
             title: 'Ghali Kombucha',
             subtitle: 'Investigación y Optimización UX E-commerce',
             year: '2025',
@@ -107,6 +110,7 @@ const projectsData = {
         {
             id: 4,
             slug: 'la-especieria',
+            galleryCols: 2,
             title: 'La Especiería',
             subtitle: 'UX/UI E-commerce & Desarrollo Front-End',
             year: '2024',
@@ -138,6 +142,7 @@ const projectsData = {
         {
             id: 5,
             slug: 'pharmafy',
+            galleryCols: 3,
             title: 'Pharmafy',
             subtitle: 'Diseño UX App de Salud',
             year: '2023',
@@ -145,7 +150,7 @@ const projectsData = {
             type: 'Diseño UX',
             description: 'Solución de salud digital para gestión de medicamentos demostrando proceso UX end-to-end desde investigación hasta prototipos.',
             coverImage: '/assets/projects/pharmafy-cover.png',
-            tags: ['Salud', 'Investigación UX', 'Personas', 'Flujos de Usuario'],
+            tags: ['Healthcare', 'UX Research', 'Personas', 'Flujos de Usuario'],
             metrics: {
                 improvement: 'Diseño privacidad-primero',
                 impact: 'Certificación Google UX'
@@ -163,8 +168,9 @@ const projectsData = {
         {
             id: 6,
             slug: 'findies',
+            galleryCols: 3,
             title: 'Findies',
-            subtitle: 'App de Descubrimiento de Eventos y Música',
+            subtitle: 'Music & Events Discovery App',
             year: '2024',
             industry: 'Entretenimiento',
             type: 'Mobile App UX/UI',
@@ -188,8 +194,9 @@ const projectsData = {
         {
             id: 7,
             slug: 'goodmeal',
+            galleryCols: 3,
             title: 'GoodMeal',
-            subtitle: 'App de Planificación de Comidas y Nutrición',
+            subtitle: 'Meal Planning & Nutrition App',
             year: '2024',
             industry: 'Salud y Bienestar',
             type: 'Mobile App UX/UI',
@@ -198,14 +205,14 @@ const projectsData = {
             tags: ['Diseño Móvil', 'Onboarding', 'Health Tech', 'Estrategia UX'],
             metrics: {
                 improvement: 'Adquisición de usuarios',
-                impact: 'Seguimiento nutricional accesible'
+                impact: 'Accessible nutrition tracking'
             },
             links: {
                 figma: 'https://www.figma.com/design/dFQzwm8NK6z86GDVmIcUd8/Wireframe-App-GoodMeal---Equipo-3?node-id=113-3&t=XpVD9THQJRMtoRae-1'
             },
             gallery: [
                 {
-                    title: "Prototipo Final",
+                    title: "Final Prototype",
                     images: [
                         ...Array.from({ length: 5 }, (_, i) => `/assets/projects/goodmeal/goodmeal${i + 1}.PNG`),
                         '/assets/projects/goodmeal/goodmealuikit.PNG'
@@ -218,6 +225,7 @@ const projectsData = {
         {
             id: 1,
             slug: 'banco-estado',
+            galleryCols: 3,
             title: 'Banco Estado',
             subtitle: 'Fintech B2B Conversion Optimization',
             year: '2025',
@@ -250,6 +258,7 @@ const projectsData = {
         {
             id: 2,
             slug: 'bcn-global',
+            galleryCols: 2,
             title: 'BCN Global',
             subtitle: 'B2B Corporate Homepage Redesign',
             year: '2025',
@@ -289,6 +298,7 @@ const projectsData = {
         {
             id: 3,
             slug: 'ghali-kombucha',
+            galleryCols: 2,
             title: 'Ghali Kombucha',
             subtitle: 'E-commerce UX Research & Optimization',
             year: '2025',
@@ -322,6 +332,7 @@ const projectsData = {
         {
             id: 4,
             slug: 'la-especieria',
+            galleryCols: 2,
             title: 'La Especiería',
             subtitle: 'E-commerce UX/UI & Front-End Development',
             year: '2024',
@@ -353,6 +364,7 @@ const projectsData = {
         {
             id: 5,
             slug: 'pharmafy',
+            galleryCols: 3,
             title: 'Pharmafy',
             subtitle: 'Healthcare App UX Design',
             year: '2023',
@@ -378,6 +390,7 @@ const projectsData = {
         {
             id: 6,
             slug: 'findies',
+            galleryCols: 3,
             title: 'Findies',
             subtitle: 'Music & Events Discovery App',
             year: '2024',
@@ -403,10 +416,11 @@ const projectsData = {
         {
             id: 7,
             slug: 'goodmeal',
+            galleryCols: 3,
             title: 'GoodMeal',
             subtitle: 'Meal Planning & Nutrition App',
             year: '2024',
-            industry: 'Health & Wellness',
+            industry: 'Salud y Bienestar',
             type: 'Mobile App UX/UI',
             description: 'Health-focused meal planning application with streamlined onboarding and low-friction user acquisition flow.',
             coverImage: '/assets/projects/goodmeal-cover.png',

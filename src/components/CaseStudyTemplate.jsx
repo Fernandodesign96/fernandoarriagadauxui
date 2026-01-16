@@ -83,16 +83,19 @@ const CaseStudyTemplate = ({
             lovable: 'Lovable AI Preview',
             desktop: 'Live Demo (Desktop)',
             tablet: 'Live Demo (Tablet)',
-            mobile: 'Live Demo (Mobile)'
+            mobile: 'Live Demo (Mobile)',
+            github: 'GitHub Repository'
         }
         return labels[key] || 'View Resource'
     }
 
+    const galleryGridClass = project.galleryCols === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2';
+
     return (
         <div className="min-h-screen bg-white dark:bg-neutral-950 transition-colors duration-200">
-            {/* Hero Section */}
+            {/* Hero Section with Integrated Cover Image */}
             <section className="bg-neutral-50 dark:bg-neutral-900/50 border-b border-neutral-200 dark:border-neutral-800 transition-colors duration-200">
-                <div className="container-custom py-16 md:py-24">
+                <div className="container-custom py-12 md:py-20 lg:py-24">
                     <Link
                         to="/"
                         className="inline-flex items-center gap-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 mb-8 transition-colors"
@@ -103,40 +106,39 @@ const CaseStudyTemplate = ({
                         {t.backHome}
                     </Link>
 
-                    <div className="max-w-4xl">
-                        <div className="flex flex-wrap items-center gap-4 mb-6">
-                            <span className="px-3 py-1 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-medium rounded-full">
-                                {project.industry}
-                            </span>
-                            <span className="text-sm text-neutral-600 dark:text-neutral-400">{project.year}</span>
-                            <span className="text-sm text-neutral-600 dark:text-neutral-400">·</span>
-                            <span className="text-sm text-neutral-600 dark:text-neutral-400">{project.type}</span>
+                    <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
+                        {/* Text Column */}
+                        <div className="flex-1 w-full">
+                            <div className="flex flex-wrap items-center gap-4 mb-6">
+                                <span className="px-3 py-1 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-medium rounded-full">
+                                    {project.industry}
+                                </span>
+                                <span className="text-sm text-neutral-600 dark:text-neutral-400">{project.year}</span>
+                                <span className="text-sm text-neutral-600 dark:text-neutral-400">·</span>
+                                <span className="text-sm text-neutral-600 dark:text-neutral-400">{project.type}</span>
+                            </div>
+
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-neutral-900 dark:text-white leading-tight">
+                                {project.title}
+                            </h1>
+                            <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                {project.subtitle}
+                            </p>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-neutral-900 dark:text-white leading-tight">
-                            {project.title}
-                        </h1>
-                        <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
-                            {project.subtitle}
-                        </p>
+                        {/* Image Column */}
+                        {project.coverImage && (
+                            <div className="flex-1 w-full max-w-2xl">
+                                <img
+                                    src={`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`}
+                                    alt={`${project.title} showcase`}
+                                    className="w-full h-auto rounded-xl shadow-lg object-cover"
+                                />
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>
-
-            {/* Project Cover Image (Compact) */}
-            {project.coverImage && (
-                <section className="container-custom py-8 md:py-12">
-                    <div className="max-w-4xl mx-auto">
-                        <div className="rounded-xl overflow-hidden shadow-xl border border-neutral-200 dark:border-neutral-800 relative aspect-[21/9]">
-                            <img
-                                src={`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`}
-                                alt={`${project.title} showcase`}
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
-                </section>
-            )}
 
             <div className="container-custom py-12 md:py-16">
                 <div className="max-w-4xl mx-auto space-y-20">
@@ -182,25 +184,28 @@ const CaseStudyTemplate = ({
                                 {t.resources}
                             </h2>
                             <div className="flex flex-wrap gap-4">
-                                {Object.entries(project.links).map(([key, url]) => (
-                                    <a
-                                        key={key}
-                                        href={url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-3 px-6 py-4 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-lg transition-all group"
-                                    >
-                                        <span className="text-neutral-500 dark:text-neutral-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                                            {getLinkIcon(key)}
-                                        </span>
-                                        <span className="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">
-                                            {getLinkLabel(key)}
-                                        </span>
-                                        <svg className="w-4 h-4 text-neutral-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                        </svg>
-                                    </a>
-                                ))}
+                                {Object.entries(project.links).map(([key, url]) => {
+                                    if (key === 'github') return null; // Skip github here as it has its own section
+                                    return (
+                                        <a
+                                            key={key}
+                                            href={url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-3 px-6 py-4 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 hover:shadow-lg transition-all group"
+                                        >
+                                            <span className="text-neutral-500 dark:text-neutral-400 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                                {getLinkIcon(key)}
+                                            </span>
+                                            <span className="font-semibold text-neutral-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400">
+                                                {getLinkLabel(key)}
+                                            </span>
+                                            <svg className="w-4 h-4 text-neutral-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                    )
+                                })}
                             </div>
                         </section>
                     )}
@@ -328,9 +333,9 @@ const CaseStudyTemplate = ({
                                 <span className="w-1.5 h-8 bg-primary-500 mr-4 rounded-full"></span>
                                 {group.title}
                             </h3>
-                            <div className="grid grid-cols-1 gap-8 md:gap-12">
+                            <div className={`grid grid-cols-1 ${galleryGridClass} gap-8 md:gap-8`}>
                                 {group.images.map((img, imgIndex) => (
-                                    <div key={imgIndex} className="bg-neutral-50 dark:bg-neutral-900 p-2 md:p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-shadow">
+                                    <div key={imgIndex} className="bg-neutral-50 dark:bg-neutral-900 p-2 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-shadow">
                                         <img
                                             src={`${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`}
                                             alt={`${group.title} ${imgIndex + 1}`}
