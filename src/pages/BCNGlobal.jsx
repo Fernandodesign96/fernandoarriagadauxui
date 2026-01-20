@@ -1,6 +1,7 @@
 import CaseStudyTemplate from '../components/CaseStudyTemplate'
 import projectsData from '../data/projects'
 import { useLanguage } from '../context/LanguageContext'
+import BCNGlobalKPIs from '../components/BCNGlobalKPIs'
 
 const BCNGlobal = () => {
     const { currentLang } = useLanguage()
@@ -10,7 +11,9 @@ const BCNGlobal = () => {
     return (
         <CaseStudyTemplate
             project={project}
-        />
+        >
+            <BCNGlobalKPIs currentLang={currentLang} />
+        </CaseStudyTemplate>
     )
 }
 

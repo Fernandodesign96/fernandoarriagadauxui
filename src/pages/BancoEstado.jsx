@@ -1,6 +1,7 @@
 import CaseStudyTemplate from '../components/CaseStudyTemplate'
 import projectsData from '../data/projects'
 import { useLanguage } from '../context/LanguageContext'
+import KPISection from '../components/KPISection'
 
 const BancoEstado = () => {
     const { currentLang } = useLanguage()
@@ -10,7 +11,9 @@ const BancoEstado = () => {
     return (
         <CaseStudyTemplate
             project={project}
-        />
+        >
+            <KPISection currentLang={currentLang} />
+        </CaseStudyTemplate>
     )
 }
 

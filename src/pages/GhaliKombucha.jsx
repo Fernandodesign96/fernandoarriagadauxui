@@ -1,6 +1,7 @@
 import CaseStudyTemplate from '../components/CaseStudyTemplate'
 import projectsData from '../data/projects'
 import { useLanguage } from '../context/LanguageContext'
+import GhaliKombuchaKPIs from '../components/GhaliKombuchaKPIs'
 
 const GhaliKombucha = () => {
     const { currentLang } = useLanguage()
@@ -10,7 +11,9 @@ const GhaliKombucha = () => {
     return (
         <CaseStudyTemplate
             project={project}
-        />
+        >
+            <GhaliKombuchaKPIs currentLang={currentLang} />
+        </CaseStudyTemplate>
     )
 }
 

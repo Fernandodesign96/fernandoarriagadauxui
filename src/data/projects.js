@@ -70,10 +70,15 @@ const projectsData = {
                 'Optimicé campos de formulario basados en pruebas de usabilidad, reduciendo campos requeridos en un 30% sin comprometer requisitos KYC'
             ],
             results: [
-                'Embudo de conversión optimizado con pasos reducidos',
-                'Mejora en puntuaciones de satisfacción del usuario en pruebas posteriores al lanzamiento',
-                'Implementación front-end validada exitosamente contra especificaciones de diseño',
-                'Mejoras de rendimiento medibles demostradas en flujos de usuarios clave'
+                'Visibilice problemas en estabilidad del flujo y conversión.',
+                'Identifiqué fricciones críticas en el funnel de conversión asociadas a intermitencia del sistema, falta de feedback y puntos de abandono.',
+                'Definí criterio, evaluación UX y KPIs de performance al analizar impacto en conversión y experiencia.',
+                'Propuse mejoras estratégicas de flujo, arquitectura de información y feedback del sistema.',
+                'Diseñé wireframes y prototipos de alta fidelidad orientados a escalabilidad.',
+                'Implementé maquetación asistida por IA (Lovable, Figma Make, Figma Sites) para agilizar procesos.',
+                'Desarrollé prototipo en Visual Studio Code (HTML, CSS, Bootstrap) para validación técnica.',
+                'Ejecuté testeo UX para validar hipótesis y optimizar flujos críticos.',
+                'Optimizé la estabilidad, el performance y mejoré mi experiencia bancaria B2B.'
             ],
             learnings: 'La UX Fintech requiere equilibrar confianza y simplicidad. Los usuarios necesitan tranquilidad a través de patrones bancarios familiares e indicadores claros de seguridad, pero la complejidad nunca debe confundirse con minuciosidad. El sistema más seguro es aquel que los usuarios realmente completan con éxito.'
         },
@@ -154,11 +159,16 @@ const projectsData = {
                 'Diseño responsivo mobile-first considerando que la investigación inicial a menudo ocurre en dispositivos móviles'
             ],
             results: [
-                'Sitio web completamente funcional desplegado con dominio personalizado y hosting',
-                'Percepción de marca significativamente mejorada basada en feedback de clientes',
-                'Sistema de diseño escalable creado para desarrollo de páginas futuras',
-                'Puntuaciones de rendimiento excelentes logradas (90+ Lighthouse)',
-                'Jerarquía visual y de contenido clara establecida para generación de leads'
+                'Rediseñé homepage corporativa con foco en captación y claridad de propuesta de valor.',
+                'Analicé el flujo y estructura, identifiqué problemas de jerarquía, arquitectura y conversión.',
+                'Definí criterios UX alineados a objetivos de negocio B2B y métricas de engagement.',
+                'Propuse una nueva arquitectura y narrativa visual orientada a confianza y conversión.',
+                'Agilicé procesos con maquetación asistida por IA (Lovable).',
+                'Diseñé wireframes, prototipos de alta fidelidad, y un Design System responsivo y consistente (Desktop, tablet y mobile)',
+                'Hosting de prueba funcional y responsiva para cada breakpoint (Figma y figma.to.website)',
+                'Ejecuté testeo UX para validar decisiones de diseño.',
+                'Desarrollé la solución en HTML, CSS y Bootstrap para asegurar viabilidad técnica.',
+                'Solucioné y comprendí flujos end to end, B2B, conversión y performance UX.'
             ],
             learnings: 'Los sitios web B2B requieren diseño priorizando la credibilidad. Los clientes empresariales necesitan entender rápidamente qué haces, con quién trabajaste y por qué estás calificado. El pulido visual importa, pero la comunicación clara y las señales de confianza impulsan la conversión en este mercado.'
         },
@@ -228,16 +238,16 @@ const projectsData = {
             ],
             keyDecisions: [
                 'Reorganicé categorías de productos de base-producción a base-beneficio (ej., "Salud Digestiva" en lugar de "Mezcla Original")',
-                'Simplifiqué el checkout a diseño de una sola página basado en prueba A/B mostrando mejora del 12.5% en conversión',
+                'Simplifiqué el checkout a diseño de una sola página basado en prueba A/B mostrando mejora del 15% en conversión',
                 'Añadí función de comparación de productos después de que la investigación mostró que usuarios luchaban para diferenciar entre sabores',
                 'Implementé carrito persistente con recuperación por email basado en datos de abandono'
             ],
             results: [
-                '+12.5% de aumento en tasa de conversión tras implementar checkout de una sola página',
-                '+100% de aumento en duración promedio de sesión siguiendo mejoras de AI',
-                'Reducción de abandono de carrito en 18% a través de eliminación estratégica de puntos de fricción',
-                'Puntuaciones de encontrabilidad de producto mejoradas en 78% en tree testing de seguimiento',
-                'Recomendaciones basadas en datos adoptadas por equipo de desarrollo'
+                "Versión B seleccionada como mejor opción",
+                "Mejora del 15% en tasa de conversión",
+                "Reducción de 50 segundos en tiempo de compra",
+                "CTR constante del 100% en ambas versiones",
+                "Optimización exitosa de usabilidad y reducción de fricciones"
             ],
             learnings: 'El éxito en e-commerce depende de flujos de descubrimiento y compra libres de fricción. A los usuarios no les importa tu organización interna de productos—piensan en términos de sus propias necesidades y objetivos. Probar con usuarios reales temprano y a menudo previene suposiciones costosas y asegura que la AI realmente sirva a los modelos mentales de los usuarios.'
         },
@@ -615,10 +625,15 @@ const projectsData = {
                 'Optimized form fields based on usability testing, reducing required fields by 30% without compromising KYC requirements'
             ],
             results: [
-                'Streamlined conversion funnel with reduced steps',
-                'Improved user satisfaction scores in post-launch testing',
-                'Successfully validated front-end implementation against design specs',
-                'Demonstrated measurable performance improvements in key user flows'
+                'Visualize stability issues in flow and conversion.',
+                'Identify critical frictions in the conversion funnel associated with system intermittency, lack of feedback, and drop-off points.',
+                'Define criteria, UX evaluation, and performance KPIs when analyzing impact on conversion and experience.',
+                'Propose strategic flow improvements, information architecture, and system feedback.',
+                'Design wireframes and high-fidelity prototypes oriented towards scalability.',
+                'Implement AI-assisted layout (Lovable, Figma Make, Figma Sites) to streamline processes.',
+                'Develop prototype in Visual Studio Code (HTML, CSS, Bootstrap) for technical validation.',
+                'Execute UX testing to validate hypotheses and optimize critical flows.',
+                'Optimize stability, performance, and improved the B2B banking experience.'
             ],
             learnings: "Fintech UX requires balancing trust and simplicity. Users need reassurance through familiar banking patterns and clear security indicators, but complexity should never be mistaken for thoroughness. The most secure system is one users actually complete successfully."
         },
@@ -698,11 +713,16 @@ const projectsData = {
                 'Mobile-first responsive design considering that initial research often happens on mobile devices'
             ],
             results: [
-                'Deployed fully functional website with custom domain and hosting',
-                'Significantly improved brand perception based on client feedback',
-                'Created scalable design system for future page development',
-                'Achieved excellent performance scores (90+ Lighthouse)',
-                'Established clear visual and content hierarchy for lead generation'
+                'Redesigned corporate homepage with a focus on acquisition and clarity of value proposition.',
+                'Analyzed the flow and structure, identified problems with hierarchy, architecture, and conversion.',
+                'Defined UX criteria aligned with B2B business objectives and engagement metrics.',
+                'Proposed a new architecture and visual narrative oriented towards trust and conversion.',
+                'Streamlined processes with AI-assisted layout (Lovable).',
+                'Designed wireframes, high-fidelity prototypes, and a responsive and consistent Design System (Desktop, tablet, and mobile)',
+                'Functional and responsive test hosting for each breakpoint (Figma and figma.to.website)',
+                'Executed UX testing to validate design decisions.',
+                'Developed the solution in HTML, CSS, and Bootstrap to ensure technical feasibility.',
+                'Solved and understood end-to-end flows, B2B, conversion, and UX performance.'
             ],
             learnings: "B2B websites require credibility-first design. Enterprise clients need to quickly understand what you do, who you've worked with, and why you're qualified. Visual polish matters, but clear communication and trust signals drive conversion in this market."
         },
@@ -771,16 +791,16 @@ const projectsData = {
             ],
             keyDecisions: [
                 'Reorganized product categories from production-based to benefit-based (e.g., "Digestive Health" instead of "Original Blend")',
-                'Simplified checkout to single-page design based on A/B test showing 12.5% conversion improvement',
+                'Simplified checkout to single-page design based on A/B test showing 15% conversion improvement',
                 'Added product comparison feature after research showed users struggled to differentiate between flavors',
                 'Implemented persistent cart with email recovery based on abandonment data'
             ],
             results: [
-                '+12.5% conversion rate increase after implementing single-page checkout',
-                '+100% increase in average session duration following IA improvements',
-                'Reduced cart abandonment by 18% through strategic friction point removal',
-                'Improved product findability scores by 78% in follow-up tree testing',
-                'Data-driven recommendations adopted by development team'
+                "Version B selected as the best option",
+                "15% improvement in conversion rate",
+                "50 seconds reduction in purchase time",
+                "Constant CTR of 100% in both versions",
+                "Successful usability optimization and friction reduction"
             ],
             learnings: "E-commerce success depends on friction-free discovery and purchase flows. Users don't care about your internal product organization—they think in terms of their own needs and goals. Testing with real users early and often prevents costly assumptions and ensures the IA actually serves user mental models."
         },

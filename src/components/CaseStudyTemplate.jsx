@@ -12,6 +12,7 @@ const CaseStudyTemplate = ({
     keyDecisions = project.keyDecisions,
     results = project.results,
     learnings = project.learnings,
+    children,
     images = []
 }) => {
     const navigate = useNavigate()
@@ -286,6 +287,9 @@ const CaseStudyTemplate = ({
                             </div>
                         </section>
                     )}
+
+                    {/* Custom Content Slot (e.g., KPIs) */}
+                    {children}
 
                     {/* Results & Metrics */}
                     {results && (
