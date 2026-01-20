@@ -8,12 +8,12 @@
     }
 
     body {
-        @apply text-base text-neutral-900 antialiased font-sans bg-white;
+        @apply text-base text-slate-900 antialiased font-sans bg-white dark:bg-slate-950;
     }
 
     /* Prevent scroll jump on theme switch */
     body {
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -23,11 +23,27 @@
     }
 
     .btn-primary {
-        @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all shadow-sm;
+        @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-xl text-white bg-primary-600 hover:bg-primary-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all shadow-lg hover:shadow-indigo-500/25 hover:-translate-y-0.5 active:scale-95;
     }
 
     .btn-secondary {
-        @apply inline-flex items-center justify-center px-6 py-3 border border-neutral-300 text-base font-medium rounded-md text-neutral-700 bg-white hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#627d98] transition-all;
+        @apply inline-flex items-center justify-center px-6 py-3 border border-slate-200 dark:border-slate-800 text-base font-semibold rounded-xl text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-all shadow-md hover:shadow-lg active:scale-95;
+    }
+
+    .bg-mesh {
+        background-color: #ffffff;
+        background-image:
+            radial-gradient(at 0% 0%, hsla(243, 82%, 60%, 0.15) 0px, transparent 50%),
+            radial-gradient(at 100% 0%, hsla(262, 83%, 58%, 0.1) 0px, transparent 50%),
+            radial-gradient(at 100% 100%, hsla(243, 82%, 60%, 0.05) 0px, transparent 50%),
+            radial-gradient(at 0% 100%, hsla(262, 83%, 58%, 0.1) 0px, transparent 50%);
+    }
+
+    .dark .bg-mesh {
+        background-color: #020617;
+        background-image:
+            radial-gradient(at 0% 0%, hsla(243, 82%, 60%, 0.1) 0px, transparent 50%),
+            radial-gradient(at 100% 0%, hsla(262, 83%, 58%, 0.05) 0px, transparent 50%);
     }
 }
 

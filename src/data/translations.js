@@ -8,17 +8,11 @@ const translations = {
             contact: 'Contacto'
         },
         hero: {
-            title: 'Diseñando productos digitales que generan resultados medibles de negocio',
-            subtitle: [
-                'Estrategia UX',
-                'Optimización de Conversión',
-                'Decisiones basadas en datos',
-                'Diseño de producto end-to-end',
-                'Flujos asistidos por IA'
-            ],
+            title: 'Diseño productos digitales end-to-end que convierten objetivos de negocio en resultados medibles',
+            subtitle: 'Banca, B2B y e-commerce · UX estratégica · Optimización de conversión · Decisiones basadas en datos',
             cta: {
                 primary: 'Ver proyectos',
-                secondary: 'Contáctame'
+                secondary: 'Hablemos'
             }
         },
         work: {
@@ -27,24 +21,24 @@ const translations = {
             viewStudy: 'Ver caso de estudio'
         },
         process: {
-            title: 'Mi Proceso',
-            intro: 'Metodología de diseño centrada en el usuario y orientada a resultados de negocio',
+            title: 'Mi metodología de trabajo end-to-end',
+            intro: 'Un enfoque estructurado que conecta investigación, diseño y métricas de negocio.',
             steps: {
                 research: {
-                    title: 'Research & Análisis',
-                    description: 'Fundamento cada proyecto en investigación de usuarios, análisis de datos y auditorías UX. Combino entrevistas cualitativas con métricas cuantitativas para identificar oportunidades reales.'
+                    title: '01 · Research & Análisis',
+                    description: 'Investigo problemas reales de usuarios y negocio mediante research cualitativo, análisis de datos y auditorías UX, identificando oportunidades accionables.'
                 },
                 strategy: {
-                    title: 'Estrategia UX & Arquitectura',
-                    description: 'Traduzco insights de investigación en estrategias accionables. Diseño arquitecturas de información y user flows que alinean necesidades de usuarios con objetivos de negocio.'
+                    title: '02 · Estrategia UX & Arquitectura',
+                    description: 'Convierto insights en decisiones estratégicas: arquitectura de información, flujos críticos y definición de hipótesis alineadas a objetivos de negocio.'
                 },
                 design: {
-                    title: 'Diseño & Prototipado',
-                    description: 'Creo interfaces de alta fidelidad que balancean estética y usabilidad. Utilizo IA para acelerar iteraciones y testing de conceptos, manteniendo foco en accesibilidad.'
+                    title: '03 · Diseño & Prototipado',
+                    description: 'Diseño soluciones funcionales y escalables, creando prototipos de alta fidelidad enfocados en usabilidad, accesibilidad y eficiencia.'
                 },
                 testing: {
-                    title: 'Testing & Optimización',
-                    description: 'Valido decisiones de diseño mediante testing de usabilidad, A/B testing y análisis de métricas. Itero basado en datos para maximizar conversión y satisfacción del usuario.'
+                    title: '04 · Testing & Optimización',
+                    description: 'Valido y optimizo mediante testing de usabilidad, A/B testing y análisis de métricas para mejorar conversión y performance del producto.'
                 }
             }
         },
@@ -54,27 +48,34 @@ const translations = {
         },
         about: {
             title: 'Sobre Mí',
-            intro: 'Senior UX/UI Designer con 5+ años de experiencia diseñando productos digitales que impulsan resultados de negocio medibles.',
-            highlights: [
-                'Experiencia en múltiples industrias: B2B, Fintech, E-commerce y E-learning',
-                'Ownership end-to-end: desde research hasta implementación',
-                'Enfoque en conversión, performance y usabilidad',
-                'Colaboración con equipos multidisciplinarios (producto, desarrollo, negocio)',
-                'Integración de IA para acelerar workflows de diseño',
-                'Compromiso con accesibilidad y diseño inclusivo'
-            ]
+            intro: 'Diseñador UX/UI enfocado en producto, conversión y decisiones basadas en datos.',
+            sections: {
+                experience: {
+                    title: 'Experiencia',
+                    items: ['B2B, Fintech, E-commerce, E-learning', 'Productos complejos y entornos regulados']
+                },
+                workflow: {
+                    title: 'Forma de trabajo',
+                    items: ['Ownership end-to-end', 'Colaboración con producto, desarrollo y negocio', 'Decisiones basadas en datos']
+                },
+                value: {
+                    title: 'Valor diferencial',
+                    items: ['Optimización de conversión', 'Performance UX', 'Estrategia de Producto']
+                }
+            }
         },
         contact: {
-            title: 'Trabajemos Juntos',
-            intro: '¿Buscas un diseñador UX/UI senior para tu próximo proyecto? Hablemos sobre cómo puedo ayudar a tu equipo.',
+            title: '¿Necesitas un diseñador UX/UI que impacte resultados de negocio?',
+            intro: 'Hablemos sobre tu próximo producto o desafío UX.',
             cta: {
-                email: 'Enviar Email',
-                linkedin: 'Conectar en LinkedIn'
+                email: 'Contactarme',
+                linkedin: 'LinkedIn',
+                cv: 'Descargar CV'
             },
             audience: [
-                'Reclutadores buscando talento UX/UI senior',
-                'Equipos de producto necesitando expertise en conversión',
-                'Empresas B2B/SaaS requiriendo diseño estratégico'
+                'Reclutadores',
+                'Equipos de producto',
+                'Empresas B2B / SaaS'
             ]
         },
         footer: {
@@ -91,17 +92,11 @@ const translations = {
             contact: 'Contact'
         },
         hero: {
-            title: 'Designing digital products that drive measurable business results',
-            subtitle: [
-                'UX Strategy',
-                'Conversion Optimization',
-                'Data-informed decisions',
-                'End-to-end product design',
-                'AI-assisted workflows'
-            ],
+            title: 'End-to-end digital product design that converts business goals into measurable results',
+            subtitle: 'Banking, B2B & E-commerce · Strategic UX · Conversion Optimization · Data-informed Decisions',
             cta: {
                 primary: 'View work',
-                secondary: 'Get in touch'
+                secondary: 'Let\'s talk'
             }
         },
         work: {
@@ -110,24 +105,24 @@ const translations = {
             viewStudy: 'View case study'
         },
         process: {
-            title: 'My Process',
-            intro: 'User-centered design methodology oriented towards business results',
+            title: 'My end-to-end methodology',
+            intro: 'A structured approach that connects research, design, and business metrics.',
             steps: {
                 research: {
-                    title: 'Research & Analysis',
-                    description: 'Every project starts with user research, data analysis, and UX audits. I combine qualitative interviews with quantitative metrics to identify real opportunities.'
+                    title: '01 · Research & Analysis',
+                    description: 'I research real user and business problems through qualitative research, data analysis, and UX audits, identifying actionable opportunities.'
                 },
                 strategy: {
-                    title: 'UX Strategy & Architecture',
-                    description: 'I translate research insights into actionable strategies. I design information architectures and user flows that align user needs with business objectives.'
+                    title: '02 · UX Strategy & Architecture',
+                    description: 'I convert insights into strategic decisions: information architecture, critical flows, and hypothesis definition aligned with business objectives.'
                 },
                 design: {
-                    title: 'Design & Prototyping',
-                    description: 'I create high-fidelity interfaces that balance aesthetics and usability. I use AI to accelerate iterations and concept testing, maintaining focus on accessibility.'
+                    title: '03 · Design & Prototyping',
+                    description: 'I design functional and scalable solutions, creating high-fidelity prototypes focused on usability, accessibility, and efficiency.'
                 },
                 testing: {
-                    title: 'Testing & Optimization',
-                    description: 'I validate design decisions through usability testing, A/B testing, and metrics analysis. I iterate based on data to maximize conversion and user satisfaction.'
+                    title: '04 · Testing & Optimization',
+                    description: 'I validate and optimize through usability testing, A/B testing, and metric analysis to improve product conversion and performance.'
                 }
             }
         },
@@ -137,27 +132,34 @@ const translations = {
         },
         about: {
             title: 'About Me',
-            intro: 'Senior UX/UI Designer with 5+ years of experience designing digital products that drive measurable business results.',
-            highlights: [
-                'Experience across multiple industries: B2B, Fintech, E-commerce, and E-learning',
-                'End-to-end ownership: from research to implementation',
-                'Focus on conversion, performance, and usability',
-                'Collaboration with multidisciplinary teams (product, development, business)',
-                'AI integration to accelerate design workflows',
-                'Commitment to accessibility and inclusive design'
-            ]
+            intro: 'UX/UI Designer focused on product, conversion, and data-informed decisions.',
+            sections: {
+                experience: {
+                    title: 'Experience',
+                    items: ['B2B, Fintech, E-commerce, E-learning', 'Complex products and regulated environments']
+                },
+                workflow: {
+                    title: 'Working style',
+                    items: ['End-to-end ownership', 'Collaboration with product, development, and business', 'Data-informed decisions']
+                },
+                value: {
+                    title: 'Differential value',
+                    items: ['Conversion optimization', 'UX Performance', 'Product Strategy']
+                }
+            }
         },
         contact: {
-            title: 'Let\'s Work Together',
-            intro: 'Looking for a senior UX/UI designer for your next project? Let\'s talk about how I can help your team.',
+            title: 'Need a UX/UI designer who impacts business results?',
+            intro: 'Let\'s talk about your next product or UX challenge.',
             cta: {
-                email: 'Send Email',
-                linkedin: 'Connect on LinkedIn'
+                email: 'Contact Me',
+                linkedin: 'LinkedIn',
+                cv: 'Download CV'
             },
             audience: [
-                'Recruiters seeking senior UX/UI talent',
-                'Product teams needing conversion expertise',
-                'B2B/SaaS companies requiring strategic design'
+                'Recruiters',
+                'Product teams',
+                'B2B / SaaS Companies'
             ]
         },
         footer: {

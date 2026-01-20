@@ -6,27 +6,27 @@ const Footer = () => {
     const t = translations[currentLang].footer
 
     return (
-        <footer className="bg-white dark:bg-neutral-950 border-t border-neutral-200 dark:border-neutral-800 pt-16 pb-8 transition-colors duration-200">
+        <footer className="bg-slate-950 border-t border-slate-900 pt-20 pb-10 transition-colors duration-500">
             <div className="container-custom">
-                <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
                     <div>
-                        <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-2">Fernando Arriagada</h3>
-                        <p className="text-neutral-500 dark:text-neutral-400">
+                        <h3 className="text-2xl font-black text-white mb-2 tracking-tight">Fernando Arriagada</h3>
+                        <p className="text-slate-400 font-medium">
                             {t.role}
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-6">
-                        <a href="https://www.linkedin.com/in/fernando-arriagada-castillo-a68283180/" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-colors">
+                    <div className="flex items-center gap-10">
+                        <a href="https://www.linkedin.com/in/fernando-arriagada-castillo-a68283180/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary-400 font-bold transition-all hover:-translate-y-1">
                             LinkedIn
                         </a>
-                        <a href="mailto:fernandodesign96@gmail.com" className="text-neutral-500 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400 transition-colors">
+                        <a href="mailto:fernandodesign96@gmail.com" className="text-slate-400 hover:text-primary-400 font-bold transition-all hover:-translate-y-1">
                             Email
                         </a>
                     </div>
                 </div>
 
-                <div className="border-t border-neutral-100 dark:border-neutral-900 pt-8 text-center text-sm text-neutral-400 dark:text-neutral-500">
+                <div className="border-t border-slate-900 pt-10 text-center text-sm text-slate-600 font-medium">
                     <p>{t.rights}</p>
                 </div>
             </div>

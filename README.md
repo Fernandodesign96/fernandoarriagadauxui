@@ -6,7 +6,7 @@ Focused on UX strategy, conversion optimization, and AI-assisted design workflow
 
 ## 🌐 Live Demo
 
-[View Portfolio](https://username.github.io/fernandoarriagadauxui)
+[View Portfolio](https://Fernandodesign96.github.io/fernandoarriagadauxui)
 
 ## 🛠 Tech Stack
 

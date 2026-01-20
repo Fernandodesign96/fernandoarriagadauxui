@@ -8,74 +8,67 @@ const ProjectCard = ({ project }) => {
     const t = translations[currentLang].work
 
     const handleClick = () => {
-        // Scroll to top when navigating
         window.scrollTo(0, 0)
         navigate(`/work/${project.slug}`)
     }
 
-    // Helper to fix image paths for GitHub Pages
     const getImagePath = (path) => {
         if (!path) return ''
         const cleanPath = path.startsWith('/') ? path.slice(1) : path
         return `${import.meta.env.BASE_URL}${cleanPath}`
     }
 
+    // Helper for Sentence Case
+    const toSentenceCase = (str) => {
+        if (!str) return ''
+        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
+    }
+
     return (
         <div
             onClick={handleClick}
-            className="group cursor-pointer flex flex-col h-full bg-white dark:bg-neutral-900 rounded-xl overflow-hidden border border-neutral-100 dark:border-neutral-800 hover:border-neutral-200 dark:hover:border-neutral-700 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            className="group cursor-pointer flex flex-col h-full bg-white dark:bg-slate-900 rounded-[2.5rem] overflow-hidden border border-slate-100 dark:border-slate-800 hover:border-primary-500/50 dark:hover:border-primary-400/50 shadow-sm hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-500 transform hover:-translate-y-2"
         >
-            {/* Image Container with Overlay */}
-            <div className="aspect-[4/3] w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800 relative">
+            <div className="aspect-[4/3] w-full overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
                 <img
                     src={getImagePath(project.coverImage)}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
-                <div className="absolute inset-0 bg-neutral-900/0 group-hover:bg-neutral-900/5 dark:group-hover:bg-neutral-900/20 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-primary-900/0 group-hover:bg-primary-900/10 dark:group-hover:bg-primary-900/20 transition-colors duration-500" />
 
-                {/* Floating Tags (Industry/Year) - Keep these for context */}
-                <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                    <span className="px-3 py-1 text-xs font-medium bg-white/90 dark:bg-neutral-900/90 backdrop-blur text-neutral-800 dark:text-neutral-200 rounded-full shadow-sm">
+                <div className="absolute top-5 left-5 flex flex-wrap gap-2">
+                    <span className="px-4 py-1.5 text-[10px] font-black bg-white/90 dark:bg-slate-900/90 backdrop-blur-md text-slate-900 dark:text-white rounded-xl shadow-lg border border-white/20 dark:border-slate-800/20 tracking-widest uppercase">
                         {project.industry}
                     </span>
                 </div>
             </div>
 
-            {/* Content Body */}
-            <div className="flex flex-col flex-grow p-6 md:p-8">
-                <div className="mb-6">
-                    <h3 className="text-xl md:text-2xl font-bold text-neutral-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+            <div className="flex flex-col flex-grow p-8 md:p-10">
+                <div className="mb-10">
+                    <h3 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors leading-tight">
                         {project.title}
                     </h3>
-                    <p className="text-sm font-medium text-primary-600 dark:text-primary-400 mb-3">
-                        {project.subtitle}
-                    </p>
-                    <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed line-clamp-3">
-                        {project.description}
+                    <p className="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed font-semibold">
+                        {toSentenceCase(project.subtitle)}
                     </p>
                 </div>
 
-                <div className="mt-auto flex flex-col gap-4">
-                    {/* Tags Area */}
+                <div className="mt-auto flex flex-col gap-8">
                     <div className="flex flex-wrap gap-2">
-                        {project.tags.slice(0, 4).map((tag, index) => (
-                            <span key={index} className="text-xs font-medium text-neutral-600 dark:text-neutral-300 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 px-2.5 py-1 rounded-md">
+                        {project.tags.slice(0, 3).map((tag, index) => (
+                            <span key={index} className="text-[10px] font-bold tracking-tight text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 px-3 py-1 rounded-lg">
                                 {tag}
                             </span>
                         ))}
-                        {project.tags.length > 4 && (
-                            <span className="text-xs text-neutral-500 dark:text-neutral-400 px-1 py-1">+{project.tags.length - 4}</span>
-                        )}
                     </div>
 
-                    {/* Full Width CTA */}
-                    <div className="w-full py-3 px-4 bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg flex items-center justify-between group-hover:bg-neutral-100 dark:group-hover:bg-neutral-750 transition-colors">
-                        <span className="text-sm font-semibold text-neutral-900 dark:text-white">
+                    <div className="w-full py-4 px-6 bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 rounded-2xl flex items-center justify-between group-hover:bg-primary-600 group-hover:border-primary-500 transition-all duration-300">
+                        <span className="text-xs font-black uppercase tracking-wider text-slate-900 dark:text-white group-hover:text-white">
                             {t.viewStudy}
                         </span>
-                        <svg className="w-4 h-4 text-neutral-500 dark:text-neutral-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        <svg className="w-5 h-5 text-slate-400 group-hover:text-white group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
                     </div>
                 </div>
