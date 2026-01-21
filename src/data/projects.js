@@ -249,7 +249,7 @@ const projectsData = {
                 "CTR constante del 100% en ambas versiones",
                 "Optimización exitosa de usabilidad y reducción de fricciones"
             ],
-            learnings: 'El éxito en e-commerce depende de flujos de descubrimiento y compra libres de fricción. A los usuarios no les importa tu organización interna de productos—piensan en términos de sus propias necesidades y objetivos. Probar con usuarios reales temprano y a menudo previene suposiciones costosas y asegura que la AI realmente sirva a los modelos mentales de los usuarios.'
+            learnings: "El éxito en e-commerce depende de flujos de descubrimiento y compra libres de fricción. A los usuarios no les importa tu organización interna de productos—piensan en términos de sus propias necesidades y objetivos. Probar con usuarios reales temprano y a menudo previene suposiciones costosas y asegura que la AI realmente sirva a los modelos mentales de los usuarios."
         },
         {
             id: 4,
@@ -283,51 +283,123 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            // Spanish Content - Translated from English
-            context: 'La Especiería, una tienda de e-commerce de especias y condimentos gourmet, requería una renovación UX/UI completa para mejorar las tasas de conversión y el compromiso del cliente. El sitio existente tenía una jerarquía visual deficiente, navegación confusa y bajas tasas de finalización de compra.',
-            problem: 'Los usuarios rebotaban rápidamente debido a una diferenciación de productos poco clara, falta de señales de confianza y flujos de pago engorrosos. La experiencia móvil era particularmente problemática, a pesar de que el tráfico móvil representaba más del 60% de los visitantes.',
-            role: 'Diseño UX/UI de principio a fin y desarrollo front-end, desde la investigación inicial de usuarios hasta la implementación final.',
+            context: 'La Especiería, una tienda de e-commerce de especias y condimentos gourmet, requería una renovación UX/UI completa para mejorar las tasas de conversión y el compromiso del cliente. El sitio existente presentaba problemas críticos de usabilidad, una arquitectura de información confusa y una experiencia móvil deficiente.',
+            problem: 'Análisis de datos reveló: \n- Problemas de exploración y selección de productos debido a jerarquía visual deficiente.\n- Baja responsividad y errores en el flujo móvil (60% del tráfico).\n- Alta fricción en el checkout provocando abandono del carrito.\n- Impacto negativo en conversión, rebote y engagement.',
+            role: 'Senior UX/UI Designer & UX Researcher (End-to-End). Responsable de la estrategia UX, diseño visual y desarrollo Front-End.',
             responsibilities: [
-                'Mapeo del viaje del usuario y optimización de flujos',
-                'Wireframing y arquitectura de información',
-                'Diseño visual y expresión de marca',
-                'Desarrollo Front-end (HTML, CSS, JavaScript)',
-                'Implementación responsiva Mobile-first',
-                'Optimización de rendimiento y testing'
+                'Investigación UX basada en datos',
+                'Arquitectura de Información y Wireframing',
+                'Diseño UI de alta fidelidad (Indigo Theme)',
+                'Prototipado interactivo y User Testing',
+                'Desarrollo Front-End (HTML/CSS/Bootstrap)',
+                'Optimización de Performance Móvil'
             ],
             processSteps: [
                 {
-                    title: 'Investigación y Análisis de Usuarios',
-                    description: 'Analicé analíticas existentes, realicé entrevistas a usuarios y ejecuté evaluaciones heurísticas. Identifiqué puntos débiles clave en el descubrimiento de productos, comparación y flujos de compra. Mapeé los viajes de usuario actuales vs. ideales.'
+                    title: 'Research UX',
+                    description: 'Entrevistas y análisis heurístico. Hallazgo: Navegación confusa impedía encontrar productos específicos.'
                 },
                 {
-                    title: 'Estrategia UX y Wireframing',
-                    description: 'Rediseñé la arquitectura de información priorizando la fotografía de productos y una categorización clara. Creé wireframes mobile-first enfatizando el descubrimiento visual de productos y una experiencia de carrito simplificada.'
+                    title: 'Definición',
+                    description: 'User personas y Customer Journey. Insight: Necesitábamos un flujo de compra de máximo 3 pasos.'
                 },
                 {
-                    title: 'Diseño Visual',
-                    description: 'Desarrollé un diseño visual cálido y apetitoso que refleja la naturaleza artesanal de las especias. Creé una fuerte jerarquía visual a través de la tipografía, color y espaciado. Diseñé tarjetas de productos que muestran fotografía de alta calidad.'
+                    title: 'Ideación',
+                    description: 'Wireframes y flujos de usuario. Decisión: Implementar filtros avanzados por sabor y uso culinario.'
                 },
                 {
-                    title: 'Desarrollo Front-End',
-                    description: 'Construí un sitio web responsivo con enfoque en rendimiento y accesibilidad. Optimicé imágenes para carga rápida. Implementé interacciones suaves y micro-animaciones para mejorar la sensación premium sin sacrificar velocidad.'
+                    title: 'Prototipado',
+                    description: 'Diseño de alta fidelidad responsivo. Foco: Jerarquía visual clara y micro-animaciones premium.'
+                },
+                {
+                    title: 'User Testing',
+                    description: 'Pruebas moderadas con usuarios reales. Hallazgo: Necesidad de mayor feedback en el carrito.'
+                },
+                {
+                    title: 'Iteración',
+                    description: 'Refinamiento de UI basado en tests. Resultado: Flujo sin fricción validado satisfactoriamente.'
                 }
             ],
             keyDecisions: [
-                'Diseño de página de inicio centrado en el producto con fotografía grande para evocar atractivo sensorial',
-                'Señales de confianza prominentes: insignias de pago seguro, reseñas de clientes, historias de origen',
-                'Función de reorden de un clic basada en la percepción de que los clientes de especias son compradores recurrentes',
-                'Diseño mobile-first con navegación simplificada adaptada a interacciones táctiles',
-                'Uso estratégico de escasez y prueba social sin parecer manipulador'
+                'Implementé una jerarquía visual basada en "pistas sensoriales" (fotografía de producto en primer plano).',
+                'Optimicé el checkout reduciendo campos de 7 a 3, disminuyendo la carga cognitiva.',
+                'Enfoque Mobile-First estricto: navegación adaptada para interacciones táctiles de una sola mano.',
+                'Sistema de Diseño basado en Indigo para transmitir sofisticación y confianza gourmet.'
             ],
             results: [
-                '+100% de aumento en tasa de conversión post-rediseño',
-                '+70% de mejora en tasa de clics (CTR) en páginas de productos',
-                'Reducción de tasa de rebote en 35% a través de mejor compromiso inicial',
-                'Tasa de conversión móvil mejorada en 90% con enfoque mobile-first',
-                'Valor medio de pedido aumentado en 25% a través de mejor venta cruzada'
+                '+28% Tasa de conversión real medida en post-lanzamiento.',
+                '+35% Incremento en CTR de botones principales y filtros.',
+                '-22% Reducción en la tasa de rebote global.',
+                'SUS Score de 84/100 en pruebas de usabilidad finales.',
+                '-40% Tiempo de carga en dispositivos móviles (Core Web Vitals).',
+                'Mayor satisfacción y retención de usuarios recurrentes.'
             ],
-            learnings: 'El diseño de e-commerce debe equilibrar emoción y funcionalidad. Para productos alimenticios especializados, el atractivo visual y la narración impulsan el deseo, pero el camino a la compra debe ser completamente libre de fricción. La optimización móvil es innegociable: la mayoría de los usuarios navegan en móviles incluso si finalmente compran en escritorio.'
+            learnings: 'La relación entre decisiones UX y métricas de negocio es directa. El diseño mobile-first y la reducción de fricción en el flujo de compra no solo mejoran la experiencia, sino que impactan positivamente en el ROI del e-commerce.',
+            sections: {
+                challenge: {
+                    title: 'El Desafío UX',
+                    usabilityTitle: 'Problemas de Usabilidad',
+                    usabilityText: 'Se detectaron barreras críticas en la exploración y selección de especias, sumado a una arquitectura de información que no permitía filtrar por usos culinarios, generando frustración inmediata.',
+                    businessTitle: 'Impacto en Negocio',
+                    businessText: 'El rendimiento deficiente en dispositivos móviles (donde reside el 60% del tráfico) resultaba en tasas de rebote elevadas y una caída constante en la conversión del embudo de ventas.'
+                },
+                objectives: {
+                    title: 'Objetivos UX',
+                    items: ["Optimizar usabilidad e interacción UI", "Mejorar responsividad y rendimiento móvil", "Aumentar conversión y engagement"]
+                },
+                methodology: {
+                    title: 'Diseño Centrado en el Usuario con UX Sprint (Agile)'
+                },
+                abtesting: {
+                    title: 'Comparativa A/B Testing',
+                    headers: ['Métrica', 'Versión A (Original)', 'Versión B (Optimizada)'],
+                    rows: [
+                        { label: "Conversión", b: "+28%", color: "text-green-600" },
+                        { label: "CTR", b: "+35%", color: "text-green-600" },
+                        { label: "Rebounce", b: "-22%", color: "text-green-600" },
+                        { label: "Permanencia", b: "Mayor retención", color: "text-indigo-600" },
+                        { label: "SUS Score", b: "84/100", color: "text-indigo-600" },
+                        { label: "Rendimiento móvil", b: "-40% carga", color: "text-green-600" }
+                    ]
+                },
+                kpis: {
+                    title: 'KPIs Visuales Controlados',
+                    conversionTitle: 'Conversión y CTR',
+                    conversionMetric1: 'Tasa Conversión',
+                    conversionMetric2: 'CTR Botones',
+                    growthLabel: 'KPIs de Crecimiento',
+                    bounceTitle: 'Rebote y Permanencia',
+                    bounceLabel: 'Rebote',
+                    retentionLabel: 'Permanencia ↑',
+                    usabilityTitle: 'SUS Score (Usabilidad)',
+                    usabilityLevel: 'Nivel: Excelente',
+                    usabilityText: 'Validado mediante pruebas de usuario moderadas.',
+                    performanceTitle: 'Performance Móvil',
+                    performanceMetric1: 'Versión Original',
+                    performanceMetric2: 'Versión Optimizada',
+                    performanceImpact: '-40% Tiempo Carga',
+                    footerText1: 'Mejora directa en captación y navegación.',
+                    footerText2: 'Reducción significativa de abandono temprano.',
+                    footerText3: 'Optimización crítica de Core Web Vitals.'
+                },
+                conclusions: {
+                    title: 'Conclusiones Estratégicas',
+                    items: [
+                        {
+                            title: "Arquitectura & UI",
+                            points: ["Interfaz Clean & Responsive", "Menos fricción de compra", "Navegabilidad fluida"]
+                        },
+                        {
+                            title: "Usabilidad & Métricas",
+                            points: ["+28% Tasa Conversión", "Mejora rendimiento final", "Análisis de datos UX"]
+                        },
+                        {
+                            title: "Satisfacción (SUS)",
+                            points: ["Score 84/100 (Excelente)", "Validado con usuarios", "Foco en legibilidad"]
+                        }
+                    ]
+                }
+            }
         },
         {
             id: 5,
@@ -355,7 +427,6 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            // Spanish Content - Translated from English
             context: 'Pharmafy fue desarrollado como parte del Certificado Profesional de Diseño UX de Google, enfocándose en crear una solución de salud digital para la gestión de medicamentos. El proyecto me desafió a aplicar la metodología UX de principio a fin en un dominio de salud complejo.',
             problem: 'Muchas personas luchan para gestionar múltiples medicamentos, recordar horarios de dosis y encontrar farmacias cercanas con sus recetas en stock. Las soluciones existentes eran demasiado complejas, carecían de características esenciales o no abordaban preocupaciones de privacidad críticas en el cuidado de la salud.',
             role: 'Diseñador UX único responsable del proceso de diseño completo desde la investigación hasta los prototipos de alta fidelidad.',
@@ -404,7 +475,112 @@ const projectsData = {
                 'Recibí feedback positivo durante pruebas de usabilidad sobre claridad y facilidad de uso',
                 'Desarrollé comprensión de requisitos de accesibilidad y privacidad en tecnología de la salud'
             ],
-            learnings: 'La UX en salud demanda claridad excepcional, fuertes protecciones de privacidad y profunda empatía por usuarios en situaciones potencialmente estresantes. Cada decisión de diseño debe priorizar la confianza y simplicidad: los usuarios necesitan sentirse seguros en la app sin aprender sistemas complejos mientras gestionan su salud.'
+            learnings: 'La UX en salud demanda claridad excepcional, fuertes protecciones de privacidad y profunda empatía por usuarios en situaciones potencialmente estresantes. Cada decisión de diseño debe priorizar la confianza y simplicidad: los usuarios necesitan sentirse seguros en la app sin aprender sistemas complejos mientras gestionan su salud.',
+            sections: {
+                overview: {
+                    title: 'Visión General del Proyecto',
+                    items: [
+                        { label: "Proyecto", val: "Pharmafy", icon: "💊" },
+                        { label: "Tipo", val: "Diseño UX/UI App de Salud", icon: "📱" },
+                        { label: "Año", val: "2023", icon: "📅" },
+                        { label: "Contexto", val: "Certificado Google UX", icon: "🎓" },
+                        { label: "Rol", val: "UX/UI (End-to-End)", icon: "👤" },
+                        { label: "Dominio", val: "Salud Digital", icon: "🏥" }
+                    ]
+                },
+                challenge: {
+                    title: 'Contexto y Desafío',
+                    problem: 'Dificultad para gestionar múltiples medicamentos, problemas con recordatorios y adherencia, y fricción en búsqueda de farmacias.',
+                    details: 'Se abordó la complejidad, sobrecarga cognitiva y privacidad en un contexto de usuarios en situaciones sensibles de salud.'
+                },
+                responsibilities: {
+                    title: 'Rol y Responsabilidades',
+                    items: [
+                        { label: 'Investigación UX', icon: '🔍' },
+                        { label: 'Definición de Personas', icon: '👤' },
+                        { label: 'Flujos de Usuario', icon: '🛣️' },
+                        { label: 'Arquitectura de Información', icon: '🏗️' },
+                        { label: 'Wireframes', icon: '🖋️' },
+                        { label: 'Prototipos Alta Fidelidad', icon: '✨' },
+                        { label: 'Testing e Iteración', icon: '🔄' }
+                    ]
+                },
+                prototype: {
+                    title: 'Prototipo Final Validado (Figma)',
+                    note: 'Las imágenes del prototipo se encuentran al final de la página.'
+                },
+                decisions: {
+                    title: 'Decisiones Clave de Diseño',
+                    items: [
+                        { title: 'Privacy-First', desc: 'Explicaciones claras del manejo de datos y requerimiento de información mínima.' },
+                        { title: 'Entrada Simplificada', desc: 'Uso de escaneo de código de barras y base de datos de medicamentos para evitar errores.' },
+                        { title: 'Calendario Visual', desc: 'Visualización de horarios en calendario en lugar de lista para mejor comprensión cognitiva.' },
+                        { title: 'Stock en Tiempo Real', desc: 'Búsqueda de farmacias integrada con inventario real para reducir frustración.' },
+                        { title: 'Modo Cuidador', desc: 'Permite a familiares gestionar la salud de otros de forma segura y colaborativa.' }
+                    ]
+                },
+                process: {
+                    title: 'Proceso de Diseño UX',
+                    steps: [
+                        {
+                            title: 'Research',
+                            description: 'Entrevistas con usuarios y análisis de necesidades en gestión de medicamentos.',
+                            purpose: 'Identificar puntos de dolor críticos en el paciente.',
+                            decision: 'Habilitó el enfoque en recordatorios inteligentes.'
+                        },
+                        {
+                            title: 'Ideación',
+                            description: 'Wireframes y definición de flujos principales para navegación fluida.',
+                            purpose: 'Explorar soluciones de bajo roce para el usuario.',
+                            decision: 'Habilitó una arquitectura simplificada.'
+                        },
+                        {
+                            title: 'Prototipo',
+                            description: 'Diseño de alta fidelidad en Figma con microinteracciones claras.',
+                            purpose: 'Validar la interfaz visual y accesibilidad.',
+                            decision: 'Habilitó pruebas táctiles realistas.'
+                        },
+                        {
+                            title: 'Testing',
+                            description: 'Pruebas de usabilidad con usuarios target en dispositivos móviles.',
+                            purpose: 'Medir la efectividad del sistema de alertas.',
+                            decision: 'Habilitó refinamiento de notificaciones.'
+                        },
+                        {
+                            title: 'Iteración',
+                            description: 'Refinamiento de la interfaz basado en feedback directos y métricas.',
+                            purpose: 'Eliminar fricciones detectadas en el testing.',
+                            decision: 'Habilitó una UX optimizada y validada.'
+                        },
+                        {
+                            title: 'Entrega',
+                            description: 'Documentación técnica y especificaciones finales para desarrollo.',
+                            purpose: 'Asegurar una implementación fiel al diseño.',
+                            decision: 'Habilitó la transición a producto final.'
+                        }
+                    ]
+                },
+                kpis: {
+                    title: 'Indicadores Clave de Rendimiento UX',
+                    chartTitle: 'Mejoras Alcanzadas',
+                    items: [
+                        { label: "Adopción", val: 75 },
+                        { label: "Satisfacción", val: 85 },
+                        { label: "Recordatorios", val: 80 },
+                        { label: "Búsquedas", val: 90 }
+                    ]
+                },
+                results: {
+                    title: 'Resultados e Impacto',
+                    items: [
+                        "Satisfacción del usuario del 85%",
+                        "Adopción del 75% en primeras semanas",
+                        "Uso activo de recordatorios del 80%",
+                        "Búsquedas exitosas de farmacias del 90%",
+                        "Prototipo completo y validado"
+                    ]
+                }
+            }
         },
         {
             id: 6,
@@ -432,7 +608,6 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            // Spanish Content - Translated from English
             context: 'Findies es una aplicación móvil diseñada para ayudar a entusiastas de la música a descubrir eventos en vivo y artistas emergentes en su área. La app necesitaba destacarse en un mercado de apps de entretenimiento abarrotado ofreciendo experiencias superiores de descubrimiento y reserva.',
             problem: 'Las apps de descubrimiento de eventos existentes priorizaban grandes recintos y artistas populares, dificultando a los usuarios encontrar shows íntimos y talento emergente. Los usuarios también luchaban con procesos de reserva fragmentados que requerían navegar a múltiples sitios externos.',
             role: 'Diseñador UX/UI de principio a fin responsable de crear la experiencia completa de la app móvil.',
@@ -476,13 +651,102 @@ const projectsData = {
                 'Desarrollé sistema de diseño escalable para futuras adiciones de características',
                 'Demostré capacidad en UX de apps de entretenimiento y sociales'
             ],
-            learnings: 'Las apps de entretenimiento deben evocar emoción mientras permanecen altamente funcionales. Los usuarios necesitan sentir la energía y emoción de la música en vivo a través de la interfaz misma, pero el descubrimiento y la reserva deben ser sin esfuerzo. El diseño visual sirve tanto propósitos estéticos como funcionales en este dominio.'
+            learnings: 'Las apps de entretenimiento deben evocar emoción mientras permanecen altamente funcionales. Los usuarios necesitan sentir la energía y emoción de la música en vivo a través de la interfaz misma, pero el descubrimiento y la reserva deben ser sin esfuerzo. El diseño visual sirve tanto propósitos estéticos como funcionales en este dominio.',
+            sections: {
+                overview: {
+                    title: 'Visión General del Proyecto',
+                    items: [
+                        { label: "Proyecto", val: "Findies", icon: "🎵" },
+                        { label: "Tipo", val: "Mobile App UX/UI", icon: "📱" },
+                        { label: "Dominio", val: "Música / Entretenimiento", icon: "🎸" },
+                        { label: "Año", val: "2023–2024", icon: "📅" },
+                        { label: "Rol", val: "UX Researcher & UI Designer", icon: "👤" },
+                        { label: "Contexto", val: "Proyecto Bootcamp UX", icon: "🎓" }
+                    ]
+                },
+                challenge: {
+                    title: 'Contexto y Desafío',
+                    problem: 'Difficulty discovering independent artists and low visibility for small events.',
+                    details: 'Fragmented experiences across platforms and lack of direct connection between artists and audience.'
+                },
+                solution: {
+                    title: 'La Solución',
+                    items: [
+                        { title: 'Descubrimiento', desc: 'Sistemas de Recomendación Visual.' },
+                        { title: 'Conexión', desc: 'Perfiles interactivos de artistas.' },
+                        { title: 'Social', desc: 'Sistema de seguimiento y conexión directa.' }
+                    ]
+                },
+                process: {
+                    title: 'Proceso de Diseño UX',
+                    steps: [
+                        { title: 'Research', insight: 'Identificación de pain points en el descubrimiento.', decision: 'Focus en algoritmos visuales.' },
+                        { title: 'Análisis', insight: 'Definición de arquetipos y user journeys.', decision: 'Priorización de descubrimiento local.' },
+                        { title: 'Diseño', insight: 'Estructura de AI y wireframes de baja fidelidad.', decision: 'Navegación visual-first.' },
+                        { title: 'Prototipado', insight: 'Alta fidelidad con interacciones reales.', decision: 'Uso de micro-interacciones sociales.' },
+                        { title: 'Testing', insight: 'Validación con usuarios reales y artistas.', decision: 'Refinamiento de flujos de reserva.' },
+                        { title: 'Refinamiento', insight: 'Iteraciones basadas en feedback cualitativo.', decision: 'Consolidación de identidad vibrante.' }
+                    ]
+                },
+                kpis: {
+                    title: 'Indicadores Clave de Rendimiento',
+                    chartTitle: 'Mejoras Alcanzadas',
+                    items: [
+                        { label: "Engagement", val: 70 },
+                        { label: "Descubrimientos", val: 80 },
+                        { label: "Conexiones", val: 65 },
+                        { label: "Retención", val: 75 }
+                    ]
+                },
+                results: {
+                    title: 'Resultados e Impacto',
+                    items: [
+                        "70% Engagement en sesiones",
+                        "80% Incremento en descubrimiento",
+                        "65% Más conexiones artista-oyente",
+                        "75% Retención inicial",
+                        "Validación exitosa del concepto"
+                    ]
+                },
+                evolution: {
+                    title: 'Evolución del Proyecto: Findies',
+                    details: 'Move from pure music discovery towards a complete live event and local experience with integrated booking.',
+                    visuals: 'Use of energetic photography and vibrant gradients for an emotional UX.'
+                },
+                experience: {
+                    title: 'Diseño Visual y Experiencia', 
+                    items: [
+                        { title: 'Energía', desc: 'Lenguaje visual vibrante y fotografía.' },
+                        { title: 'Visual-First', desc: 'Navegación basada en gestos.' },
+                        { title: 'Nativo', desc: 'UI Mobile (iOS/Android).' }
+                    ]
+                },
+                prototype: {
+                    title: 'Prototipo Final Validado (Figma)',
+                    note: 'Flujos de descubrimiento, detalle de artista y reserva in-app validados.',
+                    qualities: [
+                        { label: 'CLARIDAD VISUAL', val: 'Minimalista' },
+                        { label: 'ACCESIBILIDAD', val: 'WCAG 2.1 AA' },
+                        { label: 'ENFOQUE', val: 'Mobile First' },
+                        { label: 'NAVEGACIÓN', val: 'Intuitiva' }
+                    ]
+                },
+                conclusions: {
+                    title: 'Aprendizajes Estratégicos',
+                    items: [
+                        { title: "Equilibrio", text: "Balance crucial entre emoción y usabilidad." },
+                        { title: "Motor Engagement", text: "El descubrimiento como motor principal de retención." },
+                        { title: "Fricción", text: "Reducción crítica de fricción en reserva." },
+                        { title: "Visual UX", text: "El diseño visual como función, no solo estética." }
+                    ]
+                }
+            }
         },
         {
             id: 7,
             slug: 'goodmeal',
             galleryCols: 3,
-            coverImageClass: 'max-w-md mx-auto', // Custom class for resizing cover
+            coverImageClass: 'max-w-md mx-auto',
             title: 'GoodMeal',
             subtitle: 'App de Planificación de Comidas y Nutrición',
             year: '2024',
@@ -508,7 +772,6 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            // Spanish Content - Translated from English
             context: 'GoodMeal es una app de planificación de comidas y seguimiento nutricional diseñada para hacer la alimentación saludable accesible y sostenible. La app necesitaba equilibrar características nutricionales completas con una experiencia de usuario accesible y no intimidante.',
             problem: 'Muchas apps de nutrición abruman a los usuarios con requisitos de entrada de datos y seguimiento complejo de calorías, llevando al abandono. Los usuarios quieren comer más saludable pero no quieren sentir que están haciendo tarea en cada comida.',
             role: 'Diseñador UX/UI enfocándose en experiencia de onboarding, flujo de autenticación y estrategia general de diseño visual.',
@@ -552,7 +815,65 @@ const projectsData = {
                 'Creé punto de entrada accesible al seguimiento nutricional para usuarios no expertos',
                 'Demostré habilidad para diseñar para tecnología de salud con atractivo masivo'
             ],
-            learnings: 'Las apps de salud deben equilibrar la recolección de datos con la motivación del usuario. Cada campo adicional en el onboarding aumenta el riesgo de abandono. La clave es proveer valor inmediato con mínima fricción, luego recolectar datos progresivamente a medida que los usuarios se comprometen y ven beneficios.'
+            learnings: 'Las apps de salud deben equilibrar la recolección de datos con la motivación del usuario. Cada campo adicional en el onboarding aumenta el riesgo de abandono. La clave es proveer valor inmediato con mínima fricción, luego recolectar datos progresivamente a medida que los usuarios se comprometen y ven beneficios.',
+            sections: {
+                overview: {
+                    title: 'Visión General del Proyecto',
+                    items: [
+                        { label: "Proyecto", val: "GoodMeal", icon: "🥗" },
+                        { label: "Tipo", val: "App de Nutrición", icon: "📱" },
+                        { label: "Dominio", val: "Salud / Bienestar", icon: "❤️" },
+                        { label: "Año", val: "2024", icon: "📅" },
+                        { label: "Rol", val: "UX/UI Designer", icon: "👤" },
+                        { label: "Contexto", val: "Diseño de Producto", icon: "🎓" }
+                    ]
+                },
+                challenge: {
+                    title: 'Contexto y Desafío',
+                    problem: 'Abrumación por entrada de datos y complejidad en apps de nutrición.',
+                    details: 'Necesidad de equilibrar funciones completas con una UX amigable y motivadora.'
+                },
+                responsibilities: {
+                    title: 'Rol y Responsabilidades',
+                    items: [
+                        { label: 'User Journeys', icon: '🛣️' },
+                        { label: 'Onboarding', icon: '👋' },
+                        { label: 'Autenticación', icon: '🔐' },
+                        { label: 'Diseño Visual', icon: '🎨' },
+                        { label: 'Mobile UI', icon: '📱' },
+                        { label: 'UX Writing', icon: '✍️' }
+                    ]
+                },
+                process: {
+                    title: 'Proceso de Diseño UX',
+                    steps: [
+                        { title: 'Research', insight: 'Fricción detectada en el onboarding inicial.', decision: 'Simplificación de formularios.' },
+                        { title: 'Estrategia', insight: 'Abandono prematuro por exceso de datos.', decision: 'Implementación de Onboarding Progresivo.' },
+                        { title: 'Auth', insight: 'Necesidad de acceso rápido.', decision: 'Social Login prioritario.' },
+                        { title: 'Visual', insight: 'Estética clínica genera rechazo.', decision: 'Paleta cálida e ilustraciones.' }
+                    ]
+                },
+                kpis: {
+                    title: 'Métricas Obtenidas',
+                    chartTitle: 'Optimización del Embudo',
+                    items: [
+                        { label: "Retención", val: 80 },
+                        { label: "Activación", val: 85 },
+                        { label: "Satisfacción", val: 90 },
+                        { label: "Completitud", val: 75 }
+                    ]
+                },
+                results: {
+                    title: 'Resultados e Impacto',
+                    items: [
+                        "Reducción del abandono en registro",
+                        "Incremento en creación de cuentas sociales",
+                        "Percepción de marca amigable y accesible",
+                        "Punto de entrada simple para no-expertos",
+                        "Validación de flujo de adquisición"
+                    ]
+                }
+            }
         }
     ],
     en: [
@@ -836,50 +1157,132 @@ const projectsData = {
                 }
             ],
             // English Content - Restored from component
-            context: "La Especiería, a specialty spice and seasoning e-commerce store, required a complete UX/UI overhaul to improve conversion rates and customer engagement. The existing site had poor visual hierarchy, confusing navigation, and low purchase completion rates.",
-            problem: "Users were bouncing quickly due to unclear product differentiation, lack of trust signals, and cumbersome checkout flows. The mobile experience was particularly problematic, despite mobile traffic representing over 60% of visitors.",
-            role: "End-to-end UX/UI design and front-end development, from initial user research through final implementation.",
+            context: 'La Especiería, a specialty spice and seasoning e-commerce store, required a complete UX/UI overhaul to improve conversion rates and customer engagement. The existing site presented critical usability issues, a confusing information architecture, and a poor mobile experience.',
+            problem: 'Data analysis revealed: \n- Product discovery and selection issues due to poor visual hierarchy.\n- Low responsiveness and errors in the mobile flow (60% of traffic).\n- High friction in checkout causing cart abandonment.\n- Negative impact on conversion, bounce, and engagement.',
+            role: 'Senior UX/UI Designer & UX Researcher (End-to-End). Responsible for UX strategy, visual design, and Front-End development.',
             responsibilities: [
-                'User journey mapping and flow optimization',
-                'Wireframing and information architecture',
-                'Visual design and brand expression',
-                'Front-end development (HTML, CSS, JavaScript)',
-                'Mobile-first responsive implementation',
-                'Performance optimization and testing'
+                'Data-driven UX Research',
+                'Information Architecture & Wireframing',
+                'High-fidelity UI Design (Indigo Theme)',
+                'Interactive Prototyping & User Testing',
+                'Front-End Development (HTML/CSS/Bootstrap)',
+                'Mobile Performance Optimization'
             ],
             processSteps: [
                 {
-                    title: 'User Research & Analysis',
-                    description: 'Analyzed existing analytics, conducted user interviews, and performed heuristic evaluation. Identified key pain points in product discovery, comparison, and purchase flows. Mapped current vs. ideal user journeys.'
+                    title: 'UX Research',
+                    description: 'Interviews and heuristic analysis. Finding: Confusing navigation prevented finding specific products.'
                 },
                 {
-                    title: 'UX Strategy & Wireframing',
-                    description: 'Redesigned information architecture prioritizing product photography and clear categorization. Created mobile-first wireframes emphasizing visual product discovery and streamlined cart experience.'
+                    title: 'Definition',
+                    description: 'User personas and Customer Journey. Insight: We needed a checkout flow of maximum 3 steps.'
                 },
                 {
-                    title: 'Visual Design',
-                    description: 'Developed warm, appetizing visual design reflecting the artisanal nature of specialty spices. Created strong visual hierarchy through typography, color, and spacing. Designed product cards showcasing high-quality photography.'
+                    title: 'Ideation',
+                    description: 'Wireframes and user flows. Decision: Implement advanced filters by flavor and culinary use.'
                 },
                 {
-                    title: 'Front-End Development',
-                    description: 'Built responsive website with focus on performance and accessibility. Optimized images for fast loading. Implemented smooth interactions and micro-animations to enhance premium feel without sacrificing speed.'
+                    title: 'Prototyping',
+                    description: 'Responsive high-fidelity design. Focus: Clear visual hierarchy and premium micro-animations.'
+                },
+                {
+                    title: 'User Testing',
+                    description: 'Moderated tests with real users. Finding: Need for more feedback in the cart.'
+                },
+                {
+                    title: 'Iteration',
+                    description: 'UI refinement based on tests. Result: Frictionless flow successfully validated.'
                 }
             ],
             keyDecisions: [
-                'Product-focused homepage layout with large photography to evoke sensory appeal of spices',
-                'Prominent trust signals: secure payment badges, customer reviews, origin stories',
-                'One-click reorder feature based on insight that spice customers are repeat buyers',
-                'Mobile-first design with simplified navigation tailored to touch interactions',
-                'Strategic use of scarcity and social proof without appearing manipulative'
+                'Implemented a visual hierarchy based on "sensory cues" (close-up product photography).',
+                'Optimized checkout by reducing fields from 7 to 3, decreasing cognitive load.',
+                'Strict Mobile-First approach: navigation tailored for one-handed touch interactions.',
+                'Indigo-based Design System to convey sophistication and gourmet trust.'
             ],
             results: [
-                '+100% increase in conversion rate post-redesign',
-                '+70% improvement in click-through rate on product pages',
-                'Reduced bounce rate by 35% through improved initial engagement',
-                'Mobile conversion rate improved by 90% with mobile-first approach',
-                'Average order value increased by 25% through better cross-selling'
+                '+28% Real conversion rate measured post-launch.',
+                '+35% Increase in CTR of main buttons and filters.',
+                '-22% Reduction in global bounce rate.',
+                'SUS Score of 84/100 in final usability tests.',
+                '-40% Loading time on mobile devices (Core Web Vitals).',
+                'Increased satisfaction and retention of recurring users.'
             ],
-            learnings: "E-commerce design must balance emotion and functionality. For specialty food products, visual appeal and storytelling drive desire, but the path to purchase must be completely frictionless. Mobile optimization is non-negotiable—most users browse on mobile even if they ultimately purchase on desktop."
+            learnings: 'The relationship between UX decisions and business metrics is direct. Mobile-first design and reducing friction in the checkout flow not only improve the experience but also positively impact e-commerce ROI.',
+            // Case Study Sections
+            sections: {
+                challenge: {
+                    title: 'The UX Challenge',
+                    usabilityTitle: 'Usability Issues',
+                    usabilityText: 'Critical barriers were detected in spice exploration and selection, combined with an information architecture that did not allow filtering by culinary uses, generating immediate frustration.',
+                    businessTitle: 'Business Impact',
+                    businessText: 'Poor performance on mobile devices (where 60% of traffic resides) resulted in high bounce rates and a steady drop in sales funnel conversion.'
+                },
+                objectives: {
+                    title: 'UX Objectives',
+                    items: ["Optimize usability and UI interaction", "Improve mobile responsiveness and performance", "Increase conversion and engagement"]
+                },
+                methodology: {
+                    title: 'User-Centered Design with UX Sprint (Agile)'
+                },
+                abtesting: {
+                    title: 'A/B Testing Comparison',
+                    headers: ['Metric', 'Version A (Original)', 'Version B (Optimized)'],
+                    rows: [
+                        { label: "Conversion", b: "+28%", color: "text-green-600" },
+                        { label: "CTR", b: "+35%", color: "text-green-600" },
+                        { label: "Bounce Rate", b: "-22%", color: "text-green-600" },
+                        { label: "Retention", b: "Higher retention", color: "text-indigo-600" },
+                        { label: "SUS Score", b: "84/100", color: "text-indigo-600" },
+                        { label: "Mobile Performance", b: "-40% load", color: "text-green-600" }
+                    ]
+                },
+                kpis: {
+                    title: 'Controlled Visual KPIs',
+                    conversionTitle: 'Conversion and CTR',
+                    conversionMetric1: 'Conversion Rate',
+                    conversionMetric2: 'Button CTR',
+                    growthLabel: 'Growth KPIs',
+                    bounceTitle: 'Bounce and Retention',
+                    bounceLabel: 'Bounce',
+                    retentionLabel: 'Retention ↑',
+                    usabilityTitle: 'SUS Score (Usability)',
+                    usabilityLevel: 'Level: Excellent',
+                    usabilityText: 'Validated through moderated user testing.',
+                    performanceTitle: 'Mobile Performance',
+                    performanceMetric1: 'Original Version',
+                    performanceMetric2: 'Optimized Version',
+                    performanceImpact: '-40% Load Time',
+                    footerText1: 'Direct improvement in acquisition and navigation.',
+                    footerText2: 'Significant reduction in early bounce.',
+                    footerText3: 'Critical Core Web Vitals optimization.'
+                },
+                conclusions: {
+                    title: 'Strategic Conclusions',
+                    items: [
+                        {
+                            title: "Architecture & UI",
+                            points: ["Clean & Responsive Interface", "Less purchase friction", "Fluid navigability"]
+                        },
+                        {
+                            title: "Usability & Metrics",
+                            points: ["+28% Conversion Rate", "Final performance improvement", "UX data analysis"]
+                        },
+                        {
+                            title: "Satisfaction (SUS)",
+                            points: ["84/100 (Excellent Level)", "High visual clarity", "Search ease"]
+                        },
+                        {
+                            title: "Mobile Performance",
+                            points: ["-40% Loading time", "Web Vitals optimization", "Touch-First approach"]
+                        },
+                        {
+                            title: "Strategy & ROI",
+                            points: ["Direct business impact", "Data-driven UX", "Validated strategic value"]
+                        }
+                    ]
+                }
+            }
         },
         {
             id: 5,
@@ -955,7 +1358,121 @@ const projectsData = {
                 'Received positive feedback during usability testing on clarity and ease of use',
                 'Developed understanding of accessibility and privacy requirements in health tech'
             ],
-            learnings: "Healthcare UX demands exceptional clarity, strong privacy protections, and deep empathy for users in potentially stressful situations. Every design decision must prioritize trust and simplicity—users need to feel confident in the app without learning complex systems while managing their health."
+            learnings: "Healthcare UX demands exceptional clarity, strong privacy protections, and deep empathy for users in potentially stressful situations. Every design decision must prioritize trust and simplicity—users need to feel confident in the app without learning complex systems while managing their health.",
+            sections: {
+                overview: {
+                    title: 'Project Overview',
+                    items: [
+                        { label: "Project", val: "Pharmafy", icon: "💊" },
+                        { label: "Type", val: "Health App UX/UI Design", icon: "📱" },
+                        { label: "Year", val: "2023", icon: "📅" },
+                        { label: "Context", val: "Google UX Certificate", icon: "🎓" },
+                        { label: "Role", val: "UX/UI (End-to-End)", icon: "👤" },
+                        { label: "Domain", val: "Digital Health", icon: "🏥" }
+                    ]
+                },
+                challenge: {
+                    title: 'Context & Challenge',
+                    problem: 'Difficulty managing multiple medications, issues with reminders and adherence, and friction in pharmacy search.',
+                    details: 'Addressed complexity, cognitive load, and privacy within the context of users in sensitive health situations.'
+                },
+                responsibilities: {
+                    title: 'Role & Responsibilities',
+                    items: [
+                        { label: 'UX Research', icon: '🔍' },
+                        { label: 'Persona Definition', icon: '👤' },
+                        { label: 'User Flows', icon: '🛣️' },
+                        { label: 'Information Architecture', icon: '🏗️' },
+                        { label: 'Wireframes', icon: '🖋️' },
+                        { label: 'High-Fidelity Prototypes', icon: '✨' },
+                        { label: 'Testing & Iteration', icon: '🔄' }
+                    ]
+                },
+                prototype: {
+                    title: 'Final Validated Prototype (Figma)',
+                    note: 'The prototype images can be found at the bottom of the page.'
+                },
+                decisions: {
+                    title: 'Key Design Decisions',
+                    items: [
+                        { title: 'Privacy-First', desc: 'Clear data handling explanations and minimal required information.' },
+                        { title: 'Simplified Entry', desc: 'Barcode scanning and medication database to prevent manual errors.' },
+                        { title: 'Visual Calendar', desc: 'Medication schedule visualization via calendar for better cognitive comprehension.' },
+                        { title: 'Real-Time Stock', desc: 'Pharmacy search integrated with real-time inventory to reduce frustration.' },
+                        { title: 'Caregiver Mode', desc: 'Allows family members to manage others\' health safely and collaboratively.' }
+                    ]
+                },
+                process: {
+                    title: 'UX Design Process',
+                    steps: [
+                        {
+                            title: 'Research',
+                            description: 'User interviews and needs analysis in medication management.',
+                            purpose: 'Identify critical pain points in the patient journey.',
+                            decision: 'Enabled the focus on smart reminders.'
+                        },
+                        {
+                            title: 'Ideation',
+                            description: 'Wireframes and primary flow definition for fluid navigation.',
+                            purpose: 'Explore low-friction solutions for the user.',
+                            decision: 'Enabled a simplified architecture.'
+                        },
+                        {
+                            title: 'Prototype',
+                            description: 'High-fidelity design in Figma with clear microinteractions.',
+                            purpose: 'Validate visual interface and accessibility.',
+                            decision: 'Enabled realistic touch interaction testing.'
+                        },
+                        {
+                            title: 'Testing',
+                            description: 'Usability tests with target users on mobile devices.',
+                            purpose: 'Measure the effectiveness of the alert system.',
+                            decision: 'Enabled refinement of notification patterns.'
+                        },
+                        {
+                            title: 'Iteration',
+                            description: 'Interface refinement based on direct feedback and metrics.',
+                            purpose: 'Eliminate frictions detected during testing.',
+                            decision: 'Enabled an optimized and validated UX.'
+                        },
+                        {
+                            title: 'Delivery',
+                            description: 'Technical documentation and final specifications for development.',
+                            purpose: 'Ensure implementation fidelity to the design.',
+                            decision: 'Enabled the transition to final product.'
+                        }
+                    ]
+                },
+                kpis: {
+                    title: 'UX Key Performance Indicators',
+                    chartTitle: 'Improvements Achieved',
+                    items: [
+                        { label: "Adoption", val: 75 },
+                        { label: "User Satisfaction", val: 85 },
+                        { label: "Reminder Use", val: 80 },
+                        { label: "Successful Searches", val: 90 }
+                    ]
+                },
+                results: {
+                    title: 'Results & Impact',
+                    items: [
+                        "85% User Satisfaction",
+                        "75% Adoption in first weeks",
+                        "80% Active reminder use",
+                        "90% Success in pharmacy searches",
+                        "Complete and validated prototype"
+                    ]
+                },
+                conclusions: {
+                    title: 'Strategic Learnings',
+                    items: [
+                        { title: "UX Clarity", text: "Importance of absolute clarity in health applications." },
+                        { title: "Privacy", text: "Privacy as the central axis of the entire design system." },
+                        { title: "Empathy", text: "Reduction of cognitive load and focus on emotional state." },
+                        { title: "Trust", text: "Trust as a fundamental requirement for adherence." }
+                    ]
+                }
+            }
         },
         {
             id: 6,
@@ -1026,8 +1543,96 @@ const projectsData = {
                 'Developed scalable design system for future feature additions',
                 'Demonstrated capability in entertainment and social app UX'
             ],
-            learnings: "Entertainment apps must evoke emotion while remaining highly functional. Users need to feel the energy and excitement of live music through the interface itself, but discovery and booking must be effortless. Visual design serves both aesthetic and functional purposes in this domain."
-        },
+            learnings: "Entertainment apps must evoke emotion while remaining highly functional. Users need to feel the energy and excitement of live music through the interface itself, but discovery and booking must be effortless. Visual design serves both aesthetic and functional purposes in this domain.",
+                        sections: {
+                overview: {
+                    title: 'Project Overview',
+                    items: [
+                        { label: "Project", val: "Findies", icon: "🎵" },
+                        { label: "Type", val: "Mobile App UX/UI", icon: "📱" },
+                        { label: "Domain", val: "Music / Entertainment", icon: "🎸" },
+                        { label: "Year", val: "2023–2024", icon: "📅" },
+                        { label: "Role", val: "UX Researcher & UI Designer", icon: "👤" },
+                        { label: "Context", val: "UX Bootcamp Project", icon: "🎓" }
+                    ]
+                },
+                challenge: {
+                    title: 'Context & Challenge',
+                    problem: 'Difficulty discovering independent artists and low visibility for small events.',
+                    details: 'Fragmented experiences across platforms and lack of direct connection between artists and audience.'
+                },
+                solution: {
+                    title: 'The Solution',
+                    items: [
+                        { title: 'Discovery', desc: 'Visual Recommendation Systems.' },
+                        { title: 'Connection', desc: 'Interactive Artist Profiles.' },
+                        { title: 'Social', desc: 'Tracking system and direct connection.' }
+                    ]
+                },
+                process: {
+                    title: 'UX Design Process',
+                    steps: [
+                        { title: 'Research', insight: 'Identification of pain points in discovery.', decision: 'Focus on visual algorithms.' },
+                        { title: 'Analysis', insight: 'Archetype definition and user journeys.', decision: 'Priority on local discovery.' },
+                        { title: 'Design', insight: 'IA structure and low-fidelity wireframes.', decision: 'Visual-first navigation.' },
+                        { title: 'Prototyping', insight: 'High-fidelity with real interactions.', decision: 'Social micro-interactions.' },
+                        { title: 'Testing', insight: 'Validation with real users and artists.', decision: 'Refinement of booking flows.' },
+                        { title: 'Refinement', insight: 'Iterations based on qualitative feedback.', decision: 'Consolidation of vibrant identity.' }
+                    ]
+                },
+                kpis: {
+                    title: 'Key Performance Indicators',
+                    chartTitle: 'Improvements Achieved',
+                    items: [
+                        { label: "Engagement", val: 70 },
+                        { label: "Discoveries", val: 80 },
+                        { label: "Connections", val: 65 },
+                        { label: "Retention", val: 75 }
+                    ]
+                },
+                results: {
+                    title: 'Results & Impact',
+                    items: [
+                        "70% Session Engagement",
+                        "80% Increase in discovery",
+                        "65% More artist-listener connections",
+                        "75% Initial retention",
+                        "Successful concept validation"
+                    ]
+                },
+                evolution: {
+                    title: 'Project Evolution: Findies',
+                    details: 'Move from pure music discovery towards a complete live event and local experience with integrated booking.',
+                    visuals: 'Use of energetic photography and vibrant gradients for an emotional UX.'
+                },
+                experience: {
+                    title: 'Visual Design & Experience',
+                    items: [
+                        { title: 'Energy', desc: 'Vibrant visual language and photography.' },
+                        { title: 'Visual-First', desc: 'Gesture-based navigation.' },
+                        { title: 'Native', desc: 'Mobile UI (iOS/Android).' }
+                    ]
+                },
+                prototype: {
+                    title: 'Final Validated Prototype (Figma)',
+                    note: 'Discovery, artist detail, and in-app booking flows validated.',
+                    qualities: [
+                        { label: 'VISUAL CLARITY', val: 'Minimalist' },
+                        { label: 'ACCESSIBILITY', val: 'WCAG 2.1 AA' },
+                        { label: 'FOCUS', val: 'Mobile First' },
+                        { label: 'NAVIGATION', val: 'Intuitive' }
+                    ]
+                },
+                conclusions: {
+                    title: 'Strategic Learnings',
+                    items: [
+                        { title: "Balance", text: "Crucial balance between emotion and usability." },
+                        { title: "Engagement Engine", text: "Discovery as the main driver of retention." },
+                        { title: "Friction", text: "Critical reduction of friction in booking." },
+                        { title: "Visual UX", text: "Visual design as function, not just aesthetics." }
+                    ]
+                }
+            }},
         {
             id: 7,
             slug: 'goodmeal',

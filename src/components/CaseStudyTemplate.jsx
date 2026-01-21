@@ -224,26 +224,40 @@ const CaseStudyTemplate = ({
                     </section>
 
                     {/* Role & Responsibilities */}
-                    <section className="bg-neutral-50 dark:bg-neutral-800/50 p-8 md:p-10 rounded-2xl border border-neutral-100 dark:border-neutral-800">
-                        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-900 dark:text-white">
-                            {t.role}
-                        </h2>
-                        <div className="prose prose-lg max-w-none">
-                            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8 text-lg">{role}</p>
-                            {responsibilities && responsibilities.length > 0 && (
-                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {responsibilities.map((item, index) => (
-                                        <li key={index} className="text-neutral-700 dark:text-neutral-300 flex items-start gap-3 bg-white dark:bg-neutral-800 p-4 rounded-lg border border-neutral-200 dark:border-neutral-700 shadow-sm">
-                                            <svg className="w-5 h-5 text-primary-600 dark:text-primary-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                                            </svg>
-                                            <span className="font-medium">{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
-                    </section>
+                    {(role || (responsibilities && responsibilities.length > 0) || project.sections?.responsibilities?.items) && (
+                        <section className="bg-neutral-50 dark:bg-neutral-800/50 p-8 md:p-10 rounded-2xl border border-neutral-100 dark:border-neutral-800">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-900 dark:text-white">
+                                {t.role}
+                            </h2>
+                            <div className="prose prose-lg max-w-none">
+                                {role && <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8 text-lg">{role}</p>}
+
+                                {project.sections?.responsibilities?.items ? (
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 not-prose">
+                                        {project.sections.responsibilities.items.map((item, i) => (
+                                            <div key={i} className="flex items-center gap-4 bg-white dark:bg-neutral-900 p-5 rounded-2xl border border-neutral-100 dark:border-neutral-800 shadow-sm hover:border-indigo-200 dark:hover:border-indigo-900/30 transition-all">
+                                                {item.icon && <span className="w-10 h-10 bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 rounded-full flex items-center justify-center text-lg">{item.icon}</span>}
+                                                <span className="font-bold text-neutral-800 dark:text-neutral-200 text-sm">{item.label}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    responsibilities && responsibilities.length > 0 && (
+                                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            {responsibilities.map((item, index) => (
+                                                <li key={index} className="text-neutral-700 dark:text-neutral-300 flex items-start gap-3 bg-white dark:bg-neutral-800 p-4 rounded-lg border border-neutral-200 dark:border-neutral-700 shadow-sm">
+                                                    <svg className="w-5 h-5 text-primary-600 dark:text-primary-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                                    </svg>
+                                                    <span className="font-medium">{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )
+                                )}
+                            </div>
+                        </section>
+                    )}
 
                     {/* Process */}
                     {processSteps && processSteps.length > 0 && (
@@ -267,22 +281,32 @@ const CaseStudyTemplate = ({
 
                     {/* Key Decisions */}
                     {keyDecisions && (
-                        <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-neutral-900 dark:text-white">
+                        <section id="key-decisions">
+                            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-neutral-900 dark:text-white flex items-center">
+                                <span className="w-8 h-1 bg-indigo-600 mr-4 rounded-full"></span>
                                 {t.decisions}
                             </h2>
-                            <div className="prose prose-lg max-w-none text-neutral-700 dark:text-neutral-300">
-                                {typeof keyDecisions === 'string' ? (
-                                    <p className="leading-relaxed text-lg">{keyDecisions}</p>
+                            <div className="space-y-4 max-w-4xl">
+                                {Array.isArray(keyDecisions) ? (
+                                    keyDecisions.map((decision, index) => (
+                                        <div
+                                            key={index}
+                                            className="group flex items-start gap-4 bg-white dark:bg-neutral-900/50 p-6 rounded-2xl border border-neutral-100 dark:border-neutral-800 shadow-sm hover:border-indigo-200 dark:hover:border-indigo-900/40 transition-all duration-300"
+                                        >
+                                            <div className="flex-shrink-0 mt-1">
+                                                <div className="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold text-xs group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-sm">
+                                                    {index + 1}
+                                                </div>
+                                            </div>
+                                            <p className="leading-relaxed text-lg text-neutral-800 dark:text-neutral-200 font-medium">
+                                                {decision}
+                                            </p>
+                                        </div>
+                                    ))
                                 ) : (
-                                    <ul className="space-y-4">
-                                        {keyDecisions.map((decision, index) => (
-                                            <li key={index} className="flex gap-4">
-                                                <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary-500 mt-2.5"></span>
-                                                <span className="leading-relaxed text-lg">{decision}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    <div className="bg-white dark:bg-neutral-900/50 p-6 rounded-2xl border border-neutral-100 dark:border-neutral-800">
+                                        <p className="leading-relaxed text-lg text-neutral-800 dark:text-neutral-200 font-medium">{keyDecisions}</p>
+                                    </div>
                                 )}
                             </div>
                         </section>
