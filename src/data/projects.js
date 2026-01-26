@@ -5,13 +5,13 @@ const projectsData = {
             slug: 'banco-estado',
             galleryCols: 3,
             title: 'Banco Estado',
-            subtitle: 'Optimización de Conversión B2B Fintech',
+            subtitle: 'Optimización de conversión B2B en producto fintech',
             year: '2025',
             industry: 'Fintech',
             type: 'UX/UI Integral',
             description: 'Producto bancario con embudo de conversión complejo que requería optimización UX, pruebas de usabilidad y validación visual.',
             coverImage: '/assets/projects/banco-estado-cover.png',
-            tags: ['Optimización Conversión', 'Fintech', 'Testing con IA', 'Prototipado'],
+            tags: ['Optimización de Conversión', 'Fintech', 'Testing con IA'],
             metrics: {
                 improvement: 'Optimización de embudo',
                 impact: 'Validación de rendimiento'
@@ -87,17 +87,18 @@ const projectsData = {
             slug: 'bcn-global',
             galleryCols: 2,
             title: 'BCN Global',
-            subtitle: 'Rediseño Corporativo B2B SaaS',
+            subtitle: 'Rediseño corporativo B2B SaaS orientado a claridad y escalabilidad',
             year: '2025',
             industry: 'B2B SaaS',
             type: 'UX/UI Integral',
             description: 'Soluciones de capacitación corporativa que requerían una presencia web moderna con propuesta de valor clara y diferenciación de servicios.',
             coverImage: '/assets/projects/bcn-global-cover.png',
-            tags: ['Arquitectura Información', 'Sistema de Diseño', 'B2B', 'Front-End'],
+            tags: ['Arquitectura de Información', 'Sistema de Diseño', 'B2B'],
             metrics: {
                 improvement: 'Mejora Percepción Marca',
                 impact: 'Sitio Web Funcional'
             },
+
             links: {
                 lovable: 'https://bcnglobal.lovable.app/',
                 figma: 'https://www.figma.com/design/BcGdwTMlO6tGBDaoc3D2jX/Redise%C3%B1o-BCN-Global?node-id=0-1&t=oPDIhsV43zFyPlv4-1',
@@ -177,13 +178,13 @@ const projectsData = {
             slug: 'ghali-kombucha',
             galleryCols: 2,
             title: 'Ghali Kombucha',
-            subtitle: 'Investigación y Optimización UX E-commerce',
+            subtitle: 'Investigación y optimización UX para e-commerce de consumo',
             year: '2025',
             industry: 'E-commerce',
             type: 'Investigación UX',
             description: 'Marca de kombucha artesanal que necesitaba mejoras UX basadas en datos mediante card sorting, tree testing y pruebas A/B.',
             coverImage: '/assets/projects/ghali-kombucha-cover.png',
-            tags: ['Card Sorting', 'A/B Testing', 'E-commerce', 'Conversión'],
+            tags: ['Card Sorting', 'A/B Testing', 'E-commerce'],
             metrics: {
                 improvement: '+12.5% tasa de conversión',
                 impact: '+100% duración sesión'
@@ -256,17 +257,18 @@ const projectsData = {
             slug: 'la-especieria',
             galleryCols: 2,
             title: 'La Especiería',
-            subtitle: 'UX/UI E-commerce & Desarrollo Front-End',
+            subtitle: 'Optimización UX/UI y desarrollo front-end para e-commerce',
             year: '2024',
             industry: 'E-commerce',
             type: 'UX/UI Integral',
             description: 'E-commerce de alimentos gourmet requiriendo renovación UX completa con foco en descubrimiento de productos y optimización de conversión.',
             coverImage: '/assets/projects/la-especieria-cover.png',
-            tags: ['E-commerce', 'Diseño UX/UI', 'Front-End', 'Mobile-First'],
+            tags: ['E-commerce', 'Diseño UX/UI', 'Front-End'],
             metrics: {
                 improvement: '+100% tasa conversión',
                 impact: '+70% CTR'
             },
+
             links: {
                 figma: 'https://www.figma.com/design/UMbDoTx9wA4GK7XuBrpFB4/Wireframe-Propuesta---La-Especier%C3%ADa---E3-dis-046?node-id=51-376&t=ZCmyeh2oqzBqJq6n-1',
                 github: 'https://github.com/Fernandodesign96/la-especieria'
@@ -406,13 +408,13 @@ const projectsData = {
             slug: 'pharmafy',
             galleryCols: 3,
             title: 'Pharmafy',
-            subtitle: 'Diseño UX App de Salud',
+            subtitle: 'Diseño UX de aplicación de salud centrada en investigación',
             year: '2023',
             industry: 'Healthcare',
             type: 'Diseño UX',
             description: 'Solución de salud digital para gestión de medicamentos demostrando proceso UX end-to-end desde investigación hasta prototipos.',
             coverImage: '/assets/projects/pharmafy-cover.png',
-            tags: ['Healthcare', 'Investigación UX', 'Personas', 'Flujos de Usuario'],
+            tags: ['Healthcare', 'Investigación UX', 'Personas'],
             metrics: {
                 improvement: 'Diseño privacidad-primero',
                 impact: 'Certificación Google UX'
@@ -587,13 +589,13 @@ const projectsData = {
             slug: 'findies',
             galleryCols: 3,
             title: 'Findies',
-            subtitle: 'App de Descubrimiento de Eventos y Música',
+            subtitle: 'App móvil para descubrimiento de eventos y música',
             year: '2024',
             industry: 'Entretenimiento',
             type: 'Mobile App UX/UI',
             description: 'Aplicación móvil para descubrir eventos de música en vivo y artistas con enfoque en navegación visual intuitiva.',
             coverImage: '/assets/projects/findies-cover.png',
-            tags: ['Diseño Móvil', 'Flujos de Usuario', 'Diseño Visual', 'Entretenimiento'],
+            tags: ['Diseño Móvil', 'Flujos de Usuario', 'Diseño Visual'],
             metrics: {
                 improvement: 'Descubrimiento eventos',
                 impact: 'Identidad visual atractiva'
@@ -748,13 +750,13 @@ const projectsData = {
             galleryCols: 3,
             coverImageClass: 'max-w-md mx-auto',
             title: 'GoodMeal',
-            subtitle: 'App de Planificación de Comidas y Nutrición',
+            subtitle: 'App de planificación de comidas y nutrición personalizada',
             year: '2024',
             industry: 'Salud y Bienestar',
             type: 'Mobile App UX/UI',
             description: 'Aplicación de planificación de comidas enfocada en salud con onboarding optimizado y flujo de adquisición de bajo roce.',
             coverImage: '/assets/projects/goodmeal-cover.png',
-            tags: ['Diseño Móvil', 'Onboarding', 'Health Tech', 'Estrategia UX'],
+            tags: ['Diseño Móvil', 'Onboarding', 'Health Tech'],
             metrics: {
                 improvement: 'Adquisición de usuarios',
                 impact: 'Accesibilidad nutricional'
