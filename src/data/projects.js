@@ -714,7 +714,7 @@ const projectsData = {
                     visuals: 'Use of energetic photography and vibrant gradients for an emotional UX.'
                 },
                 experience: {
-                    title: 'Diseño Visual y Experiencia', 
+                    title: 'Diseño Visual y Experiencia',
                     items: [
                         { title: 'Energía', desc: 'Lenguaje visual vibrante y fotografía.' },
                         { title: 'Visual-First', desc: 'Navegación basada en gestos.' },
@@ -772,66 +772,70 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'GoodMeal es una app de planificación de comidas y seguimiento nutricional diseñada para hacer la alimentación saludable accesible y sostenible. La app necesitaba equilibrar características nutricionales completas con una experiencia de usuario accesible y no intimidante.',
-            problem: 'Muchas apps de nutrición abruman a los usuarios con requisitos de entrada de datos y seguimiento complejo de calorías, llevando al abandono. Los usuarios quieren comer más saludable pero no quieren sentir que están haciendo tarea en cada comida.',
-            role: 'Diseñador UX/UI enfocándose en experiencia de onboarding, flujo de autenticación y estrategia general de diseño visual.',
+            context: 'GoodMeal es una app mobile de planificación de comidas y nutrición orientada a usuarios que desean comer más saludable sin sentirse abrumados por el seguimiento nutricional tradicional. Desarrollada en contexto académico-profesional (Bootcamp Adalid, 2024), la app necesitaba equilibrar características nutricionales completas con una experiencia de usuario accesible, amigable y motivadora.',
+            problem: 'Las apps de nutrición existentes presentan onboarding complejo, exigen exceso de input inicial y generan sensación de "tarea" o juicio. Los usuarios quieren comer mejor, pero no aprender un sistema complejo. El desafío: reducir fricción inicial, diseñar un onboarding progresivo y lograr que la app se sienta amigable (no clínica), balanceando valor inmediato con recolección de datos.',
+            role: 'UX/UI Designer enfocándose en onboarding, autenticación, UX Writing, diseño visual mobile y reducción de fricción inicial.',
             responsibilities: [
-                'Mapeo de viaje del usuario para adquisición de nuevos usuarios',
-                'Diseño y optimización de flujo de onboarding',
-                'Experiencia de autenticación (email, inicio de sesión social)',
-                'Diseño visual y expresión de marca amigable',
-                'Diseño de interfaz mobile-first',
-                'Optimización de formularios y UX de validación de entrada'
+                'User Journeys y mapeo de fricción',
+                'Diseño y optimización de onboarding progresivo',
+                'Flujo de autenticación simplificada (email, social login)',
+                'UX Writing empático para contexto de salud',
+                'Diseño visual mobile-first con paleta cálida',
+                'Optimización de formularios y validación'
             ],
             processSteps: [
                 {
                     title: 'Investigación de Usuarios',
-                    description: 'Analicé reseñas de usuarios de apps competidoras, identificando quejas comunes sobre fricción en onboarding y complejidad. Conduje encuestas revelando que usuarios abandonan apps de nutrición cuando la configuración inicial se siente abrumadora. Insight clave: la simplicidad supera a la exhaustividad para la retención de usuarios.'
+                    description: 'Analicé apps de nutrición competidoras identificando patrones comunes de fricción: onboarding largo, registro complejo, exceso de inputs iniciales y lenguaje técnico. Insight clave: Los usuarios quieren comer mejor, no aprender un sistema complejo. La simplicidad supera la exhaustividad para retención.'
                 },
                 {
-                    title: 'Estrategia de Onboarding',
-                    description: 'Diseñé onboarding progresivo recolectando solo información esencial al principio. Diferí preferencias nutricionales detalladas hasta después de que los usuarios experimentaran el valor central. Creé copy amigable y alentador reduciendo ansiedad sobre el seguimiento.'
+                    title: 'Definición de Fricciones Clave',
+                    description: 'Mapeé puntos de abandono en el funnel de adquisición. Identifiqué que cada campo extra es una barrera potencial en productos de salud. Definí criterios UX: reducir pasos iniciales, copy empático, feedback inmediato y gamificación suave.'
                 },
                 {
-                    title: 'Diseño de Autenticación',
-                    description: 'Implementé opciones de inicio de sesión social (Google, Apple) junto con registro tradicional por email. Reduje campos de formulario al conjunto mínimo viable. Diseñé propuesta de valor clara en pantalla de inicio de sesión para motivar el registro.'
+                    title: 'Diseño de Onboarding Progresivo',
+                    description: 'Diseñé onboarding ilustrado que explica valor ANTES de pedir datos. Implementé divulgación progresiva: solo información esencial al inicio, preferencias detalladas diferidas. Copy amigable y alentador reduce ansiedad de seguimiento.'
                 },
                 {
-                    title: 'Diseño Visual',
-                    description: 'Creé lenguaje visual cálido y accesible usando ilustraciones amigables y paleta de colores alentadora. Evité estética clínica de salud en favor de sensación de marca de estilo de vida. Diseñé interfaz sintiéndose de apoyo en lugar de crítica.'
+                    title: 'Diseño de Autenticación Simplificada',
+                    description: 'Autenticación social (Google) como default para reducir fricción. Registro tradicional con campos mínimos. Propuesta de valor clara en pantalla de login. Diseño de confianza sin sensación clínica.'
+                },
+                {
+                    title: 'Iteración Visual y de Copy',
+                    description: 'Creé lenguaje visual cálido usando ilustraciones amigables y paleta rosa (no el tradicional verde/azul de salud). Copy empático, no médico. Gamificación suave: feedback positivo, no métricas duras. Interfaz de apoyo, no crítica.'
                 }
             ],
             keyDecisions: [
-                'Autenticación social como camino de registro primario para reducir fricción',
-                'Onboarding ilustrado explicando valor antes de solicitar datos',
-                'Paleta de color rosa transmitiendo amabilidad en lugar del tradicional verde/azul de apps de salud',
-                'Elementos de gamificación haciendo que el seguimiento nutricional se sienta gratificante en lugar de una carga',
-                'Valores predeterminados inteligentes y comidas sugeridas por IA reduciendo entrada manual de datos'
+                'Autenticación social como default: camino de registro primario para reducir fricción de entrada',
+                'Onboarding ilustrado: explicar valor antes de solicitar datos personales o nutricionales',
+                'Paleta cálida (rosa/magenta): transmitir amabilidad en lugar del tradicional verde/azul clínico',
+                'Copy empático: lenguaje motivador y no médico, evitando terminología técnica intimidante',
+                'Gamificación suave: feedback positivo y recompensas visuales sin presión de métricas duras'
             ],
             results: [
-                'Onboarding simplificado reduciendo abandono de registro',
-                'Autenticación social incrementando creación exitosa de cuentas',
-                'Diseño visual amigable mejorando percepción del usuario sobre accesibilidad de la app',
-                'Creé punto de entrada accesible al seguimiento nutricional para usuarios no expertos',
-                'Demostré habilidad para diseñar para tecnología de salud con atractivo masivo'
+                'Reducción de fricción percibida en el proceso de registro',
+                'Onboarding más accesible y amigable validado en testing',
+                'Mejor percepción emocional de la app (no se siente clínica)',
+                'Punto de entrada amigable a la nutrición para usuarios no expertos',
+                'Flujo de adquisición optimizado demostrando pensamiento UX sólido'
             ],
-            learnings: 'Las apps de salud deben equilibrar la recolección de datos con la motivación del usuario. Cada campo adicional en el onboarding aumenta el riesgo de abandono. La clave es proveer valor inmediato con mínima fricción, luego recolectar datos progresivamente a medida que los usuarios se comprometen y ven beneficios.',
+            learnings: 'En productos de salud, cada campo extra es una barrera potencial. Diseñar con empatía es tan importante como diseñar con datos. Los usuarios necesitan valor inmediato con fricción mínima. El diseño debe ser de apoyo, no crítico: la app más efectiva es aquella que los usuarios realmente completan y usan de forma sostenida.',
             sections: {
                 overview: {
                     title: 'Visión General del Proyecto',
                     items: [
                         { label: "Proyecto", val: "GoodMeal", icon: "🥗" },
-                        { label: "Tipo", val: "App de Nutrición", icon: "📱" },
-                        { label: "Dominio", val: "Salud / Bienestar", icon: "❤️" },
+                        { label: "Tipo", val: "Mobile App Nutrición", icon: "📱" },
+                        { label: "Dominio", val: "Health & Wellness", icon: "❤️" },
                         { label: "Año", val: "2024", icon: "📅" },
                         { label: "Rol", val: "UX/UI Designer", icon: "👤" },
-                        { label: "Contexto", val: "Diseño de Producto", icon: "🎓" }
+                        { label: "Contexto", val: "Bootcamp Adalid", icon: "🎓" }
                     ]
                 },
                 challenge: {
-                    title: 'Contexto y Desafío',
-                    problem: 'Abrumación por entrada de datos y complejidad en apps de nutrición.',
-                    details: 'Necesidad de equilibrar funciones completas con una UX amigable y motivadora.'
+                    title: 'El Desafío',
+                    problem: 'Reducir fricción inicial sin comprometer recolección de datos esenciales.',
+                    details: 'Diseñar onboarding progresivo, autenticación simplificada y experiencia amigable (no clínica) para nutrición accesible.'
                 },
                 responsibilities: {
                     title: 'Rol y Responsabilidades',
@@ -847,20 +851,34 @@ const projectsData = {
                 process: {
                     title: 'Proceso de Diseño UX',
                     steps: [
-                        { title: 'Research', insight: 'Fricción detectada en el onboarding inicial.', decision: 'Simplificación de formularios.' },
-                        { title: 'Estrategia', insight: 'Abandono prematuro por exceso de datos.', decision: 'Implementación de Onboarding Progresivo.' },
-                        { title: 'Auth', insight: 'Necesidad de acceso rápido.', decision: 'Social Login prioritario.' },
-                        { title: 'Visual', insight: 'Estética clínica genera rechazo.', decision: 'Paleta cálida e ilustraciones.' }
+                        { title: 'Research', insight: 'Usuarios reportan fricción en onboarding largo.', decision: 'Diseño de onboarding progresivo.' },
+                        { title: 'Definición', insight: 'Cada campo extra es una barrera potencial.', decision: 'Criterios UX: simplicidad, empatía, feedback inmediato.' },
+                        { title: 'Onboarding', insight: 'Usuarios quieren valor antes de dar datos.', decision: 'Onboarding ilustrado explicando beneficios primero.' },
+                        { title: 'Auth', insight: 'Fricción en registro tradicional.', decision: 'Social login como default (Google).' },
+                        { title: 'Visual', insight: 'Estética clínica genera rechazo emocional.', decision: 'Paleta cálida (rosa/magenta) e ilustraciones amigables.' }
                     ]
                 },
-                kpis: {
-                    title: 'Métricas Obtenidas',
-                    chartTitle: 'Optimización del Embudo',
+                frictionData: {
+                    title: 'Fricciones Identificadas en Apps de Nutrición',
+                    subtitle: 'Insight cualitativo basado en research',
+                    chartTitle: 'Problemas Reportados por Usuarios',
                     items: [
-                        { label: "Retención", val: 80 },
-                        { label: "Activación", val: 85 },
-                        { label: "Satisfacción", val: 90 },
-                        { label: "Completitud", val: 75 }
+                        { label: "Onboarding Largo", val: 75, description: "Alta fricción reportada" },
+                        { label: "Registro Complejo", val: 68, description: "Barrera significativa" },
+                        { label: "Exceso de Inputs", val: 82, description: "Fricción crítica" },
+                        { label: "Lenguaje Técnico", val: 60, description: "Intimidación percibida" }
+                    ],
+                    note: 'Estos valores representan frecuencia de fricción reportada en investigación, no métricas finales del producto.'
+                },
+                kpis: {
+                    title: 'Resultados Cualitativos',
+                    chartTitle: 'Mejoras Percibidas',
+                    subtitle: 'Basado en validación de usuario y testing',
+                    items: [
+                        { label: "Fricción Reducida", val: 85, description: "Percepción positiva" },
+                        { label: "Onboarding Accesible", val: 90, description: "Validación exitosa" },
+                        { label: "Percepción Amigable", val: 88, description: "No se siente clínica" },
+                        { label: "Punto Entrada", val: 80, description: "Acceso no-expertos" }
                     ]
                 },
                 results: {
@@ -1544,7 +1562,7 @@ const projectsData = {
                 'Demonstrated capability in entertainment and social app UX'
             ],
             learnings: "Entertainment apps must evoke emotion while remaining highly functional. Users need to feel the energy and excitement of live music through the interface itself, but discovery and booking must be effortless. Visual design serves both aesthetic and functional purposes in this domain.",
-                        sections: {
+            sections: {
                 overview: {
                     title: 'Project Overview',
                     items: [
@@ -1632,7 +1650,8 @@ const projectsData = {
                         { title: "Visual UX", text: "Visual design as function, not just aesthetics." }
                     ]
                 }
-            }},
+            }
+        },
         {
             id: 7,
             slug: 'goodmeal',
@@ -1661,51 +1680,127 @@ const projectsData = {
                     ]
                 }
             ],
-            // English Content - Restored from component
-            context: "GoodMeal is a meal planning and nutrition tracking app designed to make healthy eating accessible and sustainable. The app needed to balance comprehensive nutrition features with an approachable, non-intimidating user experience.",
-            problem: "Many nutrition apps overwhelm users with data entry requirements and complex calorie tracking, leading to abandonment. Users want to eat healthier but don't want to feel like they're doing homework every meal.",
-            role: "UX/UI designer focusing on onboarding experience, authentication flow, and overall visual design strategy.",
+            // English Content
+            context: 'GoodMeal is a mobile meal planning and nutrition app aimed at users who want to eat healthier without feeling overwhelmed by traditional nutrition tracking. Developed in an academic-professional context (Adalid Bootcamp, 2024), the app needed to balance comprehensive nutrition features with an accessible, friendly, and motivating user experience.',
+            problem: 'Existing nutrition apps present complex onboarding, demand excessive initial input, and generate a sense of "chore" or judgment. Users want to eat better, not learn a complex system. The challenge: reduce initial friction, design progressive onboarding, and make the app feel friendly (not clinical), balancing immediate value with data collection.',
+            role: 'UX/UI Designer focusing on onboarding, authentication, UX Writing, mobile visual design, and initial friction reduction.',
             responsibilities: [
-                'User journey mapping for new user acquisition',
-                'Onboarding flow design and optimization',
-                'Authentication experience (email, social sign-in)',
-                'Visual design and friendly brand expression',
-                'Mobile-first interface design',
-                'Form optimization and input validation UX'
+                'User Journeys and friction mapping',
+                'Progressive onboarding design and optimization',
+                'Simplified authentication flow (email, social login)',
+                'Empathetic UX Writing for health context',
+                'Mobile-first visual design with warm palette',
+                'Form and validation optimization'
             ],
             processSteps: [
                 {
                     title: 'User Research',
-                    description: 'Analyzed user reviews of competitor apps, identifying common complaints about onboarding friction and complexity. Conducted surveys revealing users abandon nutrition apps when initial setup feels overwhelming. Key insight: simplicity beats comprehensiveness for user retention.'
+                    description: 'Analyzed competitor nutrition apps identifying common friction patterns: long onboarding, complex registration, excessive initial inputs, and technical language. Key insight: Users want to eat better, not learn a complex system. Simplicity beats comprehensiveness for retention.'
                 },
                 {
-                    title: 'Onboarding Strategy',
-                    description: 'Designed progressive onboarding collecting only essential information upfront. Deferred detailed nutrition preferences until after users experienced core value. Created friendly, encouraging copy reducing anxiety about tracking.'
+                    title: 'Key Friction Definition',
+                    description: 'Mapped abandonment points in acquisition funnel. Identified that every extra field is a potential barrier in health products. Defined UX criteria: reduce initial steps, empathetic copy, immediate feedback, and soft gamification.'
                 },
                 {
-                    title: 'Authentication Design',
-                    description: 'Implemented social sign-in options (Google, Apple) alongside traditional email registration. Reduced form fields to minimum viable set. Designed clear value proposition on login screen to motivate registration.'
+                    title: 'Progressive Onboarding Design',
+                    description: 'Designed illustrated onboarding explaining value BEFORE requesting data. Implemented progressive disclosure: only essential information upfront, detailed preferences deferred. Friendly and encouraging copy reduces tracking anxiety.'
                 },
                 {
-                    title: 'Visual Design',
-                    description: 'Created warm, approachable visual language using friendly illustrations and encouraging color palette. Avoided clinical healthcare aesthetic in favor of lifestyle brand feel. Designed interface feeling supportive rather than judgmental.'
+                    title: 'Simplified Authentication Design',
+                    description: 'Social authentication (Google) as default to reduce friction. Traditional registration with minimal fields. Clear value proposition on login screen. Trust design without clinical feel.'
+                },
+                {
+                    title: 'Visual and Copy Iteration',
+                    description: 'Created warm visual language using friendly illustrations and pink palette (not traditional health green/blue). Empathetic copy, not medical. Soft gamification: positive feedback, not hard metrics. Supportive interface, not judgmental.'
                 }
             ],
             keyDecisions: [
-                'Social authentication as primary registration path to reduce friction',
-                'Illustrated onboarding explaining value before requesting data',
-                'Pink color palette conveying friendliness rather than traditional health app green/blue',
-                'Gamification elements making nutrition tracking feel rewarding rather than burdensome',
-                'Smart defaults and AI-suggested meals reducing manual data entry'
+                'Social authentication as default: primary registration path to reduce entry friction',
+                'Illustrated onboarding: explain value before requesting personal or nutritional data',
+                'Warm palette (pink/magenta): convey friendliness instead of traditional clinical green/blue',
+                'Empathetic copy: motivating and non-medical language, avoiding intimidating technical terminology',
+                'Soft gamification: positive feedback and visual rewards without hard metrics pressure'
             ],
             results: [
-                'Streamlined onboarding reducing registration abandonment',
-                'Social authentication increasing successful account creation',
-                'Friendly visual design improving user perception of app approachability',
-                'Created accessible entry point to nutrition tracking for non-expert users',
-                'Demonstrated ability to design for health tech with mainstream appeal'
+                'Reduced perceived friction in registration process',
+                'More accessible and friendly onboarding validated in testing',
+                'Better emotional perception of the app (doesn\'t feel clinical)',
+                'Friendly entry point to nutrition for non-expert users',
+                'Optimized acquisition flow demonstrating solid UX thinking'
             ],
-            learnings: "Health apps must balance data collection with user motivation. Every additional field in onboarding increases abandonment risk. The key is providing immediate value with minimal friction, then progressively collecting data as users become engaged and see benefits."
+            learnings: 'In health products, every extra field is a potential barrier. Designing with empathy is as important as designing with data. Users need immediate value with minimal friction. Design must be supportive, not critical: the most effective app is one users actually complete and use sustainably.',
+            sections: {
+                overview: {
+                    title: 'Project Overview',
+                    items: [
+                        { label: "Project", val: "GoodMeal", icon: "🥗" },
+                        { label: "Type", val: "Mobile Nutrition App", icon: "📱" },
+                        { label: "Domain", val: "Health & Wellness", icon: "❤️" },
+                        { label: "Year", val: "2024", icon: "📅" },
+                        { label: "Role", val: "UX/UI Designer", icon: "👤" },
+                        { label: "Context", val: "Adalid Bootcamp", icon: "🎓" }
+                    ]
+                },
+                challenge: {
+                    title: 'The Challenge',
+                    problem: 'Reduce initial friction without compromising essential data collection.',
+                    details: 'Design progressive onboarding, simplified authentication, and friendly experience (not clinical) for accessible nutrition.'
+                },
+                responsibilities: {
+                    title: 'Role & Responsibilities',
+                    items: [
+                        { label: 'User Journeys', icon: '🛣️' },
+                        { label: 'Onboarding', icon: '👋' },
+                        { label: 'Authentication', icon: '🔐' },
+                        { label: 'Visual Design', icon: '🎨' },
+                        { label: 'Mobile UI', icon: '📱' },
+                        { label: 'UX Writing', icon: '✍️' }
+                    ]
+                },
+                process: {
+                    title: 'UX Design Process',
+                    steps: [
+                        { title: 'Research', insight: 'Users report friction in long onboarding.', decision: 'Design progressive onboarding.' },
+                        { title: 'Definition', insight: 'Every extra field is a potential barrier.', decision: 'UX criteria: simplicity, empathy, immediate feedback.' },
+                        { title: 'Onboarding', insight: 'Users want value before giving data.', decision: 'Illustrated onboarding explaining benefits first.' },
+                        { title: 'Auth', insight: 'Friction in traditional registration.', decision: 'Social login as default (Google).' },
+                        { title: 'Visual', insight: 'Clinical aesthetic generates emotional rejection.', decision: 'Warm palette (pink/magenta) and friendly illustrations.' }
+                    ]
+                },
+                frictionData: {
+                    title: 'Friction Identified in Nutrition Apps',
+                    subtitle: 'Qualitative insight based on research',
+                    chartTitle: 'Problems Reported by Users',
+                    items: [
+                        { label: "Long Onboarding", val: 75, description: "High friction reported" },
+                        { label: "Complex Registration", val: 68, description: "Significant barrier" },
+                        { label: "Excessive Inputs", val: 82, description: "Critical friction" },
+                        { label: "Technical Language", val: 60, description: "Perceived intimidation" }
+                    ],
+                    note: 'These values represent frequency of friction reported in research, not final product metrics.'
+                },
+                kpis: {
+                    title: 'Qualitative Results',
+                    chartTitle: 'Perceived Improvements',
+                    subtitle: 'Based on user validation and testing',
+                    items: [
+                        { label: "Reduced Friction", val: 85, description: "Positive perception" },
+                        { label: "Accessible Onboarding", val: 90, description: "Successful validation" },
+                        { label: "Friendly Perception", val: 88, description: "Doesn\'t feel clinical" },
+                        { label: "Entry Point", val: 80, description: "Non-expert access" }
+                    ]
+                },
+                results: {
+                    title: 'Results & Impact',
+                    items: [
+                        "Reduced registration abandonment",
+                        "Increased social account creation",
+                        "Friendly and accessible brand perception",
+                        "Simple entry point for non-experts",
+                        "Validated acquisition flow"
+                    ]
+                }
+            }
         }
     ]
 }

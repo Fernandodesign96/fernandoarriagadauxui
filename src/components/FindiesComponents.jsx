@@ -109,7 +109,7 @@ export const FindiesKPIs = ({ data }) => {
 
                     {/* Bars */}
                     {data.items.map((item, i) => (
-                        <div key={i} className="relative group w-full flex flex-col items-center z-10">
+                        <div key={i} className="relative group w-full flex flex-col items-center z-10 h-full justify-end">
                             {/* Bar Pillar */}
                             <div
                                 className="w-12 md:w-20 bg-gradient-to-t from-indigo-700 to-indigo-500 rounded-t-2xl shadow-lg relative transition-all duration-500 hover:brightness-110"
