@@ -1,99 +1,137 @@
 const tools = [
-    // Design & Prototyping
+    // 1. STRATEGY & RESEARCH (The "Why")
+    {
+        category: 'strategy',
+        name: 'Google Analytics',
+        icon: '📈',
+        role: 'Data / KPI',
+        isCore: true
+    },
+    {
+        category: 'strategy',
+        name: 'Hotjar',
+        icon: '🔥',
+        role: 'Heatmaps',
+        isCore: true
+    },
+    {
+        category: 'strategy',
+        name: 'Optimal Workshop',
+        icon: '🔧',
+        role: 'Card Sorting',
+        isCore: false
+    },
+    {
+        category: 'strategy',
+        name: 'Looker Studio',
+        icon: '📊',
+        role: 'Reporting',
+        isCore: false
+    },
+
+    // 2. DESIGN & PROTOTYPING (The "How")
     {
         category: 'design',
         name: 'Figma',
-        icon: '🎨'
+        icon: '🎨',
+        role: 'UI / UX / Prototyping',
+        isCore: true
     },
     {
         category: 'design',
-        name: 'Sketch',
-        icon: '💎'
+        name: 'Adobe Creative Cloud',
+        icon: '✨',
+        role: 'Graphic / Motion',
+        isCore: false
     },
     {
         category: 'design',
         name: 'Framer',
-        icon: '⚡'
+        icon: '⚡',
+        role: 'High-Fi / Sites',
+        isCore: true
+    },
+    {
+        category: 'design',
+        name: 'Maze',
+        icon: '🧪',
+        role: 'Testing',
+        isCore: false
     },
 
-    // Project Management
-    {
-        category: 'pm',
-        name: 'Miro',
-        icon: '📋'
-    },
-    {
-        category: 'pm',
-        name: 'Trello',
-        icon: '📊'
-    },
-    {
-        category: 'pm',
-        name: 'Jira',
-        icon: '✏️'
-    },
-
-    // Analytics & Research
-    {
-        category: 'analytics',
-        name: 'Google Analytics',
-        icon: '📈'
-    },
-    {
-        category: 'analytics',
-        name: 'Hotjar',
-        icon: '🔥'
-    },
-    {
-        category: 'analytics',
-        name: 'Optimal Workshop',
-        icon: '🔧'
-    },
-
-    // Development
+    // 3. DEVELOPMENT (The "Build")
     {
         category: 'dev',
-        name: 'React',
-        icon: '⚛️'
+        name: 'React.js',
+        icon: '⚛️',
+        role: 'Frontend',
+        isCore: true
     },
     {
         category: 'dev',
-        name: 'HTML5',
-        icon: '🌐'
+        name: 'Tailwind CSS',
+        icon: '🌊',
+        role: 'Styling',
+        isCore: true
     },
     {
         category: 'dev',
-        name: 'CSS3',
-        icon: '🎨'
+        name: 'GitHub',
+        icon: '🐙',
+        role: 'Version Control',
+        isCore: true
+    },
+    {
+        category: 'dev',
+        name: 'VS Code',
+        icon: '💻',
+        role: 'IDE',
+        isCore: false
     },
 
-    // AI Tools
+    // 4. PRODUCTIVITY & AI (The "Boost")
     {
         category: 'ai',
-        name: 'ChatGPT',
-        icon: '🤖'
+        name: 'ChatGPT / Claude',
+        icon: '🤖',
+        role: 'AI Assistant',
+        isCore: true
+    },
+    {
+        category: 'ai',
+        name: 'Notion',
+        icon: '📝',
+        role: 'Documentation',
+        isCore: true
     },
     {
         category: 'ai',
         name: 'Lovable',
-        icon: '💙'
+        icon: '💙',
+        role: 'AI Coding',
+        isCore: false
     },
+    {
+        category: 'ai',
+        name: 'Jira',
+        icon: '🎫',
+        role: 'Agile',
+        isCore: false
+    }
 ]
 
 export const toolCategories = {
     es: {
+        strategy: 'Estrategia & Research',
         design: 'Diseño & Prototipado',
-        pm: 'Gestión de Proyectos',
-        analytics: 'Analítica & Research',
-        dev: 'Desarrollo',
-        ai: 'IA & Automatización'
+        dev: 'Desarrollo & Implementación',
+        ai: 'Productividad & IA'
     },
     en: {
+        strategy: 'Strategy & Research',
         design: 'Design & Prototyping',
-        pm: 'Project Management',
-        analytics: 'Analytics & Research',
-        dev: 'Development',
-        ai: 'AI & Automation'
+        dev: 'Development & Implementation',
+        ai: 'Productivity & AI'
     }
 }
 
