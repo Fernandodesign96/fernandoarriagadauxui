@@ -5,13 +5,16 @@ const Section = ({ id, className, children, background = 'white' }) => {
         white: 'bg-white dark:bg-slate-950',
         gray: 'bg-slate-50 dark:bg-slate-900',
         dark: 'bg-slate-900 dark:bg-slate-950',
-        primary: 'bg-primary-900 dark:bg-slate-950'
+        primary: 'bg-primary-900 dark:bg-slate-950',
+        none: ''
     }
+
+    const bgClass = background === 'none' ? '' : (bgClasses[background] || bgClasses.white)
 
     return (
         <section
             id={id}
-            className={`py-10 md:py-14 ${bgClasses[background] || bgClasses.white} ${className || ''} transition-colors duration-500`}
+            className={`py-10 md:py-14 ${bgClass} ${className || ''} transition-colors duration-500`}
         >
             <div className="container-custom">
                 {children}
