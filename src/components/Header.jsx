@@ -64,13 +64,18 @@ const Header = () => {
                 {/* Desktop Navigation & Actions */}
                 <div className="hidden md:flex items-center gap-10">
                     <div className="flex items-center gap-8 mr-4 border-r border-slate-200 dark:border-slate-800 pr-8">
-                        {['work', 'process', 'tools', 'about'].map((item) => (
+                        {[
+                            { id: 'work', key: 'projects' },
+                            { id: 'about', key: 'about' },
+                            { id: 'process', key: 'process' },
+                            { id: 'tools', key: 'skills' }
+                        ].map(({ id, key }) => (
                             <button
-                                key={item}
-                                onClick={() => scrollToSection(item)}
+                                key={key}
+                                onClick={() => scrollToSection(id)}
                                 className="text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all hover:-translate-y-0.5 capitalize relative group/link"
                             >
-                                {t[item]}
+                                {t[key]}
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 transition-all group-hover/link:w-full" />
                             </button>
                         ))}
@@ -146,13 +151,18 @@ const Header = () => {
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 p-6 shadow-2xl flex flex-col gap-6 animate-fade-in rounded-b-3xl">
-                    {['work', 'process', 'tools', 'about'].map((item) => (
+                    {[
+                        { id: 'work', key: 'projects' },
+                        { id: 'about', key: 'about' },
+                        { id: 'process', key: 'process' },
+                        { id: 'tools', key: 'skills' }
+                    ].map(({ id, key }) => (
                         <button
-                            key={item}
-                            onClick={() => scrollToSection(item)}
+                            key={key}
+                            onClick={() => scrollToSection(id)}
                             className="text-left text-xl font-bold text-slate-800 dark:text-slate-200 py-3 border-b border-slate-100 dark:border-slate-900 capitalize flex justify-between items-center group"
                         >
-                            {t[item]}
+                            {t[key]}
                             <svg className="w-5 h-5 text-slate-300 group-hover:text-primary-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" /></svg>
                         </button>
                     ))}

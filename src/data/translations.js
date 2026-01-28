@@ -1,15 +1,15 @@
 const translations = {
     es: {
         nav: {
-            work: 'Trabajo',
-            process: 'Proceso',
-            tools: 'Herramientas',
-            about: 'Sobre mí',
+            projects: 'Proyectos',
+            about: 'Sobre Mí',
+            process: 'Metodología',
+            skills: 'Herramientas',
             contact: 'Contacto'
         },
         hero: {
             title: 'Diseño productos digitales end-to-end que convierten objetivos de negocio en resultados medibles',
-            subtitle: 'Banca, B2B y e-commerce · UX estratégica · Optimización de conversión · Decisiones basadas en datos',
+            subtitle: 'Diseño de producto enfocado en conversión, performance y decisiones basadas en datos',
             cta: {
                 primary: 'Ver proyectos',
                 secondary: 'Hablemos'
@@ -42,14 +42,45 @@ const translations = {
                 }
             }
         },
-        tools: {
+        skills: {
             title: 'Herramientas & Tecnologías',
-            intro: 'Stack tecnológico para diseño, prototipado, research y desarrollo'
+            subtitle: 'Stack tecnológico para diseño, prototipado, investigación y desarrollo',
+            filters: {
+                all: 'Todo',
+                strategy: 'Estrategia & Research',
+                design: 'Diseño & Prototipado',
+                dev: 'Desarrollo & Implementación',
+                ai: 'Productividad & IA'
+            },
+            levels: {
+                master: 'Maestro',
+                advanced: 'Avanzado',
+                intermediate: 'Intermedio'
+            }
         },
         about: {
             title: 'Sobre Mí',
-            intro: 'Diseñador UX/UI enfocado en producto, conversión y decisiones basadas en datos.',
-            sections: {
+            subtitle: 'Diseño de Producto · Conversión · Datos',
+            profile: {
+                p1: 'Diseñador UX/UI con 5 años de experiencia en diseño, optimización y desarrollo de productos digitales. Especializado en Diseño Centrado en el Usuario, optimización de conversión, performance y métricas, aplicando metodologías como Design Thinking y UX Sprint.',
+                p2: 'Experiencia en proyectos B2B, Fintech, e-commerce y productos digitales, liderando procesos end-to-end, desde la propuesta de valor hasta testeo UX.',
+                p3: 'Manejo de herramientas de prototipado, análisis de datos y Front-End (HTML, CSS y Bootstrap), integrando IA aplicada al diseño y maquetación para agilizar procesos.'
+            },
+            interests: {
+                research: 'Investigación',
+                innovation: 'Innovación',
+                technology: 'Tecnología',
+                creativity: 'Creatividad',
+                gamer: 'Gamer',
+                tennis: 'Tenis',
+                boxing: 'Boxeo',
+                chess: 'Ajedrez'
+            },
+            cta: {
+                contact: 'Contactarme',
+                cv: 'Descargar CV'
+            },
+            cards: {
                 experience: {
                     title: 'Experiencia',
                     items: ['B2B, Fintech, E-commerce, E-learning', 'Productos complejos y entornos regulados']
@@ -66,17 +97,26 @@ const translations = {
         },
         contact: {
             title: '¿Necesitas un diseñador UX/UI que impacte resultados de negocio?',
-            intro: 'Hablemos sobre tu próximo producto o desafío UX.',
-            cta: {
-                email: 'Contactarme',
-                linkedin: 'LinkedIn',
-                cv: 'Descargar CV'
+            subtitle: 'Hablemos sobre tu próximo producto o desafío UX.',
+            infoTitle: 'Información de contacto',
+            formTitle: 'Envía un mensaje',
+            labels: {
+                name: 'Tu nombre',
+                email: 'Tu email',
+                message: 'Tu mensaje'
             },
-            audience: [
-                'Reclutadores',
-                'Equipos de producto',
-                'Empresas B2B / SaaS'
-            ]
+            cta: 'Enviar Mensaje',
+            status: {
+                sending: 'Enviando mensaje...',
+                success: 'Mensaje enviado correctamente. Te responderé pronto.',
+                error: 'Ocurrió un error. Intenta nuevamente.'
+            },
+            location: 'Santiago, Chile',
+            links: {
+                linkedin: 'LinkedIn',
+                github: 'GitHub',
+                cv: 'CV'
+            }
         },
         footer: {
             rights: '© 2026 Fernando Arriagada. Todos los derechos reservados.',
@@ -85,15 +125,15 @@ const translations = {
     },
     en: {
         nav: {
-            work: 'Work',
-            process: 'Process',
-            tools: 'Tools',
+            projects: 'Projects',
             about: 'About',
+            process: 'Methodology',
+            skills: 'Skills',
             contact: 'Contact'
         },
         hero: {
             title: 'End-to-end digital product design that converts business goals into measurable results',
-            subtitle: 'Banking, B2B & E-commerce · Strategic UX · Conversion Optimization · Data-informed Decisions',
+            subtitle: 'Product design focused on conversion, performance, and data-driven decisions',
             cta: {
                 primary: 'View work',
                 secondary: 'Let\'s talk'
@@ -126,14 +166,45 @@ const translations = {
                 }
             }
         },
-        tools: {
+        skills: {
             title: 'Tools & Technologies',
-            intro: 'Technology stack for design, prototyping, research, and development'
+            subtitle: 'Technology stack for design, prototyping, research, and development',
+            filters: {
+                all: 'All',
+                strategy: 'Strategy & Research',
+                design: 'Design & Prototyping',
+                dev: 'Development & Implementation',
+                ai: 'Productivity & AI'
+            },
+            levels: {
+                master: 'Master',
+                advanced: 'Advanced',
+                intermediate: 'Intermediate'
+            }
         },
         about: {
             title: 'About Me',
-            intro: 'UX/UI Designer focused on product, conversion, and data-informed decisions.',
-            sections: {
+            subtitle: 'Product Design · Conversion · Data',
+            profile: {
+                p1: 'UX/UI Designer with 5 years of experience in design, optimization, and development of digital products. Specialized in User-Centered Design, conversion optimization, performance, and metrics, applying methodologies like Design Thinking and UX Sprint.',
+                p2: 'Experience in B2B, Fintech, e-commerce, and digital product projects, leading end-to-end processes from value proposition to UX testing.',
+                p3: 'Proficiency in prototyping tools, data analysis, and Front-End (HTML, CSS, and Bootstrap), integrating AI applied to design and layout to streamline processes.'
+            },
+            interests: {
+                research: 'Research',
+                innovation: 'Innovation',
+                technology: 'Technology',
+                creativity: 'Creativity',
+                gamer: 'Gamer',
+                tennis: 'Tennis',
+                boxing: 'Boxing',
+                chess: 'Chess'
+            },
+            cta: {
+                contact: 'Get in Touch',
+                cv: 'Download CV'
+            },
+            cards: {
                 experience: {
                     title: 'Experience',
                     items: ['B2B, Fintech, E-commerce, E-learning', 'Complex products and regulated environments']
@@ -150,17 +221,26 @@ const translations = {
         },
         contact: {
             title: 'Need a UX/UI designer who impacts business results?',
-            intro: 'Let\'s talk about your next product or UX challenge.',
-            cta: {
-                email: 'Contact Me',
-                linkedin: 'LinkedIn',
-                cv: 'Download CV'
+            subtitle: 'Let\'s talk about your next product or UX challenge.',
+            infoTitle: 'Contact Information',
+            formTitle: 'Send a message',
+            labels: {
+                name: 'Your name',
+                email: 'Your email',
+                message: 'Your message'
             },
-            audience: [
-                'Recruiters',
-                'Product teams',
-                'B2B / SaaS Companies'
-            ]
+            cta: 'Send Message',
+            status: {
+                sending: 'Sending message...',
+                success: 'Message sent successfully. I will get back to you soon.',
+                error: 'An error occurred. Please try again.'
+            },
+            location: 'Santiago, Chile',
+            links: {
+                linkedin: 'LinkedIn',
+                github: 'GitHub',
+                cv: 'CV'
+            }
         },
         footer: {
             rights: '© 2026 Fernando Arriagada. All rights reserved.',

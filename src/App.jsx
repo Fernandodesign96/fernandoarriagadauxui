@@ -11,6 +11,7 @@ import LaEspecieria from './pages/LaEspecieria'
 import Pharmafy from './pages/Pharmafy'
 import Findies from './pages/Findies'
 import GoodMeal from './pages/GoodMeal'
+import BackToTop from './components/BackToTop'
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                             <Route path="/work/findies" element={<Findies />} />
                             <Route path="/work/goodmeal" element={<GoodMeal />} />
                         </Routes>
+                        <BackToTop />
                         <Footer />
                     </div>
                 </Router>

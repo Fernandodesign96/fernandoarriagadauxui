@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 
 const CaseStudyTemplate = ({
@@ -90,10 +90,45 @@ const CaseStudyTemplate = ({
         return labels[key] || 'View Resource'
     }
 
+    const [selectedImage, setSelectedImage] = useState(null)
+
+    const openLightbox = (imgSrc) => {
+        setSelectedImage(imgSrc)
+        document.body.style.overflow = 'hidden' // Prevent scrolling
+    }
+
+    const closeLightbox = () => {
+        setSelectedImage(null)
+        document.body.style.overflow = 'unset'
+    }
+
+    // ... existing helpers ...
+
     const galleryGridClass = project.galleryCols === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2';
 
     return (
         <div className="min-h-screen bg-white dark:bg-neutral-950 transition-colors duration-200">
+            {/* Lightbox Modal */}
+            {selectedImage && (
+                <div
+                    className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
+                    onClick={closeLightbox}
+                >
+                    <button
+                        onClick={closeLightbox}
+                        className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors"
+                    >
+                        <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                    <img
+                        src={selectedImage}
+                        alt="Full screen preview"
+                        className="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain"
+                        onClick={(e) => e.stopPropagation()}
+                    />
+                </div>
+            )}
+
             {/* Hero Section with Integrated Cover Image */}
             <section className="bg-neutral-50 dark:bg-neutral-900/50 border-b border-neutral-200 dark:border-neutral-800 transition-colors duration-200">
                 <div className="container-custom py-12 md:py-20 lg:py-24">
@@ -129,7 +164,10 @@ const CaseStudyTemplate = ({
 
                         {/* Image Column */}
                         {project.coverImage && (
-                            <div className="flex-1 w-full max-w-2xl flex justify-center items-center">
+                            <div
+                                className="flex-1 w-full max-w-2xl flex justify-center items-center cursor-pointer hover:opacity-95 transition-opacity"
+                                onClick={() => openLightbox(`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`)}
+                            >
                                 <img
                                     src={`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`}
                                     alt={`${project.title} showcase`}
@@ -363,7 +401,11 @@ const CaseStudyTemplate = ({
                             </h3>
                             <div className={`grid grid-cols-1 ${galleryGridClass} gap-8 md:gap-8`}>
                                 {group.images.map((img, imgIndex) => (
-                                    <div key={imgIndex} className="bg-neutral-50 dark:bg-neutral-900 p-2 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-shadow">
+                                    <div
+                                        key={imgIndex}
+                                        className="bg-neutral-50 dark:bg-neutral-900 p-2 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer hover:opacity-95"
+                                        onClick={() => openLightbox(`${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`)}
+                                    >
                                         <img
                                             src={`${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`}
                                             alt={`${group.title} ${imgIndex + 1}`}

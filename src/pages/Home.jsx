@@ -5,6 +5,7 @@ import ProjectCard from '../components/ProjectCard'
 import Section from '../components/Section'
 import ProcessStep from '../components/ProcessStep'
 import ToolsGrid from '../components/ToolsGrid'
+import Contact from '../components/Contact'
 
 const Home = () => {
     const { currentLang } = useLanguage()
@@ -20,6 +21,7 @@ const Home = () => {
 
     return (
         <div className="bg-white dark:bg-slate-950 transition-colors duration-500">
+
             {/* HERO SECTION */}
             <section className="relative min-h-[75vh] flex items-center pt-24 pb-16 overflow-hidden bg-slate-950 transition-colors duration-500">
                 {/* Refined Background Decoration - Even more subtle on dark */}
@@ -62,7 +64,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* SELECTED WORK */}
+            {/* SELECTED WORK (PROJECTS) */}
             <Section id="work" background="white" className="relative">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 text-center md:text-left">
                     <div className="max-w-3xl">
@@ -75,15 +77,125 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                     {projects.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
             </Section>
 
-            {/* PROCESS */}
-            <Section id="process" className="bg-slate-50 dark:bg-slate-900/30">
+            {/* ABOUT ME (Moved here) */}
+            <Section id="about" className="bg-slate-50 dark:bg-slate-900/30">
+                <div className="container-custom mx-auto">
+                    {/* Header */}
+                    <div className="text-center mb-10">
+                        <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
+                            {t.about.title}
+                        </h2>
+                        <p className="text-xl text-primary-600 dark:text-primary-400 font-bold">
+                            {t.about.subtitle}
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+                        {/* Left Column: Profile, Interests & CTAs */}
+                        <div className="flex flex-col gap-3">
+                            {/* Profile Text Blocks */}
+                            <div className="flex flex-col gap-2">
+                                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed font-normal max-w-xl mx-auto lg:mx-0">
+                                    {t.about.profile.p1}
+                                </p>
+                                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed font-normal max-w-xl mx-auto lg:mx-0">
+                                    {t.about.profile.p2}
+                                </p>
+                                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed font-normal max-w-xl mx-auto lg:mx-0">
+                                    {t.about.profile.p3}
+                                </p>
+                            </div>
+
+                            {/* Personal Attributes / Interests Grid */}
+                            <div className="grid grid-cols-4 gap-2 max-w-xl mx-auto lg:mx-0 w-full">
+                                {[
+                                    { key: 'research', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg> },
+                                    { key: 'innovation', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg> },
+                                    { key: 'technology', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg> },
+                                    { key: 'creativity', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg> },
+                                    { key: 'gamer', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 15a2 2 0 100 4 2 2 0 000-4zm0 0V8a2 2 0 012-2h8a2 2 0 012 2v7m-2 0a2 2 0 100 4 2 2 0 000-4zM9 13h6" /></svg> },
+                                    { key: 'tennis', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /><circle cx="12" cy="12" r="3" strokeWidth={1.5} /></svg> },
+                                    { key: 'boxing', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 10V6a3 3 0 013-3v0a3 3 0 013 3v4m-6 0h6m-6 0a3 3 0 00-3 3v3a3 3 0 003 3h6a3 3 0 003-3v-3a3 3 0 00-3-3m-6 0v7" /></svg> },
+                                    { key: 'chess', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6a2 2 0 100-4 2 2 0 000 4zm0 2c-2 0-3.5 1-3.5 3h7c0-2-1.5-3-3.5-3zM8 21h8m-7-3h6m-3-7v7" /></svg> } // Star/Crown shape
+                                ].map((item) => (
+                                    <div key={item.key} className="flex flex-col items-center justify-center gap-1 p-1.5 bg-white dark:bg-slate-900 rounded-lg border border-slate-100 dark:border-slate-800 aspect-square text-center shadow-sm hover:border-indigo-200 dark:hover:border-indigo-900/50 transition-colors group">
+                                        <span className="text-slate-400 dark:text-slate-500 group-hover:text-indigo-500 transition-colors">
+                                            {item.icon}
+                                        </span>
+                                        <span className="text-[8px] uppercase font-bold text-slate-500 dark:text-slate-400 tracking-wider">
+                                            {t.about.interests[item.key]}
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* CTAs */}
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <button
+                                    onClick={scrollToContact}
+                                    className="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold text-sm transition-all shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:-translate-y-1 active:scale-95 text-center"
+                                >
+                                    {t.about.cta.contact}
+                                </button>
+                                <a
+                                    href="https://drive.google.com/file/d/1wIBM0SO7vQGvGgDtebRt3I_b-ZO1E5Gn/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="px-8 py-4 bg-white dark:bg-slate-900 text-slate-700 dark:text-white border border-slate-200 dark:border-slate-700 hover:border-indigo-500 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-xl font-bold text-sm transition-all hover:shadow-lg hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2 group"
+                                >
+                                    <svg className="w-5 h-5 text-slate-400 group-hover:text-indigo-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                                    {t.about.cta.cv}
+                                </a>
+                            </div>
+                        </div>      {/* Right Column: Avatar & Info Cards */}
+                        <div className="flex flex-col gap-3">
+                            {/* Avatar Card */}
+                            <div className="bg-white dark:bg-slate-800 p-2 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm w-32 aspect-square relative overflow-hidden group">
+                                <img
+                                    src="assets/profile.jpg"
+                                    alt="Foto de perfil de Fernando Arriagada"
+                                    className="w-full h-full object-cover rounded-xl"
+                                />
+                            </div>
+
+                            {Object.entries(t.about.cards).map(([key, card]) => (
+                                <div key={key} className="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all flex flex-col justify-center">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <div className="p-2.5 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg text-indigo-600 dark:text-indigo-400">
+                                            {/* Icons based on key matching new requests or existing */}
+                                            {key === 'experience' && <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>}
+                                            {/* Workflow -> "style" in translations? t key is 'workflow'. Check map loop */}
+                                            {key === 'workflow' && <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" /></svg>}
+                                            {key === 'value' && <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
+                                        </div>
+                                        <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                                            {card.title}
+                                        </h3>
+                                    </div>
+                                    <ul className="space-y-2 pl-2">
+                                        {card.items.map((item, idx) => (
+                                            <li key={idx} className="text-slate-600 dark:text-slate-400 text-sm font-medium flex items-center gap-2">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </Section>
+
+            {/* METHODOLOGY (PROCESS) */}
+            <Section id="process" className="bg-white dark:bg-slate-950">
                 <div className="text-center max-w-3xl mx-auto mb-12">
                     <h2 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-6 tracking-tight">
                         {t.process.title}
@@ -121,113 +233,23 @@ const Home = () => {
                 </div>
             </Section>
 
-            {/* TOOLS SECTION */}
-            <Section id="tools" background="white">
+            {/* SKILLS (TOOLS, Renamed to match Nav logic, key in t is 'skills') */}
+            <Section id="tools" className="bg-slate-50 dark:bg-slate-900/30">
                 <div className="text-center max-w-3xl mx-auto mb-12">
                     <h2 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-6 tracking-tight">
-                        {t.tools.title}
+                        {t.skills.title}
                     </h2>
                     <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
-                        {t.tools.intro}
+                        {t.skills.subtitle}
                     </p>
                 </div>
 
                 <ToolsGrid />
             </Section>
 
-            {/* ABOUT */}
-            <Section id="about" className="bg-slate-50 dark:bg-slate-900/30">
-                <div className="flex flex-col items-center text-center mb-12 max-w-4xl mx-auto">
-                    <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden shadow-2xl mb-10 border-[6px] border-white dark:border-slate-800 ring-4 ring-primary-500/20">
-                        <img
-                            src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
-                            alt="Fernando Arriagada"
-                            className="absolute inset-0 w-full h-full object-cover"
-                        />
-                    </div>
-                    <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
-                        {t.about.title}
-                    </h2>
-                    <p className="text-xl md:text-2xl text-primary-600 dark:text-primary-400 font-bold mb-12 leading-tight">
-                        {t.about.intro}
-                    </p>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full text-left">
-                        {Object.entries(t.about.sections).map(([key, section]) => (
-                            <div key={key} className="bg-white dark:bg-slate-800 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                                <h3 className="text-lg font-black text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                                    <span className="w-2 h-2 rounded-full bg-primary-500 shadow-lg shadow-primary-500/50" />
-                                    {section.title}
-                                </h3>
-                                <ul className="space-y-4">
-                                    {section.items.map((item, idx) => (
-                                        <li key={idx} className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed flex items-start gap-3">
-                                            <span className="text-primary-500 mt-1 font-bold">→</span>
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </Section>
-
             {/* CONTACT */}
             <Section id="contact" background="white">
-                <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-8 tracking-tighter leading-[1.05] max-w-[800px] mx-auto">
-                        {t.contact.title}
-                    </h2>
-                    <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-                        {t.contact.intro}
-                    </p>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-                        {t.contact.audience.map((item, index) => (
-                            <div key={index} className="px-8 py-5 bg-slate-50 dark:bg-slate-900/30 rounded-2xl border border-slate-100 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] font-black uppercase tracking-widest">
-                                {item}
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="flex flex-col items-center gap-10">
-                        <a
-                            href="mailto:fernandodesign96@gmail.com"
-                            className="w-full sm:w-auto px-12 py-5 bg-primary-600 hover:bg-primary-500 text-white rounded-2xl font-black text-xl transition-all shadow-2xl shadow-primary-500/30 hover:shadow-primary-500/50 flex items-center justify-center transform hover:-translate-y-2 active:scale-95"
-                        >
-                            <svg className="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                            {t.contact.cta.email}
-                        </a>
-
-                        <div className="flex flex-wrap justify-center gap-10 font-black uppercase tracking-widest text-[11px]">
-                            <a
-                                href="https://www.linkedin.com/in/fernando-arriagada-castillo-a68283180/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group text-slate-400 hover:text-primary-600 transition-all flex items-center gap-3"
-                            >
-                                <svg className="w-5 h-5 grayscale group-hover:grayscale-0 transition-all opacity-50 group-hover:opacity-100" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                                </svg>
-                                LinkedIn
-                            </a>
-                            <a
-                                href="https://drive.google.com/file/d/1wIBM0SO7vQGvGgDtebRt3I_b-ZO1E5Gn/view?usp=sharing"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group text-slate-400 hover:text-primary-600 transition-all flex items-center gap-3"
-                            >
-                                <svg className="w-5 h-5 grayscale group-hover:grayscale-0 transition-all opacity-50 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                </svg>
-                                {t.contact.cta.cv}
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <Contact />
             </Section>
         </div>
     )
