@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useLanguage } from '../context/LanguageContext'
+import projectsData from '../data/projects'
 import DeviceMockup from './DeviceMockup'
 
 const CaseStudyTemplate = ({
@@ -18,6 +19,12 @@ const CaseStudyTemplate = ({
 }) => {
     const navigate = useNavigate()
     const { currentLang } = useLanguage()
+
+    // Find siblings for sequential navigation
+    const allProjects = projectsData[currentLang]
+    const currentIndex = allProjects.findIndex(p => p.slug === project.slug)
+    const prevProject = currentIndex > 0 ? allProjects[currentIndex - 1] : null
+    const nextProject = currentIndex < allProjects.length - 1 ? allProjects[currentIndex + 1] : null
 
     // Simple label translations for the template
     const labels = {
@@ -91,17 +98,52 @@ const CaseStudyTemplate = ({
         return labels[key] || 'View Resource'
     }
 
-    const [selectedImage, setSelectedImage] = useState(null)
+    const [lightboxIndex, setLightboxIndex] = useState(null)
+
+    // Flatten all gallery images for lighthouse navigation
+    const allGalleryImages = project.gallery?.reduce((acc, group) => {
+        return [...acc, ...group.images.map(img => ({
+            src: `${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`,
+            groupTitle: group.title
+        }))]
+    }, []) || []
 
     const openLightbox = (imgSrc) => {
-        setSelectedImage(imgSrc)
-        document.body.style.overflow = 'hidden' // Prevent scrolling
+        const index = allGalleryImages.findIndex(img => img.src === imgSrc)
+        setLightboxIndex(index !== -1 ? index : 0)
+        document.body.style.overflow = 'hidden'
     }
 
     const closeLightbox = () => {
-        setSelectedImage(null)
+        setLightboxIndex(null)
         document.body.style.overflow = 'unset'
     }
+
+    const nextImage = (e) => {
+        e?.stopPropagation()
+        if (lightboxIndex < allGalleryImages.length - 1) {
+            setLightboxIndex(prev => prev + 1)
+        }
+    }
+
+    const prevImage = (e) => {
+        e?.stopPropagation()
+        if (lightboxIndex > 0) {
+            setLightboxIndex(prev => prev - 1)
+        }
+    }
+
+    // Keyboard navigation
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (lightboxIndex === null) return
+            if (e.key === 'ArrowRight') nextImage()
+            if (e.key === 'ArrowLeft') prevImage()
+            if (e.key === 'Escape') closeLightbox()
+        }
+        window.addEventListener('keydown', handleKeyDown)
+        return () => window.removeEventListener('keydown', handleKeyDown)
+    }, [lightboxIndex])
 
     // ... existing helpers ...
 
@@ -110,38 +152,97 @@ const CaseStudyTemplate = ({
     return (
         <div className="min-h-screen bg-white dark:bg-neutral-950 transition-colors duration-200">
             {/* Lightbox Modal */}
-            {selectedImage && (
+            {lightboxIndex !== null && (
                 <div
-                    className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
+                    className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
                     onClick={closeLightbox}
                 >
+                    {/* Close Button */}
                     <button
                         onClick={closeLightbox}
-                        className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors"
+                        className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-[110]"
+                        aria-label="Close viewer"
                     >
                         <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
-                    <img
-                        src={selectedImage}
-                        alt="Full screen preview"
-                        className="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain"
-                        onClick={(e) => e.stopPropagation()}
-                    />
+
+                    {/* Prev Button */}
+                    {lightboxIndex > 0 && (
+                        <button
+                            onClick={prevImage}
+                            className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 text-white transition-all z-[110]"
+                            aria-label="Previous image"
+                        >
+                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+                        </button>
+                    )}
+
+                    {/* Next Button */}
+                    {lightboxIndex < allGalleryImages.length - 1 && (
+                        <button
+                            onClick={nextImage}
+                            className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 text-white transition-all z-[110]"
+                            aria-label="Next image"
+                        >
+                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    )}
+
+                    <div className="relative max-w-5xl w-full flex flex-col items-center">
+                        <img
+                            src={allGalleryImages[lightboxIndex].src}
+                            alt={`${allGalleryImages[lightboxIndex].groupTitle} - Image ${lightboxIndex + 1}`}
+                            className="max-w-full max-h-[85vh] rounded-lg shadow-2xl object-contain animate-scale-in"
+                            onClick={(e) => e.stopPropagation()}
+                        />
+                        <div className="mt-4 text-white/60 text-sm font-medium">
+                            {lightboxIndex + 1} / {allGalleryImages.length}
+                        </div>
+                    </div>
                 </div>
             )}
 
             {/* Hero Section with Integrated Cover Image */}
             <section className="bg-neutral-50 dark:bg-neutral-900/50 border-b border-neutral-200 dark:border-neutral-800 transition-colors duration-200">
                 <div className="container-custom py-12 md:py-20 lg:py-24">
-                    <Link
-                        to="/"
-                        className="inline-flex items-center gap-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 mb-8 transition-colors"
-                    >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                        </svg>
-                        {t.backHome}
-                    </Link>
+                    <div className="flex items-center justify-between mb-12">
+                        <Link
+                            to="/"
+                            className="inline-flex items-center gap-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                            </svg>
+                            {t.backHome}
+                        </Link>
+
+                        {/* Sequential Navigation Buttons */}
+                        <div className="flex items-center gap-1 bg-neutral-200/50 dark:bg-neutral-800/50 p-1 rounded-lg backdrop-blur-sm animate-fade-in shadow-sm border border-neutral-300/50 dark:border-neutral-700/50">
+                            <button
+                                onClick={() => prevProject && navigate(`/work/${prevProject.slug}`)}
+                                disabled={!prevProject}
+                                className={`p-2 rounded-md transition-all ${!prevProject ? 'text-neutral-400 cursor-not-allowed opacity-30' : 'text-neutral-700 dark:text-neutral-300 hover:bg-white dark:hover:bg-neutral-700 hover:shadow-sm'}`}
+                                aria-label="Previous Project"
+                                title={prevProject?.title}
+                            >
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <div className="w-[1px] h-4 bg-neutral-300 dark:bg-neutral-700"></div>
+                            <button
+                                onClick={() => nextProject && navigate(`/work/${nextProject.slug}`)}
+                                disabled={!nextProject}
+                                className={`p-2 rounded-md transition-all ${!nextProject ? 'text-neutral-400 cursor-not-allowed opacity-30' : 'text-neutral-700 dark:text-neutral-300 hover:bg-white dark:hover:bg-neutral-700 hover:shadow-sm'}`}
+                                aria-label="Next Project"
+                                title={nextProject?.title}
+                            >
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
 
                     <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
                         {/* Text Column */}
@@ -180,7 +281,7 @@ const CaseStudyTemplate = ({
                         )}
                     </div>
                 </div>
-            </section>
+            </section >
 
             <div className="container-custom py-12 md:py-16">
                 <div className="max-w-4xl mx-auto space-y-20">
@@ -411,12 +512,12 @@ const CaseStudyTemplate = ({
                                     >
                                         <DeviceMockup
                                             type={project.deviceType === 'iphone' ? 'iphone' : (project.deviceType === 'laptop' ? 'laptop' : 'original')}
-                                            className={project.deviceType === 'iphone' ? 'scale-90' : ''}
+                                            className={`${project.deviceType === 'iphone' ? 'scale-90' : ''} w-full`}
                                         >
                                             <img
                                                 src={`${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`}
                                                 alt={`${group.title} ${imgIndex + 1}`}
-                                                className={`w-full h-auto object-top rounded-lg shadow-sm ${project.deviceType === 'iphone' ? 'object-cover' : (project.deviceType === 'none' ? 'mix-blend-multiply dark:mix-blend-normal' : '')}`}
+                                                className={`w-full h-auto object-cover object-top rounded-lg shadow-sm ${project.deviceType === 'iphone' ? 'object-cover' : (project.deviceType === 'none' ? 'mix-blend-multiply dark:mix-blend-normal' : '')}`}
                                                 loading="lazy"
                                             />
                                         </DeviceMockup>
@@ -447,7 +548,7 @@ const CaseStudyTemplate = ({
                     </div>
                 </div>
             </section>
-        </div>
+        </div >
     )
 }
 

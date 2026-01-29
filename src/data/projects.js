@@ -107,7 +107,7 @@ const projectsData = {
                 desktop: 'https://bcnglobal.figweb.site/',
                 tablet: 'https://bcnglobaltablet.figweb.site/',
                 mobile: 'https://bcnglobalmobile.figweb.site/',
-                github: 'https://github.com/Fernandodesign96/bancoestado-app'
+                github: 'https://github.com/Fernandodesign96/bcnglobal'
             },
             codeDetails: 'Desarrollo Front End (HTML5 + CSS3 + Bootstrap)',
             gallery: [
@@ -1009,7 +1009,7 @@ const projectsData = {
                 desktop: 'https://bcnglobal.figweb.site/',
                 tablet: 'https://bcnglobaltablet.figweb.site/',
                 mobile: 'https://bcnglobalmobile.figweb.site/',
-                github: 'https://github.com/Fernandodesign96/bancoestado-app'
+                github: 'https://github.com/Fernandodesign96/bcnglobal'
             },
             codeDetails: 'Front End Development (HTML5 + CSS3 + Bootstrap)',
             gallery: [
