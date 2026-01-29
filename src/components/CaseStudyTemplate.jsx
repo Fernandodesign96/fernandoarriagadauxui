@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useLanguage } from '../context/LanguageContext'
+import DeviceMockup from './DeviceMockup'
 
 const CaseStudyTemplate = ({
     project,
@@ -165,14 +166,16 @@ const CaseStudyTemplate = ({
                         {/* Image Column */}
                         {project.coverImage && (
                             <div
-                                className="flex-1 w-full max-w-2xl flex justify-center items-center cursor-pointer hover:opacity-95 transition-opacity"
+                                className="flex-1 w-full max-w-2xl cursor-pointer hover:opacity-95 transition-opacity"
                                 onClick={() => openLightbox(`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`)}
                             >
-                                <img
-                                    src={`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`}
-                                    alt={`${project.title} showcase`}
-                                    className={`h-auto rounded-xl shadow-lg object-cover ${project.coverImageClass ? project.coverImageClass : 'w-full'}`}
-                                />
+                                <DeviceMockup type={project.deviceType}>
+                                    <img
+                                        src={`${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`}
+                                        alt={`${project.title} showcase`}
+                                        className={`w-full h-full object-contain object-top ${project.deviceType === 'none' ? 'dark:bg-neutral-800 rounded-xl mix-blend-multiply dark:mix-blend-normal' : 'object-cover rounded-none'} ${project.coverImageClass ? project.coverImageClass : ''}`}
+                                    />
+                                </DeviceMockup>
                             </div>
                         )}
                     </div>
@@ -403,15 +406,20 @@ const CaseStudyTemplate = ({
                                 {group.images.map((img, imgIndex) => (
                                     <div
                                         key={imgIndex}
-                                        className="bg-neutral-50 dark:bg-neutral-900 p-2 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer hover:opacity-95"
+                                        className="bg-neutral-50 dark:bg-neutral-900 p-2 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer hover:opacity-95 flex items-center justify-center overflow-hidden"
                                         onClick={() => openLightbox(`${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`)}
                                     >
-                                        <img
-                                            src={`${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`}
-                                            alt={`${group.title} ${imgIndex + 1}`}
-                                            className="w-full h-auto rounded-lg shadow-sm"
-                                            loading="lazy"
-                                        />
+                                        <DeviceMockup
+                                            type={project.deviceType === 'iphone' ? 'iphone' : (project.deviceType === 'laptop' ? 'laptop' : 'original')}
+                                            className={project.deviceType === 'iphone' ? 'scale-90' : ''}
+                                        >
+                                            <img
+                                                src={`${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`}
+                                                alt={`${group.title} ${imgIndex + 1}`}
+                                                className={`w-full h-auto object-top rounded-lg shadow-sm ${project.deviceType === 'iphone' ? 'object-cover' : (project.deviceType === 'none' ? 'mix-blend-multiply dark:mix-blend-normal' : '')}`}
+                                                loading="lazy"
+                                            />
+                                        </DeviceMockup>
                                     </div>
                                 ))}
                             </div>

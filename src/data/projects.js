@@ -10,7 +10,8 @@ const projectsData = {
             industry: 'Fintech',
             type: 'UX/UI Integral',
             description: 'Producto bancario con embudo de conversión complejo que requería optimización UX, pruebas de usabilidad y validación visual.',
-            coverImage: '/assets/projects/banco-estado-cover.png',
+            coverImage: '/assets/projects/bancoestado.PNG',
+            deviceType: 'iphone',
             tags: ['Optimización de Conversión', 'Fintech', 'Testing con IA'],
             metrics: {
                 improvement: 'Optimización de embudo',
@@ -92,7 +93,8 @@ const projectsData = {
             industry: 'B2B SaaS',
             type: 'UX/UI Integral',
             description: 'Soluciones de capacitación corporativa que requerían una presencia web moderna con propuesta de valor clara y diferenciación de servicios.',
-            coverImage: '/assets/projects/bcn-global-cover.png',
+            coverImage: '/assets/projects/bcnglobal.PNG',
+            deviceType: 'laptop',
             tags: ['Arquitectura de Información', 'Sistema de Diseño', 'B2B'],
             metrics: {
                 improvement: 'Mejora Percepción Marca',
@@ -183,7 +185,8 @@ const projectsData = {
             industry: 'E-commerce',
             type: 'Investigación UX',
             description: 'Marca de kombucha artesanal que necesitaba mejoras UX basadas en datos mediante card sorting, tree testing y pruebas A/B.',
-            coverImage: '/assets/projects/ghali-kombucha-cover.png',
+            coverImage: '/assets/projects/ghalikombucha.PNG',
+            deviceType: 'laptop',
             tags: ['Card Sorting', 'A/B Testing', 'E-commerce'],
             metrics: {
                 improvement: '+12.5% tasa de conversión',
@@ -262,7 +265,8 @@ const projectsData = {
             industry: 'E-commerce',
             type: 'UX/UI Integral',
             description: 'E-commerce de alimentos gourmet requiriendo renovación UX completa con foco en descubrimiento de productos y optimización de conversión.',
-            coverImage: '/assets/projects/la-especieria-cover.png',
+            coverImage: '/assets/projects/laespecieria.PNG',
+            deviceType: 'laptop',
             tags: ['E-commerce', 'Diseño UX/UI', 'Front-End'],
             metrics: {
                 improvement: '+100% tasa conversión',
@@ -414,6 +418,7 @@ const projectsData = {
             type: 'Diseño UX',
             description: 'Solución de salud digital para gestión de medicamentos demostrando proceso UX end-to-end desde investigación hasta prototipos.',
             coverImage: '/assets/projects/pharmafy-cover.png',
+            deviceType: 'none',
             tags: ['Healthcare', 'Investigación UX', 'Personas'],
             metrics: {
                 improvement: 'Diseño privacidad-primero',
@@ -595,6 +600,7 @@ const projectsData = {
             type: 'Mobile App UX/UI',
             description: 'Aplicación móvil para descubrir eventos de música en vivo y artistas con enfoque en navegación visual intuitiva.',
             coverImage: '/assets/projects/findies-cover.png',
+            deviceType: 'none',
             tags: ['Diseño Móvil', 'Flujos de Usuario', 'Diseño Visual'],
             metrics: {
                 improvement: 'Descubrimiento eventos',
@@ -756,6 +762,7 @@ const projectsData = {
             type: 'Mobile App UX/UI',
             description: 'Aplicación de planificación de comidas enfocada en salud con onboarding optimizado y flujo de adquisición de bajo roce.',
             coverImage: '/assets/projects/goodmeal-cover.png',
+            deviceType: 'none',
             tags: ['Diseño Móvil', 'Onboarding', 'Health Tech'],
             metrics: {
                 improvement: 'Adquisición de usuarios',
@@ -907,7 +914,8 @@ const projectsData = {
             industry: 'Fintech',
             type: 'End-to-End UX/UI',
             description: 'Banking product with complex conversion funnel requiring comprehensive UX optimization, usability testing, and front-end validation.',
-            coverImage: '/assets/projects/banco-estado-cover.png',
+            coverImage: '/assets/projects/bancoestado.PNG',
+            deviceType: 'iphone',
             tags: ['Conversion Optimization', 'Fintech', 'AI-Assisted Testing', 'Prototyping'],
             metrics: {
                 improvement: 'Funnel optimization',
@@ -988,7 +996,8 @@ const projectsData = {
             industry: 'B2B SaaS',
             type: 'End-to-End UX/UI',
             description: 'Corporate training solutions provider requiring modern web presence with clear value proposition and service differentiation.',
-            coverImage: '/assets/projects/bcn-global-cover.png',
+            coverImage: '/assets/projects/bcnglobal.PNG',
+            deviceType: 'laptop',
             tags: ['Information Architecture', 'Design System', 'B2B', 'Front-End'],
             metrics: {
                 improvement: 'Brand perception',
@@ -1077,7 +1086,8 @@ const projectsData = {
             industry: 'E-commerce',
             type: 'UX Research & Testing',
             description: 'Artisan kombucha brand needing data-driven UX improvements through card sorting, tree testing, and A/B testing.',
-            coverImage: '/assets/projects/ghali-kombucha-cover.png',
+            coverImage: '/assets/projects/ghalikombucha.PNG',
+            deviceType: 'laptop',
             tags: ['Card Sorting', 'A/B Testing', 'E-commerce', 'Conversion'],
             metrics: {
                 improvement: '+12.5% conversion rate',
@@ -1155,7 +1165,8 @@ const projectsData = {
             industry: 'E-commerce',
             type: 'End-to-End UX/UI',
             description: 'Specialty foods e-commerce requiring complete UX overhaul with focus on product discovery and conversion optimization.',
-            coverImage: '/assets/projects/la-especieria-cover.png',
+            coverImage: '/assets/projects/laespecieria.PNG',
+            deviceType: 'laptop',
             tags: ['E-commerce', 'UX/UI Design', 'Front-End', 'Mobile-First'],
             metrics: {
                 improvement: '+100% conversion rate',
@@ -1315,6 +1326,7 @@ const projectsData = {
             type: 'UX Design Project',
             description: 'Digital health solution for medication management demonstrating end-to-end UX process from research to high-fidelity prototypes.',
             coverImage: '/assets/projects/pharmafy-cover.png',
+            deviceType: 'none',
             tags: ['Healthcare', 'UX Research', 'Personas', 'User Flows'],
             metrics: {
                 improvement: 'Privacy-first design',
@@ -1505,6 +1517,7 @@ const projectsData = {
             type: 'Mobile App UX/UI',
             description: 'Mobile application for discovering live music events and artists with focus on visual-first browsing and intuitive navigation.',
             coverImage: '/assets/projects/findies-cover.png',
+            deviceType: 'none',
             tags: ['Mobile Design', 'User Flows', 'Visual Design', 'Entertainment'],
             metrics: {
                 improvement: 'Event discovery',
@@ -1665,6 +1678,7 @@ const projectsData = {
             type: 'Mobile App UX/UI',
             description: 'Health-focused meal planning application with streamlined onboarding and low-friction user acquisition flow.',
             coverImage: '/assets/projects/goodmeal-cover.png',
+            deviceType: 'none',
             tags: ['Mobile Design', 'Onboarding', 'Health Tech', 'UX Strategy'],
             metrics: {
                 improvement: 'User acquisition',

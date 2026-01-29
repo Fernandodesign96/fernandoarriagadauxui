@@ -85,7 +85,11 @@ const Home = () => {
             </Section>
 
             {/* ABOUT ME (Moved here) */}
-            <Section id="about" className="bg-slate-50 dark:bg-slate-900/30">
+            <Section
+                id="about"
+                background="none"
+                className="py-20 md:py-28"
+            >
                 <div className="container-custom mx-auto">
                     {/* Header */}
                     <div className="text-center mb-10">
@@ -248,7 +252,11 @@ const Home = () => {
             </Section>
 
             {/* CONTACT */}
-            <Section id="contact" background="white">
+            <Section
+                id="contact"
+                background="none"
+                className="py-20 md:py-28"
+            >
                 <Contact />
             </Section>
         </div>

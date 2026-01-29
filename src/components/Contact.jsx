@@ -49,7 +49,7 @@ const Contact = () => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                 {/* Left Column: Contact Info */}
                 <div className="flex flex-col justify-center gap-8 h-full">
                     <div>
