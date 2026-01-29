@@ -163,7 +163,7 @@ const Home = () => {
                             {/* Avatar Card */}
                             <div className="bg-white dark:bg-slate-800 p-2 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm w-32 aspect-square relative overflow-hidden group">
                                 <img
-                                    src="assets/profile.jpg"
+                                    src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
                                     alt="Foto de perfil de Fernando Arriagada"
                                     className="w-full h-full object-cover rounded-xl"
                                 />

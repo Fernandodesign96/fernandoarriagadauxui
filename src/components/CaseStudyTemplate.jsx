@@ -101,12 +101,18 @@ const CaseStudyTemplate = ({
     const [lightboxIndex, setLightboxIndex] = useState(null)
 
     // Flatten all gallery images for lighthouse navigation
-    const allGalleryImages = project.gallery?.reduce((acc, group) => {
-        return [...acc, ...group.images.map(img => ({
-            src: `${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`,
-            groupTitle: group.title
-        }))]
-    }, []) || []
+    const allGalleryImages = [
+        ...(project.coverImage ? [{
+            src: `${import.meta.env.BASE_URL}${project.coverImage.startsWith('/') ? project.coverImage.slice(1) : project.coverImage}`,
+            groupTitle: 'Cover'
+        }] : []),
+        ...(project.gallery?.reduce((acc, group) => {
+            return [...acc, ...group.images.map(img => ({
+                src: `${import.meta.env.BASE_URL}${img.startsWith('/') ? img.slice(1) : img}`,
+                groupTitle: group.title
+            }))]
+        }, []) || [])
+    ]
 
     const openLightbox = (imgSrc) => {
         const index = allGalleryImages.findIndex(img => img.src === imgSrc)
