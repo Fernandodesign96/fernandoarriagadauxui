@@ -34,54 +34,53 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            // Spanish Content - Translated from English
-            context: 'Banco Estado, una de las instituciones financieras más grandes de Chile, requería optimización UX para su producto bancario B2B. El embudo de conversión existente mostraba puntos de fricción que afectaban la adquisición de clientes empresariales y las tasas de activación de cuentas.',
-            problem: 'Procesos complejos de múltiples pasos, propuestas de valor poco claras y una arquitectura de información subóptima creaban barreras en el viaje del usuario. El desafío era simplificar sin comprometer los requisitos necesarios de seguridad y cumplimiento inherentes a los productos bancarios.',
-            role: 'Lideré el proceso de diseño UX/UI de principio a fin, incluyendo investigación de usuarios, wireframing, prototipado de alta fidelidad y validación front-end.',
+            context: 'Banco Estado, una de las instituciones financieras más grandes de Chile, requería optimización UX para su producto bancario B2B, con foco en mejorar la continuidad del flujo, la activación de clientes empresariales y la estabilidad percibida del sistema. El funnel existente presentaba fricciones estructurales que afectaban directamente la finalización del proceso.',
+            problem: 'Flujos extensos con múltiples pasos y baja divulgación progresiva, propuestas de valor poco claras en etapas críticas del onboarding, arquitectura de información subóptima y falta de feedback ante validaciones. El desafío no era estético: simplificar sin comprometer seguridad ni requisitos KYC, optimizando la experiencia de punta a punta.',
+            role: 'Senior UX/UI Designer – Proyecto End-to-End (Fintech B2B). Lideré el proceso de optimización UX/UI, investigación, prototipado y validación técnica.',
             responsibilities: [
-                'Análisis de flujo de usuarios y estrategia de optimización del embudo',
+                'Análisis de flujos y optimización del funnel de conversión',
+                'Investigación UX y evaluación de fricciones críticas',
                 'Wireframing y prototipado interactivo',
-                'Diseño UI de alta fidelidad alineado con las pautas de marca',
-                'Pruebas de usabilidad con clientes de banca empresarial',
-                'Generación de escenarios de prueba asistida por IA',
-                'Validación de implementación front-end'
+                'Diseño UI de alta fidelidad alineado a marca y accesibilidad',
+                'Pruebas de usabilidad con clientes empresariales',
+                'Generación de escenarios de prueba asistidos por IA',
+                'Validación de implementación front-end y performance'
             ],
             processSteps: [
                 {
                     title: 'Investigación y Análisis',
-                    description: 'Realicé análisis de datos del embudo de conversión existente, identificando puntos de abandono y problemas de usabilidad. Ejecuté análisis competitivo de experiencias bancarias B2B y entrevisté a stakeholders para comprender las limitaciones comerciales y requisitos de cumplimiento.'
+                    description: 'Analicé datos del funnel existente para identificar etapas de abandono, errores recurrentes y puntos de incertidumbre. Complementé con análisis competitivo de productos bancarios B2B y entrevistas con stakeholders para comprender restricciones técnicas, regulatorias y de negocio. Insight clave: gran parte del abandono se debía a falta de claridad, feedback y continuidad del flujo.'
                 },
                 {
                     title: 'Estrategia UX y Wireframing',
-                    description: 'Rediseñé flujos de usuarios para reducir pasos y carga cognitiva. Creé wireframes de baja a media fidelidad enfocados en la divulgación progresiva y CTAs claros. Definí una nueva arquitectura de información priorizando acciones bancarias críticas.'
+                    description: 'Rediseñé flujos priorizando: reducción de pasos innecesarios, divulgación progresiva de información compleja, CTAs claros y consistentes, y arquitectura enfocada en tareas críticas. Los wireframes se enfocaron en reducir carga cognitiva sin eliminar controles regulatorios.'
                 },
                 {
                     title: 'Diseño UI y Prototipado',
-                    description: 'Desarrollé diseños de alta fidelidad manteniendo la consistencia de marca mientras mejoraba la jerarquía visual. Creé prototipos interactivos para revisión de stakeholders y pruebas de usabilidad. Apliqué estándares de accesibilidad (WCAG 2.1 AA) en todo el proceso.'
+                    description: 'Desarrollé diseños de alta fidelidad respetando pautas de marca, reforzando jerarquía visual y señales de confianza. Implementé criterios de accesibilidad WCAG 2.1 AA y prototipos interactivos para validación con stakeholders y usuarios.'
                 },
                 {
                     title: 'Pruebas y Validación',
-                    description: 'Conduje pruebas de usabilidad con clientes empresariales. Utilicé IA para generar diversos escenarios de prueba y casos extremos. Validé la implementación front-end para asegurar fidelidad de diseño y estándares de rendimiento.'
+                    description: 'Realicé pruebas de usabilidad con clientes de banca empresarial, apoyadas por escenarios generados con IA para cubrir casos extremos. Validé la implementación front-end para asegurar consistencia entre diseño, performance y comportamiento real del sistema.'
                 }
             ],
             keyDecisions: [
-                'Implementé divulgación progresiva para reducir primeras impresiones abrumadoras manteniendo acceso a todas las funciones',
-                'Diseñé señales de confianza (insignias de seguridad, soporte en vivo) de manera prominente para abordar la ansiedad bancaria',
-                'Creé flujos responsivos móviles ya que los datos mostraron que el 40% de los dueños de negocios iniciaban solicitudes en móviles',
-                'Optimicé campos de formulario basados en pruebas de usabilidad, reduciendo campos requeridos en un 30% sin comprometer requisitos KYC'
+                'Divulgación progresiva como principio UX para reducir percepción de complejidad inicial manteniendo acceso completo a funciones avanzadas.',
+                'Señales explícitas de confianza y feedback: insignias de seguridad, estados de carga y mensajes de validación claros para reducir ansiedad bancaria.',
+                'Flujos responsivos mobile-first considerando que ~40% de los usuarios iniciaban procesos desde dispositivos móviles.',
+                'Optimización de formularios basada en testing: reducción del 30% de campos visibles por etapa, manteniendo todos los requisitos KYC.'
             ],
             results: [
-                'Visibilice problemas en estabilidad del flujo y conversión.',
-                'Identifiqué fricciones críticas en el funnel de conversión asociadas a intermitencia del sistema, falta de feedback y puntos de abandono.',
-                'Definí criterio, evaluación UX y KPIs de performance al analizar impacto en conversión y experiencia.',
-                'Propuse mejoras estratégicas de flujo, arquitectura de información y feedback del sistema.',
-                'Diseñé wireframes y prototipos de alta fidelidad orientados a escalabilidad.',
-                'Implementé maquetación asistida por IA (Lovable, Figma Make, Figma Sites) para agilizar procesos.',
-                'Desarrollé prototipo en Visual Studio Code (HTML, CSS, Bootstrap) para validación técnica.',
+                'Visibilicé problemas críticos de estabilidad del flujo y conversión.',
+                'Identifiqué fricciones estructurales asociadas a abandono, intermitencia y falta de feedback.',
+                'Definí criterios UX y KPIs de performance para evaluar impacto real en negocio.',
+                'Propuse mejoras estratégicas en flujo, arquitectura de información y comunicación del sistema.',
+                'Diseñé wireframes y prototipos escalables alineados a requerimientos regulatorios.',
+                'Implementé maquetación asistida por IA para acelerar ciclos de validación.',
                 'Ejecuté testeo UX para validar hipótesis y optimizar flujos críticos.',
-                'Optimizé la estabilidad, el performance y mejoré mi experiencia bancaria B2B.'
+                'Mejoré la experiencia bancaria B2B manteniendo seguridad, estabilidad y cumplimiento.'
             ],
-            learnings: 'La UX Fintech requiere equilibrar confianza y simplicidad. Los usuarios necesitan tranquilidad a través de patrones bancarios familiares e indicadores claros de seguridad, pero la complejidad nunca debe confundirse con minuciosidad. El sistema más seguro es aquel que los usuarios realmente completan con éxito.'
+            learnings: 'En productos Fintech B2B, la confianza no se construye agregando complejidad, sino eliminando incertidumbre. La UX efectiva traduce requisitos regulatorios en flujos comprensibles, medibles y completables. Un sistema seguro es aquel que los usuarios pueden completar con éxito.'
         },
         {
             id: 2,
@@ -1042,54 +1041,54 @@ const projectsData = {
                     images: Array.from({ length: 7 }, (_, i) => `/assets/projects/bancoestado/bancoestadoversionb${i + 1}.PNG`)
                 }
             ],
-            // English Content - Restored from component
-            context: "Banco Estado, one of Chile's largest financial institutions, required UX optimization for their B2B banking product. The existing conversion funnel showed friction points affecting business customer acquisition and account activation rates.",
-            problem: "Complex multi-step processes, unclear value propositions, and suboptimal information architecture were creating barriers in the user journey. The challenge was to simplify without compromising the necessary security and compliance requirements inherent to banking products.",
-            role: "Led end-to-end UX/UI design process including user research, wireframing, high-fidelity prototyping, and front-end validation.",
+            // English Content
+            context: 'Banco Estado, one of Chile\'s largest financial institutions, required UX optimization for its B2B banking product, focusing on improving flow continuity, business customer activation, and perceived system stability. The existing funnel presented structural frictions that directly affected process completion.',
+            problem: 'Extensive flows with multiple steps and low progressive disclosure, unclear value propositions at critical onboarding stages, suboptimal information architecture, and a lack of system feedback. The challenge was not aesthetic: simplify without compromising security or KYC requirements, optimizing the experience end-to-end.',
+            role: 'Senior UX/UI Designer – End-to-End Project (B2B Fintech). I led the UX/UI optimization process, including research, prototyping, and technical validation.',
             responsibilities: [
-                'User flow analysis and funnel optimization strategy',
+                'Flow analysis and conversion funnel optimization',
+                'UX research and critical friction evaluation',
                 'Wireframing and interactive prototyping',
-                'High-fidelity UI design aligned with brand guidelines',
-                'Usability testing with business banking customers',
-                'AI-assisted testing scenario generation',
-                'Front-end implementation validation'
+                'High-fidelity UI design aligned with brand and accessibility',
+                'Usability testing with business customers',
+                'AI-assisted test scenario generation',
+                'Front-end implementation and performance validation'
             ],
             processSteps: [
                 {
-                    title: 'Research & Analysis',
-                    description: 'Conducted data analysis of existing conversion funnel, identifying dropout points and usability issues. Performed competitive analysis of B2B banking experiences and interviewed stakeholders to understand business constraints and compliance requirements.'
+                    title: 'Research and Analysis',
+                    description: 'Analyzed data from the existing funnel to identify drop-off stages, recurring errors, and points of uncertainty. Complemented with competitive analysis of B2B banking products and interviews with stakeholders to understand technical, regulatory, and business constraints. Key Insight: abandonment was not due to complexity itself, but due to lack of clarity, feedback, and continuity.'
                 },
                 {
-                    title: 'UX Strategy & Wireframing',
-                    description: 'Redesigned user flows to reduce steps and cognitive load. Created low to mid-fidelity wireframes focusing on progressive disclosure and clear CTAs. Defined new information architecture prioritizing critical banking actions.'
+                    title: 'UX Strategy and Wireframing',
+                    description: 'Redesigned flows prioritizing: reduction of unnecessary steps, progressive disclosure of complex information, clear and consistent CTAs, and information architecture focused on critical tasks. Wireframes focused on reducing cognitive load without removing regulatory controls.'
                 },
                 {
-                    title: 'UI Design & Prototyping',
-                    description: 'Developed high-fidelity designs maintaining brand consistency while improving visual hierarchy. Created interactive prototypes for stakeholder review and usability testing. Applied accessibility standards (WCAG 2.1 AA) throughout.'
+                    title: 'UI Design and Prototyping',
+                    description: 'Developed high-fidelity designs respecting brand guidelines, reinforcing visual hierarchy and trust signals. Implemented WCAG 2.1 AA accessibility criteria and interactive prototypes for validation with stakeholders and users.'
                 },
                 {
-                    title: 'Testing & Validation',
-                    description: 'Conducted usability tests with business customers. Used AI to generate diverse testing scenarios and edge cases. Validated front-end implementation to ensure design fidelity and performance standards.'
+                    title: 'Testing and Validation',
+                    description: 'Conducted usability tests with business banking customers, supported by AI-generated scenarios to cover edge cases. Validated front-end implementation to ensure consistency between design, performance, and real system behavior.'
                 }
             ],
             keyDecisions: [
-                'Implemented progressive disclosure to reduce overwhelming first impressions while maintaining access to all features',
-                'Designed trust signals (security badges, live support) prominently to address banking anxiety',
-                'Created mobile-responsive flows as data showed 40% of business owners started applications on mobile',
-                'Optimized form fields based on usability testing, reducing required fields by 30% without compromising KYC requirements'
+                'Progressive disclosure as a UX principle to reduce initial complexity perception while maintaining access to advanced features.',
+                'Explicit trust signals and system feedback: security badges, loading states, and clear validation messages to reduce banking anxiety.',
+                'Mobile-first responsive flows considering that ~40% of users started processes from mobile devices.',
+                'Form optimization based on testing: approximately 30% reduction in visible fields per stage, maintaining all KYC requirements.'
             ],
             results: [
-                'Visualize stability issues in flow and conversion.',
-                'Identify critical frictions in the conversion funnel associated with system intermittency, lack of feedback, and drop-off points.',
-                'Define criteria, UX evaluation, and performance KPIs when analyzing impact on conversion and experience.',
-                'Propose strategic flow improvements, information architecture, and system feedback.',
-                'Design wireframes and high-fidelity prototypes oriented towards scalability.',
-                'Implement AI-assisted layout (Lovable, Figma Make, Figma Sites) to streamline processes.',
-                'Develop prototype in Visual Studio Code (HTML, CSS, Bootstrap) for technical validation.',
-                'Execute UX testing to validate hypotheses and optimize critical flows.',
-                'Optimize stability, performance, and improved the B2B banking experience.'
+                'Visible technical stability issues in flow and conversion were addressed.',
+                'Identified structural frictions associated with abandonment, intermittency, and lack of feedback.',
+                'Defined UX criteria and performance KPIs to evaluate real business impact.',
+                'Proposed strategic improvements in flow, information architecture, and system communication.',
+                'Designed scalable wireframes and prototypes aligned with regulatory requirements.',
+                'Implemented AI-assisted layout to accelerate validation cycles.',
+                'Executed UX testing to validate hypotheses and optimize critical flows.',
+                'Improved the B2B banking experience while maintaining security, stability, and compliance.'
             ],
-            learnings: "Fintech UX requires balancing trust and simplicity. Users need reassurance through familiar banking patterns and clear security indicators, but complexity should never be mistaken for thoroughness. The most secure system is one users actually complete successfully."
+            learnings: 'In B2B Fintech products, trust is not built by adding complexity, but by removing uncertainty. Effective UX translates regulatory requirements into understandable, measurable, and completable flows. A secure system is one that users can successfully complete.'
         },
         {
             id: 2,
