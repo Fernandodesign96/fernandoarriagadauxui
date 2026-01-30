@@ -82,16 +82,16 @@ const translations = {
             },
             cards: {
                 experience: {
-                    title: 'Experiencia',
-                    items: ['B2B, Fintech, E-commerce, E-learning', 'Productos complejos y entornos regulados']
+                    title: 'Especialización',
+                    items: ['B2B SaaS', 'Fintech', 'E-commerce']
                 },
                 workflow: {
-                    title: 'Forma de trabajo',
-                    items: ['Ownership end-to-end', 'Colaboración con producto, desarrollo y negocio', 'Decisiones basadas en datos']
+                    title: 'Enfoque',
+                    items: ['Conversión', 'Performance', 'Diseño basado en métricas']
                 },
                 value: {
-                    title: 'Valor diferencial',
-                    items: ['Optimización de conversión', 'Performance UX', 'Estrategia de Producto']
+                    title: 'Herramientas clave',
+                    items: ['Figma · Research', 'Tailwind · React · Vite', 'IA aplicada']
                 }
             }
         },
@@ -206,16 +206,16 @@ const translations = {
             },
             cards: {
                 experience: {
-                    title: 'Experience',
-                    items: ['B2B, Fintech, E-commerce, E-learning', 'Complex products and regulated environments']
+                    title: 'Specialization',
+                    items: ['B2B SaaS', 'Fintech', 'E-commerce']
                 },
                 workflow: {
-                    title: 'Working style',
-                    items: ['End-to-end ownership', 'Collaboration with product, development, and business', 'Data-informed decisions']
+                    title: 'Focus',
+                    items: ['Conversion', 'Performance', 'Metric-based design']
                 },
                 value: {
-                    title: 'Differential value',
-                    items: ['Conversion optimization', 'UX Performance', 'Product Strategy']
+                    title: 'Key Tools',
+                    items: ['Figma · Research', 'Tailwind · React · Vite', 'Applied AI']
                 }
             }
         },

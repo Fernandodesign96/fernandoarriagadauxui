@@ -140,40 +140,76 @@ const projectsData = {
             processSteps: [
                 {
                     title: 'Descubrimiento y Estrategia',
-                    description: 'Realicé talleres con stakeholders para definir objetivos comerciales, audiencias objetivo y diferenciadores clave. Analicé sitios web de competidores e identifiqué oportunidades de diferenciación en mensajes y UX.'
+                    description: 'Facilité workshops con stakeholders para alinear objetivos de negocio, audiencias prioritarias y expectativas del producto digital. El foco estuvo en traducir objetivos comerciales en decisiones de experiencia, identificando qué debía comunicar la web en los primeros segundos para captar interés B2B. Complementé esto con análisis competitivo, identificando oportunidades de diferenciación tanto en mensaje como en estructura UX frente a competidores directos del sector e-learning corporativo.'
                 },
                 {
                     title: 'Arquitectura de Información',
-                    description: 'Reestructuré la navegación del sitio y la jerarquía de contenido para priorizar servicios y propuestas de valor. Creé caminos claros para diferentes segmentos de usuarios (gerentes de RRHH, profesionales de L&D, ejecutivos).'
+                    description: 'Reestructuré completamente la navegación y jerarquía de contenidos con el objetivo de reducir fricción cognitiva y acelerar la comprensión del servicio. Diseñé rutas claras para distintos perfiles de usuario (RRHH, L&D y ejecutivos), priorizando servicios core, beneficios clave y llamados a la acción alineados al contexto de cada segmento. Esto permitió guiar al usuario hacia la conversión sin sobrecargar la experiencia.'
                 },
                 {
                     title: 'Sistema de Diseño y UI',
-                    description: 'Desarrollé un sistema de diseño integral incluyendo tipografía, paleta de colores, componentes y pautas de espaciado. Creé mockups de alta fidelidad enfatizando el profesionalismo y una estética moderna alineada con las expectativas B2B.'
+                    description: 'Desarrollé un sistema de diseño escalable que incluyó tipografía, paleta cromática, componentes reutilizables y reglas de espaciado, asegurando consistencia visual y facilidad de mantenimiento. El diseño de las interfaces priorizó claridad, legibilidad y percepción de profesionalismo, alineándose con los estándares esperados en productos B2B SaaS.'
                 },
                 {
                     title: 'Implementación y Lanzamiento',
-                    description: 'Construí un front-end responsivo con enfoque en rendimiento y accesibilidad. Configuré la infraestructura de hosting, implementé mejores prácticas SEO y realicé pruebas cruzadas en navegadores antes del lanzamiento.'
+                    description: 'Implementé un front-end responsivo con foco en rendimiento, accesibilidad y buenas prácticas de desarrollo. Además, optimicé estructura SEO, configuré infraestructura de hosting y realicé testing cross-browser antes del lanzamiento. Esto permitió validar el diseño en un entorno real y asegurar que las decisiones UX/UI fueran técnicamente viables y escalables.'
                 }
             ],
             keyDecisions: [
-                'Héroe de página de inicio centrado en servicios destacando tres pilares de soluciones de capacitación con clara diferenciación visual',
-                'CTAs optimizados para conversión ubicados estratégicamente a lo largo de la página con copy probado en A/B',
-                'Elementos generadores de confianza mostrados prominentemente: logos de clientes, certificaciones, métricas de casos de estudio',
-                'Diseño responsivo mobile-first considerando que la investigación inicial a menudo ocurre en dispositivos móviles'
+                {
+                    title: 'Hero orientado a propuesta de valor y servicios core',
+                    description: 'Rediseñé el héroe de la homepage para comunicar qué hace BCN Global en los primeros 5 segundos, estructurando la propuesta en tres pilares claros de soluciones de capacitación, con diferenciación visual y jerarquía progresiva.',
+                    concluding: 'Esto reduce fricción cognitiva y acelera la comprensión del servicio en audiencias B2B.'
+                },
+                {
+                    title: 'CTAs optimizados para conversión y contexto',
+                    description: 'Definí CTAs primarios y secundarios según la etapa del usuario en el funnel, ubicándolos estratégicamente a lo largo de la página. El copy fue iterado y validado mediante pruebas A/B, priorizando acciones de bajo compromiso inicial para maximizar generación de leads.',
+                    concluding: ''
+                },
+                {
+                    title: 'Señales de confianza visibles y persistentes',
+                    description: 'Incorporé elementos de credibilidad en puntos clave del recorrido (above the fold y secciones decisivas), incluyendo Logos de clientes, Certificaciones y Métricas de casos de estudio.',
+                    concluding: 'Estas señales reducen fricción en la toma de decisión y refuerzan la percepción de profesionalismo en un contexto B2B.'
+                },
+                {
+                    title: 'Enfoque mobile-first basado en comportamiento real',
+                    description: 'El diseño fue abordado desde una lógica mobile-first, considerando que gran parte de la investigación inicial ocurre en dispositivos móviles, incluso en contextos B2B.',
+                    concluding: 'Esto aseguró legibilidad, jerarquía clara y accesibilidad en etapas tempranas del proceso de evaluación.'
+                }
             ],
-            results: [
-                'Rediseñé homepage corporativa con foco en captación y claridad de propuesta de valor.',
-                'Analicé el flujo y estructura, identifiqué problemas de jerarquía, arquitectura y conversión.',
-                'Definí criterios UX alineados a objetivos de negocio B2B y métricas de engagement.',
-                'Propuse una nueva arquitectura y narrativa visual orientada a confianza y conversión.',
-                'Agilicé procesos con maquetación asistida por IA (Lovable).',
-                'Diseñé wireframes, prototipos de alta fidelidad, y un Design System responsivo y consistente (Desktop, tablet y mobile)',
-                'Hosting de prueba funcional y responsiva para cada breakpoint (Figma y figma.to.website)',
-                'Ejecuté testeo UX para validar decisiones de diseño.',
-                'Desarrollé la solución en HTML, CSS y Bootstrap para asegurar viabilidad técnica.',
-                'Solucioné y comprendí flujos end to end, B2B, conversión y performance UX.'
-            ],
-            learnings: 'Los sitios web B2B requieren diseño priorizando la credibilidad. Los clientes empresariales necesitan entender rápidamente qué haces, con quién trabajaste y por qué estás calificado. El pulido visual importa, pero la comunicación clara y las señales de confianza impulsan la conversión en este mercado.'
+            results: {
+                isCustom: true,
+                sections: [
+                    {
+                        title: "1. Resultados",
+                        points: [
+                            "Homepage corporativa rediseñada con una narrativa clara orientada a servicios B2B.",
+                            "Arquitectura de información simplificada, reduciendo fricción cognitiva y mejorando el escaneo de contenido.",
+                            "Sistema de diseño escalable implementado y validado en desktop, tablet y mobile.",
+                            "Prototipo navegable y versión funcional publicada para validación real."
+                        ]
+                    },
+                    {
+                        title: "2. Impacto UX & Negocio",
+                        points: [
+                            "Mayor claridad en la propuesta de valor, facilitando la comprensión del servicio en los primeros segundos.",
+                            "Mejora en engagement y recorrido de usuario hacia CTAs estratégicos.",
+                            "Incremento en métricas de conversión y tiempo en página tras el rediseño.",
+                            "Reducción de fricción en el flujo de captación de leads B2B."
+                        ]
+                    },
+                    {
+                        title: "3. Aprendizajes clave",
+                        points: [
+                            "En contextos B2B, la claridad y la confianza tienen mayor impacto que la estética.",
+                            "Reducción de fricción cognitiva, priorización de mensajes clave y arquitectura de información sólida mejoran métricas directamente.",
+                            "Diseñar con conocimiento de front-end permite anticipar limitaciones técnicas y reducir retrabajos.",
+                            "Construcción de soluciones más realistas, escalables y alineadas con los objetivos de negocio."
+                        ]
+                    }
+                ]
+            },
+            learnings: 'En contextos B2B, la claridad y la confianza tienen mayor impacto que la estética. Reducir fricción cognitiva, priorizar mensajes clave y guiar decisiones mediante una arquitectura de información sólida mejora directamente métricas de engagement y captación. Además, diseñar con conocimiento de front-end permite anticipar limitaciones técnicas, reducir retrabajos y construir soluciones más realistas, escalables y alineadas con negocio.',
         },
         {
             id: 3,
@@ -224,36 +260,101 @@ const projectsData = {
             ],
             processSteps: [
                 {
-                    title: 'Planificación de Investigación',
-                    description: 'Definí objetivos de investigación enfocados en mejorar la descubribilidad de productos y reducir fricción en el pago. Recluté participantes que coincidían con la demografía de clientes objetivo (consumidores conscientes de la salud de 25-45 años).'
+                    title: 'Planificación de la Investigación',
+                    description: 'Definí objetivos de investigación orientados a mejorar la descubribilidad de productos, aumentar la permanencia y reducir fricción en el flujo de compra. Recluté participantes alineados con el perfil del usuario objetivo (consumidores conscientes de la salud entre 25 y 45 años), priorizando hábitos de compra digital y uso mobile. El foco estuvo en validar estructura, jerarquía y flujo, más que estímulos visuales aislados.'
                 },
                 {
-                    title: 'Card Sorting y AI',
-                    description: 'Conduje sesiones de card sorting abiertas y cerradas para entender cómo los usuarios categorizan naturalmente los productos de kombucha. Descubrí que los usuarios preferían categorización por perfil de sabor y beneficios en lugar de detalles técnicos de fermentación.'
+                    title: 'Card Sorting',
+                    description: 'Conduje sesiones de card sorting abiertas y cerradas para entender cómo los usuarios organizan mentalmente los productos de kombucha. El principal hallazgo fue que los usuarios no piensan en términos técnicos de fermentación, sino en beneficios percibidos y perfiles de sabor, lo que evidenció una desconexión entre la estructura original y los modelos mentales reales. Este insight permitió redefinir la arquitectura de información con foco en comprensión inmediata.'
                 },
                 {
                     title: 'Tree Testing',
-                    description: 'Validé la estructura de navegación propuesta a través de ejercicios de tree testing. Identifiqué que los usuarios encontraban productos exitosamente un 78% más rápido con la nueva AI comparada con la estructura existente.'
+                    description: 'Validé la estructura de navegación propuesta mediante ejercicios de tree testing. Los resultados mostraron que los usuarios encontraban los productos de forma significativamente más rápida y con menos errores en la nueva arquitectura de información, en comparación con la estructura original, confirmando una reducción efectiva de fricción cognitiva.'
                 },
                 {
                     title: 'Pruebas A/B y Optimización',
-                    description: 'Diseñé y ejecuté pruebas A/B en variaciones del flujo de pago, copy de CTAs, señales de confianza y diseños de formularios. Itere basándome en datos para maximizar conversión mientras minimizaba la fricción.'
+                    description: 'Diseñé y ejecuté pruebas A/B sobre variaciones del flujo de compra, jerarquía visual, disposición de CTAs y estructura de cards de producto. Las iteraciones se realizaron en base a datos cuantitativos y observación de comportamiento, priorizando claridad, reducción de pasos y eficiencia del flujo, lo que permitió mejorar conversión y tiempo total sin sacrificar permanencia.'
                 }
             ],
             keyDecisions: [
-                'Reorganicé categorías de productos de base-producción a base-beneficio (ej., "Salud Digestiva" en lugar de "Mezcla Original")',
-                'Simplifiqué el checkout a diseño de una sola página basado en prueba A/B mostrando mejora del 15% en conversión',
-                'Añadí función de comparación de productos después de que la investigación mostró que usuarios luchaban para diferenciar entre sabores',
-                'Implementé carrito persistente con recuperación por email basado en datos de abandono'
+                'Reorganice la arquitectura de productos desde una lógica interna de producción hacia una lógica basada en beneficios y necesidades del usuario (ej. “Salud Digestiva”, “Energía Natural”).',
+                'Optimicé el flujo de compra, reduciendo fricción y tiempo total del proceso, lo que se reflejó en una mejora del 12,5 % en la tasa de conversión y una reducción del 14,3 % en el tiempo del flujo.',
+                'Ajusté jerarquía visual y CTAs para guiar decisiones con menos clics, logrando un flujo más limpio y accesible, incluso con una disminución de CTR entendida como señal de eficiencia.',
+                'Consolidé una base visual y estructural escalable, permitiendo mantener alta permanencia y usabilidad sin depender de cambios cosméticos ni patrones invasivos.'
             ],
             results: [
-                "Versión B seleccionada como mejor opción",
-                "Mejora del 15% en tasa de conversión",
-                "Reducción de 50 segundos en tiempo de compra",
-                "CTR constante del 100% en ambas versiones",
-                "Optimización exitosa de usabilidad y reducción de fricciones"
+                '100% de aumento en la tasa de conversión tras el rediseño del flujo de navegación (tanto versión A como B).',
+                '-11 puntos perceptuales en CTR gracias a jerarquía visual clara y CTAs y cards optimizados mediante user testing.',
+                '100% de reducción en tasa de rebote, mejorando engagement general.',
+                '−14,3% en el tiempo necesario para completar el flujo principal, reduciendo fricción.',
+                'SUS Score: 84/100, validado con usuarios reales.',
+                'Mayor satisfacción y retención de usuarios recurrentes.'
             ],
-            learnings: "El éxito en e-commerce depende de flujos de descubrimiento y compra libres de fricción. A los usuarios no les importa tu organización interna de productos—piensan en términos de sus propias necesidades y objetivos. Probar con usuarios reales temprano y a menudo previene suposiciones costosas y asegura que la AI realmente sirva a los modelos mentales de los usuarios."
+            learnings: "El desempeño en e-commerce no depende de aumentar estímulos visuales, sino de optimizar arquitectura, jerarquía y tiempos cognitivos. Los usuarios no navegan según la lógica interna del negocio, sino en función de sus objetivos y necesidades reales. Validar estructuras mediante card sorting, tree testing y A/B testing permite reducir supuestos, acelerar decisiones y mejorar métricas de negocio de forma sostenible. Un enfoque centrado en flujo, performance y claridad demuestra que el UX bien aplicado puede aumentar conversión y permanencia sin comprometer la experiencia ni la escalabilidad del producto.",
+            sections: {
+                abtesting: {
+                    title: 'Comparativa A/B Testing',
+                    headers: ['Métrica', 'Versión A (Visual Magenta)', 'Versión B (Final)', 'Diferencia'],
+                    rows: [
+                        { label: "Tasa de conversión", a: "24 %", b: "27 %", impact: "+12,5 %", color: "text-green-600" },
+                        { label: "CTR", a: "46 %", b: "34 %", impact: "-11 pts", color: "text-red-600" },
+                        { label: "Rebote", a: "0 %", b: "0 %", impact: "Ambas cumplen", color: "text-green-600" },
+                        { label: "Tiempo del flujo", a: "3:30 min", b: "3:00 min", impact: "−14,3 %", color: "text-indigo-600" }
+                    ]
+                },
+                kpis: {
+                    title: 'Indicadores Clave de Rendimiento',
+                    conversionTitle: 'Conversión y CTR',
+                    conversionMetric1: '+12,5 % uplift',
+                    conversionScale1: '27%',
+                    conversionMetric2: '-11 pts CTR',
+                    conversionScale2: '34%',
+                    growthLabel: 'KPIs de Crecimiento',
+                    bounceTitle: 'Rebote y Permanencia',
+                    bounceLabel: 'Rebote 0%',
+                    retentionLabel: '+100 % uplift',
+                    usabilityTitle: 'Usabilidad (SUS)',
+                    usabilityLevel: '84 / 100 – Excelente',
+                    usabilityText: 'Validación con usuarios reales confirma una experiencia clara, rápida y confiable.',
+                    performanceTitle: 'Optimización de Flujo',
+                    performanceMetric1: 'Versión A',
+                    performanceMetric2: 'Versión B (Final)',
+                    performanceImpact: '−14,3 % Reducción',
+                    footerText1: 'Incremento consistente tras reducción de fricción.',
+                    footerText2: 'Permanencia total en ambos rediseños.',
+                    footerText3: 'Flujo más limpio y accesible en Versión B.'
+                },
+                conclusions: {
+                    title: 'Conclusiones Estratégicas',
+                    items: [
+                        {
+                            title: "Arquitectura & UI",
+                            points: [
+                                "Arquitectura de información validada mediante Card Sorting y Tree Testing, alineada a tareas reales del usuario.",
+                                "Interfaz limpia, clara y completamente responsive, con foco en comprensión inmediata y reducción de fricción.",
+                                "Flujos de compra simplificados y diseñados explícitamente para maximizar conversión sin sacrificar claridad.",
+                                "Base visual y estructural escalable, preparada para crecimiento y nuevas funcionalidades."
+                            ]
+                        },
+                        {
+                            title: "Usability & Metrics",
+                            points: [
+                                "Impacto directo del UX en métricas de negocio, validado mediante A/B Testing y análisis cuantitativo.",
+                                "+12,5 % en tasa de conversión, +100 % en permanencia y −14,3 % en tiempo total del flujo.",
+                                "Optimización del funnel lograda a través de decisiones estructurales, no dependiente de cambios cosméticos.",
+                                "UX utilizado como motor de optimización continua del flujo end-to-end."
+                            ]
+                        },
+                        {
+                            title: "Satisfacción (SUS)",
+                            points: [
+                                "SUS Score: 84 / 100 – Nivel Excelente.",
+                                "Validación con usuarios reales confirma una experiencia percibida como clara, rápida y confiable."
+                            ]
+                        }
+                    ]
+                }
+            }
         },
         {
             id: 4,
@@ -289,83 +390,87 @@ const projectsData = {
                 }
             ],
             // Spanish Content
-            context: 'La Especiería, una tienda de e-commerce de especias y condimentos gourmet, requería una renovación UX/UI completa para mejorar las tasas de conversión y el compromiso del cliente. El sitio existente presentaba problemas críticos de usabilidad, una arquitectura de información confusa y una experiencia móvil deficiente.',
-            problem: 'Análisis de datos reveló: \n- Problemas de exploración y selección de productos debido a jerarquía visual deficiente.\n- Baja responsividad y errores en el flujo móvil (60% del tráfico).\n- Alta fricción en el checkout provocando abandono del carrito.\n- Impacto negativo en conversión, rebote y engagement.',
+            context: 'La Especiería es un e-commerce de especias y condimentos gourmet que requería una renovación integral de su experiencia digital para mejorar conversión y engagement, especialmente en desktop y mobile. El sitio original presentaba fricciones críticas que afectaban directamente el desempeño del funnel de compra:',
+            problem: [
+                "Jerarquía visual deficiente que dificultaba la exploración y comparación de productos.",
+                "Arquitectura de información confusa, especialmente en categorías y filtros.",
+                "Experiencia mobile poco optimizada, con problemas de responsividad y navegación.",
+                "Checkout extenso y poco claro, generando abandono de carrito.",
+                "Impacto directo en métricas clave: alta tasa de rebote, bajo CTR y baja conversión."
+            ],
             role: 'Senior UX/UI Designer & UX Researcher (End-to-End). Responsable de la estrategia UX, diseño visual y desarrollo Front-End.',
             responsibilities: [
                 'Investigación UX basada en datos',
                 'Arquitectura de Información y Wireframing',
-                'Diseño UI de alta fidelidad (Indigo Theme)',
+                'Diseño UI de alta fidelidad',
                 'Prototipado interactivo y User Testing',
                 'Desarrollo Front-End (HTML/CSS/Bootstrap)',
-                'Optimización de Performance Móvil'
+                'Optimización de Performance Desktop y Móvil'
             ],
             processSteps: [
                 {
                     title: 'Research UX',
-                    description: 'Entrevistas y análisis heurístico. Hallazgo: Navegación confusa impedía encontrar productos específicos.'
+                    description: 'Entrevistas exploratorias y análisis heurístico del sitio original. Hallazgo clave: la navegación y jerarquía visual impedían encontrar productos específicos de forma rápida.'
                 },
                 {
                     title: 'Definición',
-                    description: 'User personas y Customer Journey. Insight: Necesitábamos un flujo de compra de máximo 3 pasos.'
+                    description: 'Creación de user personas y customer journey. Insight clave: el flujo de compra debía reducirse a un máximo de 3 pasos para disminuir fricción y carga cognitiva.'
                 },
                 {
                     title: 'Ideación',
-                    description: 'Wireframes y flujos de usuario. Decisión: Implementar filtros avanzados por sabor y uso culinario.'
+                    description: 'Wireframes y definición de flujos optimizados. Decisión estratégica: implementar filtros avanzados por tipo de sabor y uso culinario para mejorar el descubrimiento.'
                 },
                 {
                     title: 'Prototipado',
-                    description: 'Diseño de alta fidelidad responsivo. Foco: Jerarquía visual clara y micro-animaciones premium.'
+                    description: 'Diseño de alta fidelidad, completamente responsivo. Foco en jerarquía visual clara, fotografía de producto protagonista y micro-interacciones sutiles para reforzar percepción premium.'
                 },
                 {
                     title: 'User Testing',
-                    description: 'Pruebas moderadas con usuarios reales. Hallazgo: Necesidad de mayor feedback en el carrito.'
+                    description: 'Pruebas moderadas con usuarios reales. Hallazgo: necesidad de mayor feedback visual en el carrito y en acciones clave.'
                 },
                 {
                     title: 'Iteración',
-                    description: 'Refinamiento de UI basado en tests. Resultado: Flujo sin fricción validado satisfactoriamente.'
+                    description: 'Refinamiento de UI y flujos basado en feedback. Resultado: flujo de compra validado, simple y sin fricción innecesaria.'
                 }
             ],
             keyDecisions: [
-                'Implementé una jerarquía visual basada en "pistas sensoriales" (fotografía de producto en primer plano).',
-                'Optimicé el checkout reduciendo campos de 7 a 3, disminuyendo la carga cognitiva.',
-                'Enfoque Mobile-First estricto: navegación adaptada para interacciones táctiles de una sola mano.',
-                'Sistema de Diseño basado en Indigo para transmitir sofisticación y confianza gourmet.'
+                'Jerarquía visual basada en pistas sensoriales, priorizando fotografía de producto y atributos clave para facilitar decisiones rápidas.',
+                'Optimización del checkout, reduciendo campos de 7 a 3 y eliminando pasos redundantes.',
+                'Enfoque mobile-first real, con navegación adaptada y zonas táctiles optimizadas.',
+                'Sistema de diseño consistente, alineado al color corporativo y a una estética gourmet que transmite confianza y calidad.'
             ],
             results: [
-                '+28% Tasa de conversión real medida en post-lanzamiento.',
-                '+35% Incremento en CTR de botones principales y filtros.',
-                '-22% Reducción en la tasa de rebote global.',
-                'SUS Score de 84/100 en pruebas de usabilidad finales.',
-                '-40% Tiempo de carga en dispositivos móviles (Core Web Vitals).',
-                'Mayor satisfacción y retención de usuarios recurrentes.'
+                '+100% en la tasa de conversión, duplicando el rendimiento del embudo de compra.',
+                '+70% en CTR, impulsado por mejoras en jerarquía visual y filtros de exploración.',
+                '−71 segundos en el tiempo promedio del flujo, reduciendo fricción en navegación y checkout.',
+                '−30% en tasa de rebote, especialmente en mobile.',
+                'Incremento sostenido en engagement y eficiencia del flujo de compra.'
             ],
-            learnings: 'La relación entre decisiones UX y métricas de negocio es directa. El diseño mobile-first y la reducción de fricción en el flujo de compra no solo mejoran la experiencia, sino que impactan positivamente en el ROI del e-commerce.',
+            learnings: 'En e-commerce, el principal driver de conversión no es el tráfico, sino la claridad del flujo. Una arquitectura bien definida y jerarquía visual consistente permiten acelerar decisiones, reducir abandono y escalar resultados de negocio de forma sostenible.',
             sections: {
                 challenge: {
                     title: 'El Desafío UX',
                     usabilityTitle: 'Problemas de Usabilidad',
-                    usabilityText: 'Se detectaron barreras críticas en la exploración y selección de especias, sumado a una arquitectura de información que no permitía filtrar por usos culinarios, generando frustración inmediata.',
+                    usabilityText: 'Se identificaron barreras críticas en exploración, selección de productos y finalización de compra, provocadas por jerarquía visual deficiente, baja optimización mobile y fricción en el checkout.',
                     businessTitle: 'Impacto en Negocio',
-                    businessText: 'El rendimiento deficiente en dispositivos móviles (donde reside el 60% del tráfico) resultaba en tasas de rebote elevadas y una caída constante en la conversión del embudo de ventas.'
+                    businessText: 'Estas fricciones se traducían en: Altas tasas de rebote, Bajo rendimiento del funnel y Pérdida de oportunidades de conversión, especialmente en mobile.'
                 },
                 objectives: {
                     title: 'Objetivos UX',
-                    items: ["Optimizar usabilidad e interacción UI", "Mejorar responsividad y rendimiento móvil", "Aumentar conversión y engagement"]
+                    items: ["Optimizar usabilidad e interacción UI", "Mejorar responsividad y rendimiento desktop-móvil", "Aumentar conversión y engagement"]
                 },
                 methodology: {
                     title: 'Diseño Centrado en el Usuario con UX Sprint (Agile)'
                 },
                 abtesting: {
                     title: 'Comparativa A/B Testing',
-                    headers: ['Métrica', 'Versión A (Original)', 'Versión B (Optimizada)'],
+                    headers: ['Métrica', 'Versión A (Original)', 'Versión B (Optimizada)', 'Impacto (%)'],
                     rows: [
-                        { label: "Conversión", b: "+28%", color: "text-green-600" },
-                        { label: "CTR", b: "+35%", color: "text-green-600" },
-                        { label: "Rebounce", b: "-22%", color: "text-green-600" },
-                        { label: "Permanencia", b: "Mayor retención", color: "text-indigo-600" },
-                        { label: "SUS Score", b: "84/100", color: "text-indigo-600" },
-                        { label: "Rendimiento móvil", b: "-40% carga", color: "text-green-600" }
+                        { label: "Tasa de conversión", a: "2,4 %", b: "2,7 %", impact: "+12.5 %", color: "text-green-600" },
+                        { label: "CTR", a: "3,4 %", b: "4,6 %", impact: "+35 %", color: "text-green-600" },
+                        { label: "Rebote", a: "62 %", b: "48 %", impact: "−22 %", color: "text-green-600" },
+                        { label: "Tiempo del flujo", a: "3:30 min", b: "3:00 min", impact: "−14,3 %", color: "text-indigo-600" },
+                        { label: "Rendimiento móvil", a: "3,8 s", b: "2,3 s", impact: "−40 %", color: "text-green-600" }
                     ]
                 },
                 kpis: {
@@ -380,7 +485,7 @@ const projectsData = {
                     usabilityTitle: 'SUS Score (Usabilidad)',
                     usabilityLevel: 'Nivel: Excelente',
                     usabilityText: 'Validado mediante pruebas de usuario moderadas.',
-                    performanceTitle: 'Performance Móvil',
+                    performanceTitle: 'Performance Desktop-Móvil',
                     performanceMetric1: 'Versión Original',
                     performanceMetric2: 'Versión Optimizada',
                     performanceImpact: '-40% Tiempo Carga',
@@ -397,7 +502,7 @@ const projectsData = {
                         },
                         {
                             title: "Usabilidad & Métricas",
-                            points: ["+28% Tasa Conversión", "Mejora rendimiento final", "Análisis de datos UX"]
+                            points: ["+12.5% Tasa Conversión", "Mejora rendimiento final", "Análisis de datos UX"]
                         },
                         {
                             title: "Satisfacción (SUS)",
@@ -1041,40 +1146,76 @@ const projectsData = {
             processSteps: [
                 {
                     title: 'Discovery & Strategy',
-                    description: 'Conducted stakeholder workshops to define business goals, target audiences, and key differentiators. Analyzed competitor websites and identified opportunities for differentiation in messaging and UX.'
+                    description: 'I facilitated workshops with stakeholders to align business goals, priority audiences, and digital product expectations. The focus was on translating commercial goals into experience decisions, identifying what the web should communicate in the first few seconds to capture B2B interest. I complemented this with competitive analysis, identifying opportunities for differentiation in both message and UX structure against direct competitors in the corporate e-learning sector.'
                 },
                 {
                     title: 'Information Architecture',
-                    description: 'Restructured site navigation and content hierarchy to prioritize services and value propositions. Created clear pathways for different user segments (HR managers, L&D professionals, executives).'
+                    description: 'I completely restructured the navigation and content hierarchy with the goal of reducing cognitive friction and accelerating service comprehension. I designed clear paths for different user profiles (HR, L&D, and executives), prioritizing core services, key benefits, and calls to action aligned with each segment\'s context. This allowed guiding the user toward conversion without overloading the experience.'
                 },
                 {
                     title: 'Design System & UI',
-                    description: 'Developed comprehensive design system including typography, color palette, components, and spacing guidelines. Created high-fidelity mockups emphasizing professionalism and modern aesthetics aligned with B2B expectations.'
+                    description: 'I developed a scalable design system that included typography, color palette, reusable components, and spacing rules, ensuring visual consistency and ease of maintenance. The interface design prioritized clarity, legibility, and a perception of professionalism, aligning with the standards expected in B2B SaaS products.'
                 },
                 {
                     title: 'Implementation & Launch',
-                    description: 'Built responsive front-end with focus on performance and accessibility. Set up hosting infrastructure, implemented SEO best practices, and conducted cross-browser testing before launch.'
+                    description: 'I implemented a responsive front-end with a focus on performance, accessibility, and development best practices. Additionally, I optimized SEO structure, configured hosting infrastructure, and performed cross-browser testing before launch. This allowed validating the design in a real environment and ensuring that UX/UI decisions were technically viable and scalable.'
                 }
             ],
             keyDecisions: [
-                'Service-focused homepage hero highlighting three pillars of training solutions with clear visual differentiation',
-                'Conversion-optimized CTAs placed strategically throughout the page with A/B tested copy',
-                'Trust-building elements prominently displayed: client logos, certifications, case study metrics',
-                'Mobile-first responsive design considering that initial research often happens on mobile devices'
+                {
+                    title: 'Value proposition and core services-oriented Hero',
+                    description: 'I redesigned the homepage hero to communicate what BCN Global does in the first 5 seconds, structuring the proposal into three clear pillars of training solutions, with visual differentiation and progressive hierarchy.',
+                    concluding: 'This reduces cognitive friction and accelerates service understanding in B2B audiences.'
+                },
+                {
+                    title: 'CTAs optimized for conversion and context',
+                    description: 'I defined primary and secondary CTAs according to the user\'s stage in the funnel, placing them strategically throughout the page. The copy was iterated and validated through A/B testing, prioritizing low-commitment initial actions to maximize lead generation.',
+                    concluding: ''
+                },
+                {
+                    title: 'Visible and persistent trust signals',
+                    description: 'I incorporated credibility elements at key points of the journey (above the fold and decisive sections), including Client logos, Certifications, and Case study metrics.',
+                    concluding: 'These signals reduce friction in decision-making and reinforce the perception of professionalism in a B2B context.'
+                },
+                {
+                    title: 'Mobile-first approach based on real behavior',
+                    description: 'The design was approached from a mobile-first logic, considering that much of the initial research occurs on mobile devices, even in B2B contexts.',
+                    concluding: 'This ensured legibility, clear hierarchy, and accessibility in early stages of the evaluation process.'
+                }
             ],
-            results: [
-                'Redesigned corporate homepage with a focus on acquisition and clarity of value proposition.',
-                'Analyzed the flow and structure, identified problems with hierarchy, architecture, and conversion.',
-                'Defined UX criteria aligned with B2B business objectives and engagement metrics.',
-                'Proposed a new architecture and visual narrative oriented towards trust and conversion.',
-                'Streamlined processes with AI-assisted layout (Lovable).',
-                'Designed wireframes, high-fidelity prototypes, and a responsive and consistent Design System (Desktop, tablet, and mobile)',
-                'Functional and responsive test hosting for each breakpoint (Figma and figma.to.website)',
-                'Executed UX testing to validate design decisions.',
-                'Developed the solution in HTML, CSS, and Bootstrap to ensure technical feasibility.',
-                'Solved and understood end-to-end flows, B2B, conversion, and UX performance.'
-            ],
-            learnings: "B2B websites require credibility-first design. Enterprise clients need to quickly understand what you do, who you've worked with, and why you're qualified. Visual polish matters, but clear communication and trust signals drive conversion in this market."
+            results: {
+                isCustom: true,
+                sections: [
+                    {
+                        title: "1. Results",
+                        points: [
+                            "Corporate homepage redesigned with a clear narrative oriented towards B2B services.",
+                            "Simplified information architecture, reducing cognitive friction and improving content scanning.",
+                            "Scalable design system implemented and validated on desktop, tablet, and mobile.",
+                            "Navigable prototype and functional version published for real validation."
+                        ]
+                    },
+                    {
+                        title: "2. UX & Business Impact",
+                        points: [
+                            "Greater clarity in the value proposition, facilitating service understanding in the first few seconds.",
+                            "Improvement in engagement and user journey toward strategic CTAs.",
+                            "Increase in conversion metrics and time on page after the redesign.",
+                            "Reduction of friction in the B2B lead capture flow."
+                        ]
+                    },
+                    {
+                        title: "3. Key Learnings",
+                        points: [
+                            "In B2B contexts, clarity and trust have a greater impact than aesthetics.",
+                            "Reducing cognitive friction, prioritizing key messages, and solid information architecture directly improve metrics.",
+                            "Designing with front-end knowledge allows for anticipating technical limitations and reducing rework.",
+                            "Building more realistic, scalable solutions aligned with business objectives."
+                        ]
+                    }
+                ]
+            },
+            learnings: 'In B2B contexts, clarity and trust have a greater impact than aesthetics. Reducing cognitive friction, prioritizing key messages, and guiding decisions through a solid information architecture directly improves engagement and acquisition metrics. Furthermore, designing with front-end knowledge allows for anticipating technical limitations, reducing rework, and building more realistic, scalable solutions aligned with the business.',
         },
         {
             id: 3,
@@ -1125,35 +1266,98 @@ const projectsData = {
             processSteps: [
                 {
                     title: 'Research Planning',
-                    description: 'Defined research objectives focused on improving product discoverability and reducing checkout friction. Recruited participants matching target customer demographics (health-conscious consumers aged 25-45).'
+                    description: 'I defined research objectives oriented towards improving product discoverability, increasing retention, and reducing friction in the purchase flow. I recruited participants aligned with the target user profile (health-conscious consumers between 25 and 45 years old), prioritizing digital shopping habits and mobile use. The focus was on validating structure, hierarchy, and flow, rather than isolated visual stimuli.'
                 },
                 {
-                    title: 'Card Sorting & IA',
-                    description: 'Conducted open and closed card sorting sessions to understand how users naturally categorize kombucha products. Discovered that users preferred categorization by flavor profile and benefits rather than technical fermentation details.'
+                    title: 'Card Sorting',
+                    description: 'I conducted open and closed card sorting sessions to understand how users naturally organize kombucha products. The main finding was that users do not think in technical fermentation terms, but in perceived benefits and flavor profiles, which evidenced a disconnect between the original structure and real mental models. This insight allowed for redefining the information architecture with a focus on immediate comprehension.'
                 },
                 {
                     title: 'Tree Testing',
-                    description: 'Validated proposed navigation structure through tree testing exercises. Identified that users successfully found products 78% faster with the new IA compared to the existing structure.'
+                    description: 'I validated the proposed navigation structure through tree testing exercises. The results showed that users found products significantly faster and with fewer errors in the new information architecture compared to the original structure, confirming an effective reduction of cognitive friction.'
                 },
                 {
                     title: 'A/B Testing & Optimization',
-                    description: 'Designed and ran A/B tests on checkout flow variations, CTA copy, trust signals, and form layouts. Iterated based on data to maximize conversion while minimizing friction.'
+                    description: 'I designed and executed A/B tests on variations of the purchase flow, visual hierarchy, CTA placement, and product card structure. The iterations were carried out based on quantitative data and behavioral observation, prioritizing clarity, step reduction, and flow efficiency, which allowed for improving conversion and total time without sacrificing retention.'
                 }
             ],
             keyDecisions: [
-                'Reorganized product categories from production-based to benefit-based (e.g., "Digestive Health" instead of "Original Blend")',
-                'Simplified checkout to single-page design based on A/B test showing 15% conversion improvement',
-                'Added product comparison feature after research showed users struggled to differentiate between flavors',
-                'Implemented persistent cart with email recovery based on abandonment data'
+                'Reorganized the product architecture from an internal production logic to a logic based on user benefits and needs (e.g., "Digestive Health", "Natural Energy").',
+                'Optimized the purchase flow, reducing friction and total process time, which was reflected in a 12.5% improvement in conversion rate and a 14.3% reduction in flow time.',
+                'Adjusted visual hierarchy and CTAs to guide decisions with fewer clicks, achieving a cleaner and more accessible flow, even with a decrease in CTR understood as a signal of efficiency.',
+                'Consolidated a scalable visual and structural base, allowing for high retention and usability without depending on cosmetic changes or invasive patterns.'
             ],
             results: [
-                "Version B selected as the best option",
-                "15% improvement in conversion rate",
-                "50 seconds reduction in purchase time",
-                "Constant CTR of 100% in both versions",
-                "Successful usability optimization and friction reduction"
+                '100% increase in conversion rate after navigation flow redesign (both Version A and B).',
+                '-11 percentage points in CTR thanks to clear visual hierarchy and optimized CTAs and cards via user testing.',
+                '100% reduction in bounce rate, improving general engagement.',
+                '−14.3% in time needed to complete the main flow, reducing friction.',
+                'SUS Score: 84/100, validated with real users.',
+                'Increased satisfaction and retention of recurring users.'
             ],
-            learnings: "E-commerce success depends on friction-free discovery and purchase flows. Users don't care about your internal product organization—they think in terms of their own needs and goals. Testing with real users early and often prevents costly assumptions and ensures the IA actually serves user mental models."
+            learnings: "E-commerce performance does not depend on increasing visual stimuli, but on optimizing architecture, hierarchy, and cognitive times. Users do not navigate according to internal business logic, but based on their actual goals and needs. Validating structures through card sorting, tree testing, and A/B testing allows for reducing assumptions, accelerating decisions, and improving business metrics sustainably. A focus centered on flow, performance, and clarity demonstrates that well-applied UX can increase conversion and retention without compromising experience or product scalability.",
+            sections: {
+                abtesting: {
+                    title: 'A/B Testing Comparison',
+                    headers: ['Metric', 'Version A (Visual Magenta)', 'Version B (Final)', 'Difference'],
+                    rows: [
+                        { label: "Conversion rate", a: "24 %", b: "27 %", impact: "+12.5 %", color: "text-green-600" },
+                        { label: "CTR", a: "46 %", b: "34 %", impact: "-11 pts", color: "text-red-600" },
+                        { label: "Bounce", a: "0 %", b: "0 %", impact: "Both pass", color: "text-green-600" },
+                        { label: "Flow time", a: "3:30 min", b: "3:00 min", impact: "−14.3 %", color: "text-indigo-600" }
+                    ]
+                },
+                kpis: {
+                    title: 'Key Performance Indicators',
+                    conversionTitle: 'Conversion and CTR',
+                    conversionMetric1: '+12.5 % uplift',
+                    conversionMetric2: '-11 pts CTR',
+                    growthLabel: 'Growth KPIs',
+                    bounceTitle: 'Bounce and Retention',
+                    bounceLabel: 'Bounce 0%',
+                    retentionLabel: '+100 % uplift',
+                    usabilityTitle: 'Usability (SUS)',
+                    usabilityLevel: '84 / 100 – Excellent',
+                    usabilityText: 'Validation with real users confirms a clear, fast, and reliable experience.',
+                    performanceTitle: 'Flow Optimization',
+                    performanceMetric1: 'Version A',
+                    performanceMetric2: 'Version B (Final)',
+                    performanceImpact: '−14.3 % Reduction',
+                    footerText1: 'Consistent increase after friction reduction.',
+                    footerText2: 'Total retention in both redesigns.',
+                    footerText3: 'Cleaner and more accessible flow in Version B.'
+                },
+                conclusions: {
+                    title: 'Strategic Conclusions',
+                    items: [
+                        {
+                            title: "Architecture & UI",
+                            points: [
+                                "Information architecture validated through Card Sorting and Tree Testing, aligned with real user tasks.",
+                                "Clean, clear, and fully responsive interface, focusing on immediate comprehension and friction reduction.",
+                                "Simplified purchase flows explicitly designed to maximize conversion without sacrificing clarity.",
+                                "Scalable visual and structural base, ready for growth and new functionalities."
+                            ]
+                        },
+                        {
+                            title: "Usability & Metrics",
+                            points: [
+                                "Direct impact of UX on business metrics, validated through A/B Testing and quantitative analysis.",
+                                "+12.5% in conversion rate, +100% in retention, and −14.3% in total flow time.",
+                                "Funnel optimization achieved through structural decisions, not dependent on cosmetic changes.",
+                                "UX used as a driver for continuous end-to-end flow optimization."
+                            ]
+                        },
+                        {
+                            title: "User Satisfaction (SUS)",
+                            points: [
+                                "SUS Score: 84/100 – Excellent Level.",
+                                "Validation with real users confirms an experience perceived as clear, fast, and reliable."
+                            ]
+                        }
+                    ]
+                }
+            }
         },
         {
             id: 4,
@@ -1188,130 +1392,78 @@ const projectsData = {
                 }
             ],
             // English Content - Restored from component
-            context: 'La Especiería, a specialty spice and seasoning e-commerce store, required a complete UX/UI overhaul to improve conversion rates and customer engagement. The existing site presented critical usability issues, a confusing information architecture, and a poor mobile experience.',
-            problem: 'Data analysis revealed: \n- Product discovery and selection issues due to poor visual hierarchy.\n- Low responsiveness and errors in the mobile flow (60% of traffic).\n- High friction in checkout causing cart abandonment.\n- Negative impact on conversion, bounce, and engagement.',
+            context: 'La Especiería is a gourmet spice and seasoning e-commerce that required a comprehensive renovation of its digital experience to improve conversion and engagement, especially on desktop and mobile. The original site presented critical frictions that directly affected the performance of the purchase funnel:',
+            problem: [
+                "Poor visual hierarchy that hindered product exploration and comparison.",
+                "Confusing information architecture, especially in categories and filters.",
+                "Under-optimized mobile experience, with responsiveness and navigation issues.",
+                "Extensive and unclear checkout, leading to cart abandonment.",
+                "Direct impact on key metrics: high bounce rate, low CTR, and low conversion."
+            ],
             role: 'Senior UX/UI Designer & UX Researcher (End-to-End). Responsible for UX strategy, visual design, and Front-End development.',
             responsibilities: [
                 'Data-driven UX Research',
                 'Information Architecture & Wireframing',
-                'High-fidelity UI Design (Indigo Theme)',
+                'High-fidelity UI Design',
                 'Interactive Prototyping & User Testing',
                 'Front-End Development (HTML/CSS/Bootstrap)',
-                'Mobile Performance Optimization'
+                'Desktop & Mobile Performance Optimization'
             ],
             processSteps: [
                 {
-                    title: 'UX Research',
-                    description: 'Interviews and heuristic analysis. Finding: Confusing navigation prevented finding specific products.'
+                    title: 'Research UX',
+                    description: 'Exploratory interviews and heuristic analysis of the original site. Key finding: navigation and visual hierarchy prevented finding specific products quickly.'
                 },
                 {
                     title: 'Definition',
-                    description: 'User personas and Customer Journey. Insight: We needed a checkout flow of maximum 3 steps.'
+                    description: 'Creation of user personas and customer journey. Key insight: the purchase flow needed to be reduced to a maximum of 3 steps to decrease friction and cognitive load.'
                 },
                 {
                     title: 'Ideation',
-                    description: 'Wireframes and user flows. Decision: Implement advanced filters by flavor and culinary use.'
+                    description: 'Wireframes and definition of optimized flows. Strategic decision: implement advanced filters by flavor type and culinary use to improve discovery.'
                 },
                 {
                     title: 'Prototyping',
-                    description: 'Responsive high-fidelity design. Focus: Clear visual hierarchy and premium micro-animations.'
+                    description: 'High-fidelity design, fully responsive. Focus on clear visual hierarchy, protagonist product photography, and subtle micro-interactions to reinforce premium perception.'
                 },
                 {
                     title: 'User Testing',
-                    description: 'Moderated tests with real users. Finding: Need for more feedback in the cart.'
+                    description: 'Moderated tests with real users. Finding: need for more visual feedback in the cart and key actions.'
                 },
                 {
                     title: 'Iteration',
-                    description: 'UI refinement based on tests. Result: Frictionless flow successfully validated.'
+                    description: 'UI and flow refinement based on feedback. Result: validated purchase flow, simple and without unnecessary friction.'
                 }
             ],
             keyDecisions: [
-                'Implemented a visual hierarchy based on "sensory cues" (close-up product photography).',
-                'Optimized checkout by reducing fields from 7 to 3, decreasing cognitive load.',
-                'Strict Mobile-First approach: navigation tailored for one-handed touch interactions.',
-                'Indigo-based Design System to convey sophistication and gourmet trust.'
+                'Visual hierarchy based on sensory cues, prioritizing product photography and key attributes to facilitate quick decisions.',
+                'Checkout optimization, reducing fields from 7 to 3 and eliminating redundant steps.',
+                'Real mobile-first approach, with adapted navigation and optimized touch zones.',
+                'Consistent design system, aligned with corporate color and a gourmet aesthetic that conveys trust and quality.'
             ],
             results: [
-                '+28% Real conversion rate measured post-launch.',
-                '+35% Increase in CTR of main buttons and filters.',
-                '-22% Reduction in global bounce rate.',
-                'SUS Score of 84/100 in final usability tests.',
-                '-40% Loading time on mobile devices (Core Web Vitals).',
-                'Increased satisfaction and retention of recurring users.'
+                '+100% in conversion rate, doubling the purchase funnel performance.',
+                '+70% in CTR, driven by improvements in visual hierarchy and exploration filters.',
+                '−71 seconds in average flow time, reducing friction in navigation and checkout.',
+                '−30% in bounce rate, especially on mobile.',
+                'Sustained increase in engagement and purchase flow efficiency.'
             ],
-            learnings: 'The relationship between UX decisions and business metrics is direct. Mobile-first design and reducing friction in the checkout flow not only improve the experience but also positively impact e-commerce ROI.',
+            learnings: 'In e-commerce, the main driver of conversion is not traffic, but flow clarity. A well-defined architecture and consistent visual hierarchy allow for faster decisions, reduced abandonment, and sustainably scaled business results.',
             // Case Study Sections
             sections: {
                 challenge: {
                     title: 'The UX Challenge',
                     usabilityTitle: 'Usability Issues',
-                    usabilityText: 'Critical barriers were detected in spice exploration and selection, combined with an information architecture that did not allow filtering by culinary uses, generating immediate frustration.',
+                    usabilityText: 'Critical barriers were identified in exploration, product selection, and checkout completion, caused by poor visual hierarchy, low mobile optimization, and checkout friction.',
                     businessTitle: 'Business Impact',
-                    businessText: 'Poor performance on mobile devices (where 60% of traffic resides) resulted in high bounce rates and a steady drop in sales funnel conversion.'
+                    businessText: 'These frictions translated into: High bounce rates, Low funnel performance, and Loss of conversion opportunities, especially on mobile.'
                 },
                 objectives: {
                     title: 'UX Objectives',
-                    items: ["Optimize usability and UI interaction", "Improve mobile responsiveness and performance", "Increase conversion and engagement"]
+                    items: ["Optimize usability and UI interaction", "Improve desktop-mobile responsiveness and performance", "Increase conversion and engagement"]
                 },
                 methodology: {
                     title: 'User-Centered Design with UX Sprint (Agile)'
-                },
-                abtesting: {
-                    title: 'A/B Testing Comparison',
-                    headers: ['Metric', 'Version A (Original)', 'Version B (Optimized)'],
-                    rows: [
-                        { label: "Conversion", b: "+28%", color: "text-green-600" },
-                        { label: "CTR", b: "+35%", color: "text-green-600" },
-                        { label: "Bounce Rate", b: "-22%", color: "text-green-600" },
-                        { label: "Retention", b: "Higher retention", color: "text-indigo-600" },
-                        { label: "SUS Score", b: "84/100", color: "text-indigo-600" },
-                        { label: "Mobile Performance", b: "-40% load", color: "text-green-600" }
-                    ]
-                },
-                kpis: {
-                    title: 'Controlled Visual KPIs',
-                    conversionTitle: 'Conversion and CTR',
-                    conversionMetric1: 'Conversion Rate',
-                    conversionMetric2: 'Button CTR',
-                    growthLabel: 'Growth KPIs',
-                    bounceTitle: 'Bounce and Retention',
-                    bounceLabel: 'Bounce',
-                    retentionLabel: 'Retention ↑',
-                    usabilityTitle: 'SUS Score (Usability)',
-                    usabilityLevel: 'Level: Excellent',
-                    usabilityText: 'Validated through moderated user testing.',
-                    performanceTitle: 'Mobile Performance',
-                    performanceMetric1: 'Original Version',
-                    performanceMetric2: 'Optimized Version',
-                    performanceImpact: '-40% Load Time',
-                    footerText1: 'Direct improvement in acquisition and navigation.',
-                    footerText2: 'Significant reduction in early bounce.',
-                    footerText3: 'Critical Core Web Vitals optimization.'
-                },
-                conclusions: {
-                    title: 'Strategic Conclusions',
-                    items: [
-                        {
-                            title: "Architecture & UI",
-                            points: ["Clean & Responsive Interface", "Less purchase friction", "Fluid navigability"]
-                        },
-                        {
-                            title: "Usability & Metrics",
-                            points: ["+28% Conversion Rate", "Final performance improvement", "UX data analysis"]
-                        },
-                        {
-                            title: "Satisfaction (SUS)",
-                            points: ["84/100 (Excellent Level)", "High visual clarity", "Search ease"]
-                        },
-                        {
-                            title: "Mobile Performance",
-                            points: ["-40% Loading time", "Web Vitals optimization", "Touch-First approach"]
-                        },
-                        {
-                            title: "Strategy & ROI",
-                            points: ["Direct business impact", "Data-driven UX", "Validated strategic value"]
-                        }
-                    ]
                 }
             }
         },

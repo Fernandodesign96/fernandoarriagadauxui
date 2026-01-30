@@ -7,12 +7,42 @@ const BCNGlobalKPIs = ({ currentLang = 'es' }) => {
             intro: "Las siguientes visualizaciones representan mejoras observadas tras el rediseño UX/UI de la homepage, la validación mediante testeo UX y la implementación técnica.",
             barChartTitle: "Mejoras Alcanzadas",
             metrics: [
-                { label: "Click-Through Rate (CTR)", value: 45, display: "45%" },
-                { label: "Tiempo en Página", value: 65, display: "65%" },
-                { label: "Scroll Depth", value: 80, display: "80%" },
-                { label: "Bounce Rate Reducido", value: 35, display: "35%" },
-                { label: "Tasa de Conversión Formulario", value: 55, display: "55%" },
-                { label: "Interacción Secciones Clave", value: 70, display: "70%" }
+                {
+                    label: "Click-Through Rate (CTR)",
+                    value: 45,
+                    display: "+45%",
+                    desc: "Mejor jerarquía visual, copy contextual y ubicación estratégica de CTAs según etapa del funnel."
+                },
+                {
+                    label: "Tiempo en Página",
+                    value: 65,
+                    display: "+65%",
+                    desc: "Mayor claridad de propuesta de valor y estructura escaneable aumentan exploración consciente del contenido."
+                },
+                {
+                    label: "Scroll Depth",
+                    value: 80,
+                    display: "+80%",
+                    desc: "Narrativa visual progresiva y priorización de servicios core incentivan exploración completa de la homepage."
+                },
+                {
+                    label: "Bounce Rate",
+                    value: 35,
+                    display: "−35%",
+                    desc: "Reducción de fricción cognitiva en los primeros segundos y señales de confianza visibles above the fold."
+                },
+                {
+                    label: "Conversión de Formulario",
+                    value: 55,
+                    display: "+55%",
+                    desc: "CTAs de bajo compromiso, mejor timing de activación y claridad del beneficio ofrecido."
+                },
+                {
+                    label: "Interacción Secciones Clave",
+                    value: 70,
+                    display: "+70%",
+                    desc: "Mayor engagement con servicios, casos y bloques de valor gracias a arquitectura de información optimizada."
+                }
             ],
             metricsGridTitle: "Indicadores Clave de Rendimiento",
             resultsTitle: "Resultados de Implementación",
@@ -31,12 +61,42 @@ const BCNGlobalKPIs = ({ currentLang = 'es' }) => {
             intro: "The following visualizations represent improvements observed after the UX/UI redesign of the homepage, UX testing validation, and technical implementation.",
             barChartTitle: "Improvements Achieved",
             metrics: [
-                { label: "Click-Through Rate (CTR)", value: 45, display: "45%" },
-                { label: "Time on Page", value: 65, display: "65%" },
-                { label: "Scroll Depth", value: 80, display: "80%" },
-                { label: "Bounce Rate Reduced", value: 35, display: "35%" },
-                { label: "Form Conversion Rate", value: 55, display: "55%" },
-                { label: "Key Section Interaction", value: 70, display: "70%" }
+                {
+                    label: "Click-Through Rate (CTR)",
+                    value: 45,
+                    display: "+45%",
+                    desc: "Better visual hierarchy, contextual copy, and strategic CTA placement according to funnel stage."
+                },
+                {
+                    label: "Time on Page",
+                    value: 65,
+                    display: "+65%",
+                    desc: "Greater clarity of value proposition and scannable structure increase conscious exploration of content."
+                },
+                {
+                    label: "Scroll Depth",
+                    value: 80,
+                    display: "+80%",
+                    desc: "Progressive visual narrative and prioritization of core services incentivize complete exploration of the homepage."
+                },
+                {
+                    label: "Bounce Rate",
+                    value: 35,
+                    display: "−35%",
+                    desc: "Reduction of cognitive friction in the first few seconds and visible trust signals above the fold."
+                },
+                {
+                    label: "Form Conversion Rate",
+                    value: 55,
+                    display: "+55%",
+                    desc: "Low-commitment CTAs, better activation timing, and clarity of the benefit offered."
+                },
+                {
+                    label: "Key Section Interaction",
+                    value: 70,
+                    display: "+70%",
+                    desc: "Higher engagement with services, cases, and value blocks thanks to optimized information architecture."
+                }
             ],
             metricsGridTitle: "Key Performance Indicators",
             resultsTitle: "Implementation Results",
@@ -114,23 +174,32 @@ const BCNGlobalKPIs = ({ currentLang = 'es' }) => {
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {t.metrics.map((metric, i) => (
-                            <div key={i} className="bg-gradient-to-br from-indigo-50/80 via-white to-white dark:from-indigo-900/20 dark:via-neutral-950 dark:to-neutral-950 p-6 rounded-[2rem] border border-indigo-100/50 dark:border-indigo-800/40 flex flex-col justify-between min-h-[160px] relative overflow-hidden group hover:shadow-xl transition-all border-b-4 border-b-indigo-500/30">
+                            <div key={i} className="bg-gradient-to-br from-indigo-50/80 via-white to-white dark:from-indigo-900/20 dark:via-neutral-950 dark:to-neutral-950 p-6 rounded-[2rem] border border-indigo-100/50 dark:border-indigo-800/40 flex flex-col justify-between min-h-[220px] relative overflow-hidden group hover:shadow-xl transition-all border-b-4 border-b-indigo-500/30">
                                 <div className="flex justify-between items-start">
-                                    <span className="text-[10px] font-black text-indigo-700/60 dark:text-indigo-300/60 uppercase tracking-tighter max-w-[80%]">{metric.label}</span>
-                                    <div className="w-8 h-8 rounded-lg bg-indigo-600/10 dark:bg-indigo-400/10 flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                                    <div className="flex flex-col gap-1">
+                                        <span className="text-[10px] font-black text-indigo-700/60 dark:text-indigo-300/60 uppercase tracking-tighter">{metric.label}</span>
+                                        <p className="text-[10px] font-bold text-neutral-400 dark:text-neutral-500 leading-tight pr-4 mt-1">
+                                            {metric.desc}
+                                        </p>
+                                    </div>
+                                    <div className="w-8 h-8 rounded-lg bg-indigo-600/10 dark:bg-indigo-400/10 flex items-center justify-center transform group-hover:scale-110 transition-transform flex-shrink-0">
                                         <svg className="w-4 h-4 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7h8m0 0v8m0-8l-9 9-4-4-6 6" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d={metric.label.includes('Bounce') ? "M13 17h8m0 0V9m0 8l-9-9-4 4-6-6" : "M13 7h8m0 0v8m0-8l-9 9-4-4-6 6"} />
                                         </svg>
                                     </div>
                                 </div>
                                 <div className="mt-4">
                                     <div className="flex items-baseline gap-1">
-                                        <span className="text-5xl font-black text-indigo-600 dark:text-indigo-400 leading-none">{metric.value}</span>
+                                        <span className="text-5xl font-black text-indigo-600 dark:text-indigo-400 leading-none">{metric.display.replace(/[%+−]/g, '')}</span>
                                         <span className="text-xl font-black text-indigo-600/40 dark:text-indigo-400/40">%</span>
                                     </div>
                                     <div className="mt-2 flex items-center gap-1.5">
-                                        <svg className="w-3 h-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 15l7-7 7 7" /></svg>
-                                        <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold uppercase tracking-wider">{t.typeLabel}</span>
+                                        <svg className={`w-3 h-3 ${metric.label.includes('Bounce') ? 'text-indigo-500 rotate-180' : 'text-emerald-500'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 15l7-7 7 7" />
+                                        </svg>
+                                        <span className={`text-[10px] font-bold uppercase tracking-wider ${metric.label.includes('Bounce') ? 'text-indigo-600 dark:text-indigo-400' : 'text-emerald-600 dark:text-emerald-400'}`}>
+                                            {metric.label.includes('Bounce') ? (currentLang === 'es' ? 'REDUCCIÓN' : 'REDUCTION') : t.typeLabel}
+                                        </span>
                                     </div>
                                 </div>
                                 {/* Decorative circle */}

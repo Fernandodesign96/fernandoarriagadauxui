@@ -366,8 +366,23 @@ const CaseStudyTemplate = ({
                             {t.context}
                         </h2>
                         <div className="prose prose-lg max-w-none text-neutral-700 dark:text-neutral-300">
-                            <p className="leading-relaxed mb-6 text-lg">{context}</p>
-                            {problem && <p className="leading-relaxed text-lg">{problem}</p>}
+                            <p className="leading-relaxed mb-6 text-xl font-medium">{context}</p>
+                            {problem && (
+                                Array.isArray(problem) ? (
+                                    <div className="grid grid-cols-1 gap-4 mt-8 not-prose">
+                                        {problem.map((item, i) => (
+                                            <div key={i} className="bg-white dark:bg-neutral-900 p-6 rounded-2xl border border-neutral-100 dark:border-neutral-800 shadow-sm flex items-start gap-4 hover:border-indigo-200 dark:hover:border-indigo-900/30 transition-all group">
+                                                <div className="w-2 h-2 rounded-full bg-indigo-500 mt-2.5 flex-shrink-0 group-hover:scale-125 transition-transform"></div>
+                                                <p className="text-lg font-semibold text-neutral-800 dark:text-neutral-200 leading-relaxed">
+                                                    {item}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <p className="leading-relaxed text-lg">{problem}</p>
+                                )
+                            )}
                         </div>
                     </section>
 
@@ -446,9 +461,27 @@ const CaseStudyTemplate = ({
                                                     {index + 1}
                                                 </div>
                                             </div>
-                                            <p className="leading-relaxed text-lg text-neutral-800 dark:text-neutral-200 font-medium">
-                                                {decision}
-                                            </p>
+                                            <div className="flex flex-col gap-1">
+                                                {typeof decision === 'object' ? (
+                                                    <>
+                                                        <h4 className="text-lg font-bold text-neutral-900 dark:text-white leading-tight">
+                                                            {decision.title}
+                                                        </h4>
+                                                        <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                                            {decision.description}
+                                                        </p>
+                                                        {decision.concluding && (
+                                                            <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 leading-relaxed mt-1">
+                                                                {decision.concluding}
+                                                            </p>
+                                                        )}
+                                                    </>
+                                                ) : (
+                                                    <p className="leading-relaxed text-lg text-neutral-800 dark:text-neutral-200 font-medium">
+                                                        {decision}
+                                                    </p>
+                                                )}
+                                            </div>
                                         </div>
                                     ))
                                 ) : (
@@ -473,16 +506,36 @@ const CaseStudyTemplate = ({
                                 {typeof results === 'string' ? (
                                     <p className="text-primary-900 dark:text-primary-100 leading-relaxed text-lg">{results}</p>
                                 ) : (
-                                    <div className="grid grid-cols-1 gap-6">
-                                        {results.map((result, index) => (
-                                            <div key={index} className="flex items-start gap-4 p-4 bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-primary-100 dark:border-primary-900/30">
-                                                <svg className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
-                                                <p className="text-neutral-800 dark:text-neutral-200 font-medium text-lg leading-relaxed">{result}</p>
-                                            </div>
-                                        ))}
-                                    </div>
+                                    results.isCustom ? (
+                                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 not-prose">
+                                            {results.sections.map((section, idx) => (
+                                                <div key={idx} className="bg-white dark:bg-neutral-900 p-6 rounded-2xl border border-primary-100 dark:border-primary-900/30 shadow-sm flex flex-col gap-4">
+                                                    <h3 className="text-lg font-bold text-primary-900 dark:text-primary-100 uppercase tracking-tight">
+                                                        {section.title}
+                                                    </h3>
+                                                    <ul className="space-y-3">
+                                                        {section.points.map((point, pIdx) => (
+                                                            <li key={pIdx} className="flex items-start gap-2 text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                                                                <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-1.5 shrink-0"></span>
+                                                                {point}
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    ) : (
+                                        <div className="grid grid-cols-1 gap-6">
+                                            {results.map((result, index) => (
+                                                <div key={index} className="flex items-start gap-4 p-4 bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-primary-100 dark:border-primary-900/30">
+                                                    <svg className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg>
+                                                    <p className="text-neutral-800 dark:text-neutral-200 font-medium text-lg leading-relaxed">{result}</p>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )
                                 )}
                             </div>
                         </section>
