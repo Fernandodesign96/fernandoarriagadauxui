@@ -4,7 +4,7 @@ const GhaliKombuchaKPIs = ({ currentLang = 'es' }) => {
     const content = {
         es: {
             title: "Impacto UX medido en métricas clave de e-commerce",
-            intro: "Las siguientes visualizaciones representan mejoras obtenidas tras investigación UX, validación con usuarios reales y optimización iterativa del flujo de descubrimiento y compra.",
+            intro: "Las siguientes visualizaciones representan la optimización del funnel tras priorizar la activación mediante la encontrabilidad y la alineación con los modelos mentales del usuario.",
             abTitle: "1️⃣ Resultados del A/B Testing",
             abTable: {
                 headers: ["Métrica", "Versión Original", "Versión Optimizada", "Diferencia"],
@@ -22,23 +22,23 @@ const GhaliKombuchaKPIs = ({ currentLang = 'es' }) => {
                 { label: "Rebote", value: "30", color: "indigo" }
             ],
             conversion: {
-                title: "Conversión de Checkout",
-                caption: "La simplificación del checkout y la reducción de campos duplicó la tasa de finalización del proceso de compra.",
+                title: "Activación en Checkout",
+                caption: "La reducción de la carga cognitiva y fricción táctica duplicó la tasa de completitud, validando una activación más fluida hacia la compra.",
                 xAxis: "Versiones",
                 yAxis: "% de conversión",
                 labels: ["Original", "Optimizado"],
                 values: [21, 42]
             },
             engagement: {
-                title: "Permanencia y Engagement",
-                caption: "El rediseño de la arquitectura de información y jerarquía visual aumentó significativamente la permanencia y exploración del catálogo.",
+                title: "Adopción y Exploración Consciente",
+                caption: "La alineación con modelos mentales reales permitió un uso sostenido del catálogo, aumentando la permanencia como señal de adopción productiva.",
                 labels: ["Original", "Optimizado"],
                 values: [65, 100]
             }
         },
         en: {
             title: "UX Impact Measured in Key E-commerce Metrics",
-            intro: "The following visualizations represent improvements obtained after UX research, real user validation, and iterative optimization of the discovery and purchase flow.",
+            intro: "The following visualizations represent funnel optimization after prioritizing activation through findability and alignment with user mental models.",
             abTitle: "1️⃣ A/B Testing Results",
             abTable: {
                 headers: ["Metric", "Original Version", "Optimized Version", "Difference"],
@@ -56,16 +56,16 @@ const GhaliKombuchaKPIs = ({ currentLang = 'es' }) => {
                 { label: "Bounce", value: "30", color: "indigo" }
             ],
             conversion: {
-                title: "Checkout Conversion",
-                caption: "Checkout simplification and field reduction doubled the purchase process completion rate.",
+                title: "Checkout Activation",
+                caption: "The reduction of cognitive load and tactical friction doubled completion rates, validating a smoother activation toward purchase.",
                 xAxis: "Versions",
                 yAxis: "% conversion",
                 labels: ["Original", "Optimized"],
                 values: [21, 42]
             },
             engagement: {
-                title: "Stay and Engagement",
-                caption: "Information architecture and visual hierarchy redesign significantly increased retention and catalog exploration.",
+                title: "Adoption and Conscious Exploration",
+                caption: "Alignment with real mental models enabled sustained catalog usage, increasing session length as a signal of productive adoption.",
                 labels: ["Original", "Optimized"],
                 values: [65, 100]
             }

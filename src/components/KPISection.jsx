@@ -4,56 +4,56 @@ const KPISection = ({ currentLang = 'es' }) => {
     const content = {
         es: {
             title: "Impacto UX medido en KPIs clave",
-            intro: "Los siguientes gráficos representan mejoras observadas tras la optimización UX/UI, la validación de hipótesis y el testeo de flujos críticos, con foco en conversión, estabilidad y experiencia de usuario.",
+            intro: "Las siguientes visualizaciones representan la optimización de la continuidad del flujo y la estabilidad percibida ante escenarios críticos de interacción sistémica.",
             funnel: {
                 title: "Continuidad del Funnel",
-                caption: "Mejora atribuida a reducción de fricción, divulgación progresiva y feedback del sistema.",
+                caption: "Impacto en la conversión mediante la persistencia de estados y la reducción de la fricción estructural.",
                 labels: ["Antes: ~62%", "Después: ~88%"],
                 value: "88%"
             },
             friction: {
                 title: "Formularios y Fricción",
-                caption: "Menor carga cognitiva gracias a campos condicionales y mensajes claros.",
+                caption: "Optimización de la performance UX mediante lógica condicional y jerarquía de datos orientada a la eficiencia.",
                 labels: ["Reducción de errores"],
                 value: "65%"
             },
             stability: {
                 title: "Estabilidad y Feedback",
-                caption: "Mejora cualitativa en seguridad percibida y control del proceso validada mediante pruebas.",
+                caption: "Gestión de la incertidumbre técnica y mejora de la confianza percibida mediante feedback sistémico proactivo.",
                 labels: ["Previo", "Validado"],
                 value: "Alta"
             },
             validation: {
-                title: "Validación UX–Dev",
-                caption: "Alta consistencia entre diseño y desarrollo, validada en prototipo funcional con foco en performance.",
+                title: "Validación de Resiliencia",
+                caption: "Alineación de criterios UX–Dev para asegurar la resiliencia del sistema y la fidelidad del flujo final.",
                 labels: ["Consistencia"],
                 value: "Alta"
             }
         },
         en: {
             title: "UX Impact Measured in Key KPIs",
-            intro: "The following charts represent improvements observed after UX/UI optimization, hypothesis validation, and critical flow testing, focusing on conversion, stability, and user experience.",
+            intro: "The following visualizations represent the optimization of flow continuity and perceived stability in critical systemic interaction scenarios.",
             funnel: {
                 title: "Funnel Continuity",
-                caption: "Improvement attributed to friction reduction, progressive disclosure, and system feedback.",
+                caption: "Impact on conversion through state persistence and structural friction reduction.",
                 labels: ["Before: ~62%", "After: ~88%"],
                 value: "88%"
             },
             friction: {
                 title: "Forms and Friction",
-                caption: "Lower cognitive load thanks to conditional fields and clear messaging.",
+                caption: "UX performance optimization through conditional logic and efficiency-oriented data hierarchy.",
                 labels: ["Error reduction"],
                 value: "65%"
             },
             stability: {
                 title: "Stability and Feedback",
-                caption: "Qualitative improvement in perceived security and process control validated through testing.",
+                caption: "Technical uncertainty management and perceived trust improvement through proactive systemic feedback.",
                 labels: ["Previous", "Validated"],
                 value: "High"
             },
             validation: {
-                title: "UX–Dev Validation",
-                caption: "High consistency between design and development, validated in functional prototype focusing on performance.",
+                title: "Resilience Validation",
+                caption: "UX–Dev alignment ensuring system resilience and final flow fidelity.",
                 labels: ["Consistency"],
                 value: "High"
             }
@@ -183,10 +183,10 @@ const KPISection = ({ currentLang = 'es' }) => {
                             <h3 className="text-xl font-bold text-neutral-800 dark:text-neutral-200 mb-6">{t.validation.title}</h3>
                             <div className="h-48 mb-6 bg-neutral-50/50 dark:bg-neutral-900/30 rounded-2xl p-6 flex flex-col justify-center gap-3 border border-neutral-100 dark:border-neutral-800/30">
                                 {[
-                                    { es: "Fidelidad UI", en: "UI Fidelity" },
-                                    { es: "Performance aceptable", en: "Acceptable Performance" },
-                                    { es: "Accesibilidad base", en: "Base Accessibility" },
-                                    { es: "Responsive validado", en: "Validated Responsiveness" }
+                                    { es: "Integridad del Flujo", en: "Flow Integrity" },
+                                    { es: "Resiliencia Sistémica", en: "Systemic Resilience" },
+                                    { es: "Carga Cognitiva Optimizada", en: "Optimized Cognitive Load" },
+                                    { es: "Consistencia de Estados", en: "State Consistency" }
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-center gap-3 group">
                                         <div className="w-5 h-5 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 border border-indigo-200/50 dark:border-indigo-800/50 group-hover:scale-110 transition-transform">

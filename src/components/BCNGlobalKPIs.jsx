@@ -3,110 +3,108 @@ import React from 'react';
 const BCNGlobalKPIs = ({ currentLang = 'es' }) => {
     const content = {
         es: {
-            title: "Impacto UX en captación y performance",
-            intro: "Las siguientes visualizaciones representan mejoras observadas tras el rediseño UX/UI de la homepage, la validación mediante testeo UX y la implementación técnica.",
-            barChartTitle: "Mejoras Alcanzadas",
+            title: "Performance UX: Impacto en el Pipeline B2B",
+            intro: "Las métricas reflejan la optimización del funnel de adquisición tras priorizar señales de confianza y claridad narrativa sobre la presión de conversión simple.",
+            barChartTitle: "Indicadores Clave de Rendimiento",
             metrics: [
                 {
                     label: "Click-Through Rate (CTR)",
                     value: 45,
                     display: "+45%",
-                    desc: "Mejor jerarquía visual, copy contextual y ubicación estratégica de CTAs según etapa del funnel."
+                    desc: "Mejor jerarquía visual, copy contextual y ubicación estratégica de CTAs según etapa del funnel B2B."
                 },
                 {
                     label: "Tiempo en Página",
                     value: 65,
                     display: "+65%",
-                    desc: "Mayor claridad de propuesta de valor y estructura escaneable aumentan exploración consciente del contenido."
+                    desc: "Mayor claridad de propuesta de valor y estructura escaneable que favorece una exploración consciente por decisores."
                 },
                 {
                     label: "Scroll Depth",
                     value: 80,
                     display: "+80%",
-                    desc: "Narrativa visual progresiva y priorización de servicios core incentivan exploración completa de la homepage."
+                    desc: "Resultado de una narrativa progresiva y arquitectura de información que guía hacia secciones decisivas."
                 },
                 {
                     label: "Bounce Rate",
                     value: 35,
                     display: "−35%",
-                    desc: "Reducción de fricción cognitiva en los primeros segundos y señales de confianza visibles above the fold."
+                    desc: "Reducción de fricción cognitiva inicial y señales de confianza visibles en el above-the-fold."
                 },
                 {
                     label: "Conversión de Formulario",
                     value: 55,
                     display: "+55%",
-                    desc: "CTAs de bajo compromiso, mejor timing de activación y claridad del beneficio ofrecido."
+                    desc: "Vínculo con CTAs de bajo compromiso, mejor timing de activación y claridad del beneficio ofrecido."
                 },
                 {
                     label: "Interacción Secciones Clave",
                     value: 70,
                     display: "+70%",
-                    desc: "Mayor engagement con servicios, casos y bloques de valor gracias a arquitectura de información optimizada."
+                    desc: "Mayor engagement en bloques estratégicos gracias a una jerarquía alineada a la toma de decisión B2B."
                 }
             ],
             metricsGridTitle: "Indicadores Clave de Rendimiento",
-            resultsTitle: "Resultados de Implementación",
+            resultsTitle: "Impacto en la Escala del Sistema",
             results: [
-                "Rediseño completo de Home orientado a conversión",
-                "Sistema visual escalable con UI Kit completo",
-                "Prototipo de alta fidelidad navegable",
-                "Maquetación funcional 100% responsive",
-                "Proceso eficiente apoyado por IA",
-                "Caso de estudio sólido para portafolio"
+                "Reducción de fricción en etapas del funnel que requerían mayores señales de confianza",
+                "Arquitectura modular alineada a objetivos de crecimiento B2B",
+                "Diseño de sistema alineado a la progresión de leads y a la comunicación de la propuesta de valor",
+                "Estructura del sistema escalable y performance operativo consistente",
+                "Narrativa del sistema consistente con negocio y ventas"
             ],
             typeLabel: "Incremento"
         },
         en: {
-            title: "UX Impact on Acquisition and Performance",
-            intro: "The following visualizations represent improvements observed after the UX/UI redesign of the homepage, UX testing validation, and technical implementation.",
-            barChartTitle: "Improvements Achieved",
+            title: "UX Performance: B2B Pipeline Impact",
+            intro: "Metrics reflect the acquisition funnel optimization after prioritizing trust signals and narrative clarity over simple conversion pressure.",
+            barChartTitle: "Key Performance Indicators",
             metrics: [
                 {
                     label: "Click-Through Rate (CTR)",
                     value: 45,
                     display: "+45%",
-                    desc: "Better visual hierarchy, contextual copy, and strategic CTA placement according to funnel stage."
+                    desc: "Better visual hierarchy, contextual copy, and strategic CTA placement according to B2B funnel stage."
                 },
                 {
                     label: "Time on Page",
                     value: 65,
                     display: "+65%",
-                    desc: "Greater clarity of value proposition and scannable structure increase conscious exploration of content."
+                    desc: "Greater clarity of value proposition and scannable structure favoring conscious exploration by decision-makers."
                 },
                 {
                     label: "Scroll Depth",
                     value: 80,
                     display: "+80%",
-                    desc: "Progressive visual narrative and prioritization of core services incentivize complete exploration of the homepage."
+                    desc: "Result of a progressive narrative and information architecture guiding users toward decisive sections."
                 },
                 {
                     label: "Bounce Rate",
                     value: 35,
                     display: "−35%",
-                    desc: "Reduction of cognitive friction in the first few seconds and visible trust signals above the fold."
+                    desc: "Reduced initial cognitive friction and trust signals visible in the above-the-fold."
                 },
                 {
                     label: "Form Conversion Rate",
                     value: 55,
                     display: "+55%",
-                    desc: "Low-commitment CTAs, better activation timing, and clarity of the benefit offered."
+                    desc: "Linked to low-commitment CTAs, better activation timing, and clarity of the benefit offered."
                 },
                 {
                     label: "Key Section Interaction",
                     value: 70,
                     display: "+70%",
-                    desc: "Higher engagement with services, cases, and value blocks thanks to optimized information architecture."
+                    desc: "Higher engagement in strategic blocks thanks to hierarchy aligned with B2B decision-making."
                 }
             ],
             metricsGridTitle: "Key Performance Indicators",
-            resultsTitle: "Implementation Results",
+            resultsTitle: "Impact on System Scale",
             results: [
-                "Complete Home redesign oriented to conversion",
-                "Scalable visual system with complete UI Kit",
-                "Navigable high-fidelity prototype",
-                "100% responsive functional layout",
-                "Efficient process supported by AI",
-                "Solid case study for portfolio"
+                "Reduction of friction in funnel stages that required greater trust signals",
+                "Modular architecture aligned with B2B growth goals",
+                "System design aligned with lead progression and value proposition communication",
+                "Scalable system structure and consistent operational performance",
+                "System narrative consistent with business and sales"
             ],
             typeLabel: "Increase"
         }
